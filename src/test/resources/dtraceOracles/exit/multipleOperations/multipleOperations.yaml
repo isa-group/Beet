@@ -1,0 +1,81 @@
+swagger: '2.0'
+info:
+  version: "1.4.0"
+  title: sampleApi_nestedArrays
+  description: "Example of API that contains inputs of primitive types (Double, String, Integer, boolean, array of string, array of double)
+  in all the possible sources, excepting the body (query, path, header, form)"
+host: es.us.isa
+basePath: /sampleApi/v1
+schemes:
+  - https
+
+securityDefinitions:
+  "API Key":
+    type: apiKey
+    in: header
+    name: SAMPLE-API-Key
+
+security:
+  - "API Key": []
+
+paths:
+  '/operation1':
+    x-summary: operation1
+    get:
+      summary: Operation1
+      operationId: operation1
+      description: Get Results of operation 1
+      produces:
+        - application/json
+      parameters:
+        - name: parameterOperation1
+          in: query
+          required: true
+          type: string
+      responses:
+        '200':
+          description: "Response of operation 1"
+          schema:
+            $ref: '#/definitions/operation1Response'
+  '/operation2':
+    x-summary: operation1
+    get:
+      summary: Operation2
+      operationId: operation2
+      description: Get Results of operation 2
+      produces:
+        - application/json
+      parameters:
+        - name: parameterOperation2
+          in: query
+          required: true
+          type: string
+      responses:
+        '200':
+          description: "Response of operation 2"
+          schema:
+            $ref: '#/definitions/operation2Response'
+
+definitions:
+  operation1Response:
+    title: ResponseOperation1
+    description: Response of operation 1
+    type: object
+    properties:
+      stringPropertyOperation1:
+        type: string
+      arrayOfObjectsPropertyOperation1:
+        type: array
+        items:
+          type: object
+          properties:
+            property1Operation1:
+              type: string
+
+  operation2Response:
+    title: ResponseOperation2
+    description: Response of operation 2
+    type: object
+    properties:
+      stringPropertyOperation2:
+        type: string

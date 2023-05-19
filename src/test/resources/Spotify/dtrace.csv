@@ -1,0 +1,101 @@
+,testCaseId,queryParameters,operationId,path,httpMethod,headerParameters,pathParameters,formParameters,bodyParameter,statusCode,passed,failReason,responseBody
+0,test_1hb878rv7d9ib_browseCategoriesByCategoryId,country=SE;,browseCategoriesByCategoryId,/browse/categories/{category_id},GET,Authorization=Bearer+BQCdz3NcqZ7gAgNcJCNSoKN0i9LHh5wIpigz_qfMsfWBGUPujohFWDstxzP97xe4ni-Hf7wU7pUuwONglHKFOiw3bxeIQVWw4D37DJYZXDA5GW6EkSZ0kTnz24pk_Rse-4fXralxjD9KE5xgwhvx4AadLkMBSb6uY3bACika_tDUprrH8gn5mlWFLDO46WZbR1Q2m-v36DrpVWpQpWaCgs1mWA6_PKDAj5ZmpWuUN839tH8p6Cn5oT2imxHGyFKVnkai1o7EBiHYp6WXWUkQI4KgS1HmydsZE0HA--Yg;,category_id=hiphop;,,,200,True,none,"{
+  ""href"" : ""https://api.spotify.com/v1/browse/categories/hiphop"",
+  ""icons"" : [ {
+    ""height"" : 274,
+    ""url"" : ""https://t.scdn.co/media/original/hip-274_0a661854d61e29eace5fe63f73495e68_274x274.jpg"",
+    ""width"" : 274
+  } ],
+  ""id"" : ""hiphop"",
+  ""name"" : ""Hip Hop""
+}"
+1,test_t86x373q1b3a_browseCategoriesByCategoryId,,browseCategoriesByCategoryId,/browse/categories/{category_id},GET,Authorization=Bearer+BQCdz3NcqZ7gAgNcJCNSoKN0i9LHh5wIpigz_qfMsfWBGUPujohFWDstxzP97xe4ni-Hf7wU7pUuwONglHKFOiw3bxeIQVWw4D37DJYZXDA5GW6EkSZ0kTnz24pk_Rse-4fXralxjD9KE5xgwhvx4AadLkMBSb6uY3bACika_tDUprrH8gn5mlWFLDO46WZbR1Q2m-v36DrpVWpQpWaCgs1mWA6_PKDAj5ZmpWuUN839tH8p6Cn5oT2imxHGyFKVnkai1o7EBiHYp6WXWUkQI4KgS1HmydsZE0HA--Yg;,category_id=rock;,,,200,True,none,"{
+  ""href"" : ""https://api.spotify.com/v1/browse/categories/rock"",
+  ""icons"" : [ {
+    ""height"" : 274,
+    ""url"" : ""https://t.scdn.co/media/derived/rock_9ce79e0a4ef901bbd10494f5b855d3cc_0_0_274_274.jpg"",
+    ""width"" : 274
+  } ],
+  ""id"" : ""rock"",
+  ""name"" : ""Rock""
+}"
+2,test_1ib0wxdmmbsqc_browseCategoriesByCategoryId,country=SE;,browseCategoriesByCategoryId,/browse/categories/{category_id},GET,Authorization=Bearer+BQCdz3NcqZ7gAgNcJCNSoKN0i9LHh5wIpigz_qfMsfWBGUPujohFWDstxzP97xe4ni-Hf7wU7pUuwONglHKFOiw3bxeIQVWw4D37DJYZXDA5GW6EkSZ0kTnz24pk_Rse-4fXralxjD9KE5xgwhvx4AadLkMBSb6uY3bACika_tDUprrH8gn5mlWFLDO46WZbR1Q2m-v36DrpVWpQpWaCgs1mWA6_PKDAj5ZmpWuUN839tH8p6Cn5oT2imxHGyFKVnkai1o7EBiHYp6WXWUkQI4KgS1HmydsZE0HA--Yg;,category_id=hiphop;,,,200,True,none,"{
+  ""href"" : ""https://api.spotify.com/v1/browse/categories/hiphop"",
+  ""icons"" : [ {
+    ""height"" : 274,
+    ""url"" : ""https://t.scdn.co/media/original/hip-274_0a661854d61e29eace5fe63f73495e68_274x274.jpg"",
+    ""width"" : 274
+  } ],
+  ""id"" : ""hiphop"",
+  ""name"" : ""Hip Hop""
+}"
+3,test_1jyb03uq2km03_browseCategoriesByCategoryId,,browseCategoriesByCategoryId,/browse/categories/{category_id},GET,Authorization=Bearer+BQCdz3NcqZ7gAgNcJCNSoKN0i9LHh5wIpigz_qfMsfWBGUPujohFWDstxzP97xe4ni-Hf7wU7pUuwONglHKFOiw3bxeIQVWw4D37DJYZXDA5GW6EkSZ0kTnz24pk_Rse-4fXralxjD9KE5xgwhvx4AadLkMBSb6uY3bACika_tDUprrH8gn5mlWFLDO46WZbR1Q2m-v36DrpVWpQpWaCgs1mWA6_PKDAj5ZmpWuUN839tH8p6Cn5oT2imxHGyFKVnkai1o7EBiHYp6WXWUkQI4KgS1HmydsZE0HA--Yg;,category_id=rock;,,,200,True,none,"{
+  ""href"" : ""https://api.spotify.com/v1/browse/categories/rock"",
+  ""icons"" : [ {
+    ""height"" : 274,
+    ""url"" : ""https://t.scdn.co/media/derived/rock_9ce79e0a4ef901bbd10494f5b855d3cc_0_0_274_274.jpg"",
+    ""width"" : 274
+  } ],
+  ""id"" : ""rock"",
+  ""name"" : ""Rock""
+}"
+4,test_r1lotdi648yu_browseCategoriesByCategoryId,country=US;,browseCategoriesByCategoryId,/browse/categories/{category_id},GET,Authorization=Bearer+BQCdz3NcqZ7gAgNcJCNSoKN0i9LHh5wIpigz_qfMsfWBGUPujohFWDstxzP97xe4ni-Hf7wU7pUuwONglHKFOiw3bxeIQVWw4D37DJYZXDA5GW6EkSZ0kTnz24pk_Rse-4fXralxjD9KE5xgwhvx4AadLkMBSb6uY3bACika_tDUprrH8gn5mlWFLDO46WZbR1Q2m-v36DrpVWpQpWaCgs1mWA6_PKDAj5ZmpWuUN839tH8p6Cn5oT2imxHGyFKVnkai1o7EBiHYp6WXWUkQI4KgS1HmydsZE0HA--Yg;,category_id=mood;,,,200,True,none,"{
+  ""href"" : ""https://api.spotify.com/v1/browse/categories/mood"",
+  ""icons"" : [ {
+    ""height"" : 274,
+    ""url"" : ""https://t.scdn.co/media/original/mood-274x274_976986a31ac8c49794cbdc7246fd5ad7_274x274.jpg"",
+    ""width"" : 274
+  } ],
+  ""id"" : ""mood"",
+  ""name"" : ""Mood""
+}"
+5,test_1iauvg149b59e_browseCategoriesByCategoryId,,browseCategoriesByCategoryId,/browse/categories/{category_id},GET,Authorization=Bearer+BQCdz3NcqZ7gAgNcJCNSoKN0i9LHh5wIpigz_qfMsfWBGUPujohFWDstxzP97xe4ni-Hf7wU7pUuwONglHKFOiw3bxeIQVWw4D37DJYZXDA5GW6EkSZ0kTnz24pk_Rse-4fXralxjD9KE5xgwhvx4AadLkMBSb6uY3bACika_tDUprrH8gn5mlWFLDO46WZbR1Q2m-v36DrpVWpQpWaCgs1mWA6_PKDAj5ZmpWuUN839tH8p6Cn5oT2imxHGyFKVnkai1o7EBiHYp6WXWUkQI4KgS1HmydsZE0HA--Yg;,category_id=mood;,,,200,True,none,"{
+  ""href"" : ""https://api.spotify.com/v1/browse/categories/mood"",
+  ""icons"" : [ {
+    ""height"" : 274,
+    ""url"" : ""https://t.scdn.co/media/original/mood-274x274_976986a31ac8c49794cbdc7246fd5ad7_274x274.jpg"",
+    ""width"" : 274
+  } ],
+  ""id"" : ""mood"",
+  ""name"" : ""Mood""
+}"
+6,test_qxfjgbquwbc3_browseCategoriesByCategoryId,country=US;,browseCategoriesByCategoryId,/browse/categories/{category_id},GET,Authorization=Bearer+BQCdz3NcqZ7gAgNcJCNSoKN0i9LHh5wIpigz_qfMsfWBGUPujohFWDstxzP97xe4ni-Hf7wU7pUuwONglHKFOiw3bxeIQVWw4D37DJYZXDA5GW6EkSZ0kTnz24pk_Rse-4fXralxjD9KE5xgwhvx4AadLkMBSb6uY3bACika_tDUprrH8gn5mlWFLDO46WZbR1Q2m-v36DrpVWpQpWaCgs1mWA6_PKDAj5ZmpWuUN839tH8p6Cn5oT2imxHGyFKVnkai1o7EBiHYp6WXWUkQI4KgS1HmydsZE0HA--Yg;,category_id=hiphop;,,,200,True,none,"{
+  ""href"" : ""https://api.spotify.com/v1/browse/categories/hiphop"",
+  ""icons"" : [ {
+    ""height"" : 274,
+    ""url"" : ""https://t.scdn.co/media/original/hip-274_0a661854d61e29eace5fe63f73495e68_274x274.jpg"",
+    ""width"" : 274
+  } ],
+  ""id"" : ""hiphop"",
+  ""name"" : ""Hip Hop""
+}"
+7,test_r17t5y5mwa5d_browseCategoriesByCategoryId,,browseCategoriesByCategoryId,/browse/categories/{category_id},GET,Authorization=Bearer+BQCdz3NcqZ7gAgNcJCNSoKN0i9LHh5wIpigz_qfMsfWBGUPujohFWDstxzP97xe4ni-Hf7wU7pUuwONglHKFOiw3bxeIQVWw4D37DJYZXDA5GW6EkSZ0kTnz24pk_Rse-4fXralxjD9KE5xgwhvx4AadLkMBSb6uY3bACika_tDUprrH8gn5mlWFLDO46WZbR1Q2m-v36DrpVWpQpWaCgs1mWA6_PKDAj5ZmpWuUN839tH8p6Cn5oT2imxHGyFKVnkai1o7EBiHYp6WXWUkQI4KgS1HmydsZE0HA--Yg;,category_id=pop;,,,200,True,none,"{
+  ""href"" : ""https://api.spotify.com/v1/browse/categories/pop"",
+  ""icons"" : [ {
+    ""height"" : 274,
+    ""url"" : ""https://t.scdn.co/media/derived/pop-274x274_447148649685019f5e2a03a39e78ba52_0_0_274_274.jpg"",
+    ""width"" : 274
+  } ],
+  ""id"" : ""pop"",
+  ""name"" : ""Pop""
+}"
+8,test_1iaxoe66ctfed_browseCategoriesByCategoryId,country=SE;,browseCategoriesByCategoryId,/browse/categories/{category_id},GET,Authorization=Bearer+BQCdz3NcqZ7gAgNcJCNSoKN0i9LHh5wIpigz_qfMsfWBGUPujohFWDstxzP97xe4ni-Hf7wU7pUuwONglHKFOiw3bxeIQVWw4D37DJYZXDA5GW6EkSZ0kTnz24pk_Rse-4fXralxjD9KE5xgwhvx4AadLkMBSb6uY3bACika_tDUprrH8gn5mlWFLDO46WZbR1Q2m-v36DrpVWpQpWaCgs1mWA6_PKDAj5ZmpWuUN839tH8p6Cn5oT2imxHGyFKVnkai1o7EBiHYp6WXWUkQI4KgS1HmydsZE0HA--Yg;,category_id=pop;,,,200,True,none,"{
+  ""href"" : ""https://api.spotify.com/v1/browse/categories/pop"",
+  ""icons"" : [ {
+    ""height"" : 274,
+    ""url"" : ""https://t.scdn.co/media/derived/pop-274x274_447148649685019f5e2a03a39e78ba52_0_0_274_274.jpg"",
+    ""width"" : 274
+  } ],
+  ""id"" : ""pop"",
+  ""name"" : ""Pop""
+}"
+9,test_1ib0fb9317r6t_browseCategoriesByCategoryId,,browseCategoriesByCategoryId,/browse/categories/{category_id},GET,Authorization=Bearer+BQCdz3NcqZ7gAgNcJCNSoKN0i9LHh5wIpigz_qfMsfWBGUPujohFWDstxzP97xe4ni-Hf7wU7pUuwONglHKFOiw3bxeIQVWw4D37DJYZXDA5GW6EkSZ0kTnz24pk_Rse-4fXralxjD9KE5xgwhvx4AadLkMBSb6uY3bACika_tDUprrH8gn5mlWFLDO46WZbR1Q2m-v36DrpVWpQpWaCgs1mWA6_PKDAj5ZmpWuUN839tH8p6Cn5oT2imxHGyFKVnkai1o7EBiHYp6WXWUkQI4KgS1HmydsZE0HA--Yg;,category_id=rock;,,,200,True,none,"{
+  ""href"" : ""https://api.spotify.com/v1/browse/categories/rock"",
+  ""icons"" : [ {
+    ""height"" : 274,
+    ""url"" : ""https://t.scdn.co/media/derived/rock_9ce79e0a4ef901bbd10494f5b855d3cc_0_0_274_274.jpg"",
+    ""width"" : 274
+  } ],
+  ""id"" : ""rock"",
+  ""name"" : ""Rock""
+}"

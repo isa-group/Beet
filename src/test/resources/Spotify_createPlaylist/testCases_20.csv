@@ -1,0 +1,781 @@
+,testCaseId,queryParameters,operationId,path,httpMethod,headerParameters,pathParameters,formParameters,bodyParameter,statusCode,passed,failReason,responseBody
+0,test_1hruuxxu0artx_createPlaylist,,createPlaylist,/users/{user_id}/playlists,POST,Authorization=Bearer+BQBuft2A-Sy_HL2VDovdUdwX3rDeKE55bE3KLYFMlGQjjFdcAvw2bVmKX_ApcUeKF5R03P5eid5MykkBhfoL0k-S8NdJem3c010OHrlmOPKRqofpR6bxnhgHsT-n8r7fPEqYxfto_Wn8RDdlQ7vXHVqcXxD1vzk_sfTdsTedY5r3VW8gtbqve-69ZZnKYzrLrGxDU6nIacJWEYDhAWIXcrxATK47deQ7-Xq8EVp-TBjsfV8LeLg1iAjthlDzZDqnd6Z-O51BtUju6hQ3_KR8rOL5sSNfXssTA73TqZQZ;,user_id=qenf2hlyicucelyckx7gu2n7v;,,"{""name"":""Playlist6"",""description"":""Playlist description 6"",""public"": false}",201,False,"OAS disconformity: [Path '/followers/href'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/primary_color'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/tracks/next'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/tracks/previous'] Instance type (null) does not match any allowed primitive type (allowed: [""string""])","{
+  ""collaborative"" : false,
+  ""description"" : ""Playlist description 6"",
+  ""external_urls"" : {
+    ""spotify"" : ""https://open.spotify.com/playlist/2uXdDRKhBFwnCKuClCkcl2""
+  },
+  ""followers"" : {
+    ""href"" : null,
+    ""total"" : 0
+  },
+  ""href"" : ""https://api.spotify.com/v1/playlists/2uXdDRKhBFwnCKuClCkcl2"",
+  ""id"" : ""2uXdDRKhBFwnCKuClCkcl2"",
+  ""images"" : [ ],
+  ""name"" : ""Playlist6"",
+  ""owner"" : {
+    ""display_name"" : ""qenf2hlyicucelyckx7gu2n7v"",
+    ""external_urls"" : {
+      ""spotify"" : ""https://open.spotify.com/user/qenf2hlyicucelyckx7gu2n7v""
+    },
+    ""href"" : ""https://api.spotify.com/v1/users/qenf2hlyicucelyckx7gu2n7v"",
+    ""id"" : ""qenf2hlyicucelyckx7gu2n7v"",
+    ""type"" : ""user"",
+    ""uri"" : ""spotify:user:qenf2hlyicucelyckx7gu2n7v""
+  },
+  ""primary_color"" : null,
+  ""public"" : false,
+  ""snapshot_id"" : ""MSw5M2UwYTRmNjUxNzAwODIzYjk2YjdhOGJmNDMxM2Y5YTg5MDdmMDg0"",
+  ""tracks"" : {
+    ""href"" : ""https://api.spotify.com/v1/playlists/2uXdDRKhBFwnCKuClCkcl2/tracks"",
+    ""items"" : [ ],
+    ""limit"" : 100,
+    ""next"" : null,
+    ""offset"" : 0,
+    ""previous"" : null,
+    ""total"" : 0
+  },
+  ""type"" : ""playlist"",
+  ""uri"" : ""spotify:playlist:2uXdDRKhBFwnCKuClCkcl2""
+}"
+1,test_1huzx402uwd2w_createPlaylist,,createPlaylist,/users/{user_id}/playlists,POST,Authorization=Bearer+BQBuft2A-Sy_HL2VDovdUdwX3rDeKE55bE3KLYFMlGQjjFdcAvw2bVmKX_ApcUeKF5R03P5eid5MykkBhfoL0k-S8NdJem3c010OHrlmOPKRqofpR6bxnhgHsT-n8r7fPEqYxfto_Wn8RDdlQ7vXHVqcXxD1vzk_sfTdsTedY5r3VW8gtbqve-69ZZnKYzrLrGxDU6nIacJWEYDhAWIXcrxATK47deQ7-Xq8EVp-TBjsfV8LeLg1iAjthlDzZDqnd6Z-O51BtUju6hQ3_KR8rOL5sSNfXssTA73TqZQZ;,user_id=qenf2hlyicucelyckx7gu2n7v;,,"{""name"":""Playlist1"",""description"":""Playlist description 1"",""public"": true}",201,False,"OAS disconformity: [Path '/followers/href'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/primary_color'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/tracks/next'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/tracks/previous'] Instance type (null) does not match any allowed primitive type (allowed: [""string""])","{
+  ""collaborative"" : false,
+  ""description"" : ""Playlist description 1"",
+  ""external_urls"" : {
+    ""spotify"" : ""https://open.spotify.com/playlist/2mSI1XahTBLbMyp76UN3Rc""
+  },
+  ""followers"" : {
+    ""href"" : null,
+    ""total"" : 0
+  },
+  ""href"" : ""https://api.spotify.com/v1/playlists/2mSI1XahTBLbMyp76UN3Rc"",
+  ""id"" : ""2mSI1XahTBLbMyp76UN3Rc"",
+  ""images"" : [ ],
+  ""name"" : ""Playlist1"",
+  ""owner"" : {
+    ""display_name"" : ""qenf2hlyicucelyckx7gu2n7v"",
+    ""external_urls"" : {
+      ""spotify"" : ""https://open.spotify.com/user/qenf2hlyicucelyckx7gu2n7v""
+    },
+    ""href"" : ""https://api.spotify.com/v1/users/qenf2hlyicucelyckx7gu2n7v"",
+    ""id"" : ""qenf2hlyicucelyckx7gu2n7v"",
+    ""type"" : ""user"",
+    ""uri"" : ""spotify:user:qenf2hlyicucelyckx7gu2n7v""
+  },
+  ""primary_color"" : null,
+  ""public"" : true,
+  ""snapshot_id"" : ""MSw5ODJkYmQ5NDVkNDVjMzQwNWVlNTY4YTFlZjMxNDk3NWE2ZWFlZWFm"",
+  ""tracks"" : {
+    ""href"" : ""https://api.spotify.com/v1/playlists/2mSI1XahTBLbMyp76UN3Rc/tracks"",
+    ""items"" : [ ],
+    ""limit"" : 100,
+    ""next"" : null,
+    ""offset"" : 0,
+    ""previous"" : null,
+    ""total"" : 0
+  },
+  ""type"" : ""playlist"",
+  ""uri"" : ""spotify:playlist:2mSI1XahTBLbMyp76UN3Rc""
+}"
+2,test_rh5hbnvtfcyr_createPlaylist,,createPlaylist,/users/{user_id}/playlists,POST,Authorization=Bearer+BQBuft2A-Sy_HL2VDovdUdwX3rDeKE55bE3KLYFMlGQjjFdcAvw2bVmKX_ApcUeKF5R03P5eid5MykkBhfoL0k-S8NdJem3c010OHrlmOPKRqofpR6bxnhgHsT-n8r7fPEqYxfto_Wn8RDdlQ7vXHVqcXxD1vzk_sfTdsTedY5r3VW8gtbqve-69ZZnKYzrLrGxDU6nIacJWEYDhAWIXcrxATK47deQ7-Xq8EVp-TBjsfV8LeLg1iAjthlDzZDqnd6Z-O51BtUju6hQ3_KR8rOL5sSNfXssTA73TqZQZ;,user_id=qenf2hlyicucelyckx7gu2n7v;,,"{""name"":""Playlist5"",""description"":""Playlist description 5"",""public"": true}",201,False,"OAS disconformity: [Path '/followers/href'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/primary_color'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/tracks/next'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/tracks/previous'] Instance type (null) does not match any allowed primitive type (allowed: [""string""])","{
+  ""collaborative"" : false,
+  ""description"" : ""Playlist description 5"",
+  ""external_urls"" : {
+    ""spotify"" : ""https://open.spotify.com/playlist/4J1qVd9o7TKEl6g0Z7JgdL""
+  },
+  ""followers"" : {
+    ""href"" : null,
+    ""total"" : 0
+  },
+  ""href"" : ""https://api.spotify.com/v1/playlists/4J1qVd9o7TKEl6g0Z7JgdL"",
+  ""id"" : ""4J1qVd9o7TKEl6g0Z7JgdL"",
+  ""images"" : [ ],
+  ""name"" : ""Playlist5"",
+  ""owner"" : {
+    ""display_name"" : ""qenf2hlyicucelyckx7gu2n7v"",
+    ""external_urls"" : {
+      ""spotify"" : ""https://open.spotify.com/user/qenf2hlyicucelyckx7gu2n7v""
+    },
+    ""href"" : ""https://api.spotify.com/v1/users/qenf2hlyicucelyckx7gu2n7v"",
+    ""id"" : ""qenf2hlyicucelyckx7gu2n7v"",
+    ""type"" : ""user"",
+    ""uri"" : ""spotify:user:qenf2hlyicucelyckx7gu2n7v""
+  },
+  ""primary_color"" : null,
+  ""public"" : true,
+  ""snapshot_id"" : ""MSw3OGQxYmJhMGE3MTE4ZGE1NWQ0ZWMyYTcyNDZmMTJhNGI4MjRmNmQ1"",
+  ""tracks"" : {
+    ""href"" : ""https://api.spotify.com/v1/playlists/4J1qVd9o7TKEl6g0Z7JgdL/tracks"",
+    ""items"" : [ ],
+    ""limit"" : 100,
+    ""next"" : null,
+    ""offset"" : 0,
+    ""previous"" : null,
+    ""total"" : 0
+  },
+  ""type"" : ""playlist"",
+  ""uri"" : ""spotify:playlist:4J1qVd9o7TKEl6g0Z7JgdL""
+}"
+3,test_u805hgerqpma_createPlaylist,,createPlaylist,/users/{user_id}/playlists,POST,Authorization=Bearer+BQBuft2A-Sy_HL2VDovdUdwX3rDeKE55bE3KLYFMlGQjjFdcAvw2bVmKX_ApcUeKF5R03P5eid5MykkBhfoL0k-S8NdJem3c010OHrlmOPKRqofpR6bxnhgHsT-n8r7fPEqYxfto_Wn8RDdlQ7vXHVqcXxD1vzk_sfTdsTedY5r3VW8gtbqve-69ZZnKYzrLrGxDU6nIacJWEYDhAWIXcrxATK47deQ7-Xq8EVp-TBjsfV8LeLg1iAjthlDzZDqnd6Z-O51BtUju6hQ3_KR8rOL5sSNfXssTA73TqZQZ;,user_id=qenf2hlyicucelyckx7gu2n7v;,,"{""name"":""Playlist5"",""description"":""Playlist description 5"",""public"": true}",201,False,"OAS disconformity: [Path '/followers/href'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/primary_color'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/tracks/next'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/tracks/previous'] Instance type (null) does not match any allowed primitive type (allowed: [""string""])","{
+  ""collaborative"" : false,
+  ""description"" : ""Playlist description 5"",
+  ""external_urls"" : {
+    ""spotify"" : ""https://open.spotify.com/playlist/5VHqZwmjkBEFR3vhfpwtJW""
+  },
+  ""followers"" : {
+    ""href"" : null,
+    ""total"" : 0
+  },
+  ""href"" : ""https://api.spotify.com/v1/playlists/5VHqZwmjkBEFR3vhfpwtJW"",
+  ""id"" : ""5VHqZwmjkBEFR3vhfpwtJW"",
+  ""images"" : [ ],
+  ""name"" : ""Playlist5"",
+  ""owner"" : {
+    ""display_name"" : ""qenf2hlyicucelyckx7gu2n7v"",
+    ""external_urls"" : {
+      ""spotify"" : ""https://open.spotify.com/user/qenf2hlyicucelyckx7gu2n7v""
+    },
+    ""href"" : ""https://api.spotify.com/v1/users/qenf2hlyicucelyckx7gu2n7v"",
+    ""id"" : ""qenf2hlyicucelyckx7gu2n7v"",
+    ""type"" : ""user"",
+    ""uri"" : ""spotify:user:qenf2hlyicucelyckx7gu2n7v""
+  },
+  ""primary_color"" : null,
+  ""public"" : true,
+  ""snapshot_id"" : ""MSwwNmI5YWRjZjU4YmNmMDJhZGIyYjBkNzI5NmIxMTg4ODA4ZGM3MGFm"",
+  ""tracks"" : {
+    ""href"" : ""https://api.spotify.com/v1/playlists/5VHqZwmjkBEFR3vhfpwtJW/tracks"",
+    ""items"" : [ ],
+    ""limit"" : 100,
+    ""next"" : null,
+    ""offset"" : 0,
+    ""previous"" : null,
+    ""total"" : 0
+  },
+  ""type"" : ""playlist"",
+  ""uri"" : ""spotify:playlist:5VHqZwmjkBEFR3vhfpwtJW""
+}"
+4,test_1jylkfmas360g_createPlaylist,,createPlaylist,/users/{user_id}/playlists,POST,Authorization=Bearer+BQBuft2A-Sy_HL2VDovdUdwX3rDeKE55bE3KLYFMlGQjjFdcAvw2bVmKX_ApcUeKF5R03P5eid5MykkBhfoL0k-S8NdJem3c010OHrlmOPKRqofpR6bxnhgHsT-n8r7fPEqYxfto_Wn8RDdlQ7vXHVqcXxD1vzk_sfTdsTedY5r3VW8gtbqve-69ZZnKYzrLrGxDU6nIacJWEYDhAWIXcrxATK47deQ7-Xq8EVp-TBjsfV8LeLg1iAjthlDzZDqnd6Z-O51BtUju6hQ3_KR8rOL5sSNfXssTA73TqZQZ;,user_id=qenf2hlyicucelyckx7gu2n7v;,,"{""name"":""Playlist1"",""description"":""Playlist description 1"",""public"": true}",201,False,"OAS disconformity: [Path '/followers/href'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/primary_color'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/tracks/next'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/tracks/previous'] Instance type (null) does not match any allowed primitive type (allowed: [""string""])","{
+  ""collaborative"" : false,
+  ""description"" : ""Playlist description 1"",
+  ""external_urls"" : {
+    ""spotify"" : ""https://open.spotify.com/playlist/0UFotN9RWwVzNZpaPO9ji6""
+  },
+  ""followers"" : {
+    ""href"" : null,
+    ""total"" : 0
+  },
+  ""href"" : ""https://api.spotify.com/v1/playlists/0UFotN9RWwVzNZpaPO9ji6"",
+  ""id"" : ""0UFotN9RWwVzNZpaPO9ji6"",
+  ""images"" : [ ],
+  ""name"" : ""Playlist1"",
+  ""owner"" : {
+    ""display_name"" : ""qenf2hlyicucelyckx7gu2n7v"",
+    ""external_urls"" : {
+      ""spotify"" : ""https://open.spotify.com/user/qenf2hlyicucelyckx7gu2n7v""
+    },
+    ""href"" : ""https://api.spotify.com/v1/users/qenf2hlyicucelyckx7gu2n7v"",
+    ""id"" : ""qenf2hlyicucelyckx7gu2n7v"",
+    ""type"" : ""user"",
+    ""uri"" : ""spotify:user:qenf2hlyicucelyckx7gu2n7v""
+  },
+  ""primary_color"" : null,
+  ""public"" : true,
+  ""snapshot_id"" : ""MSw4M2QyNzBjZjNhMjA1YmMxZjQ4NjYyYjEwNTU3ZDBiMzY3NmEzM2Jh"",
+  ""tracks"" : {
+    ""href"" : ""https://api.spotify.com/v1/playlists/0UFotN9RWwVzNZpaPO9ji6/tracks"",
+    ""items"" : [ ],
+    ""limit"" : 100,
+    ""next"" : null,
+    ""offset"" : 0,
+    ""previous"" : null,
+    ""total"" : 0
+  },
+  ""type"" : ""playlist"",
+  ""uri"" : ""spotify:playlist:0UFotN9RWwVzNZpaPO9ji6""
+}"
+5,test_qy4yn3oijbxy_createPlaylist,,createPlaylist,/users/{user_id}/playlists,POST,Authorization=Bearer+BQBuft2A-Sy_HL2VDovdUdwX3rDeKE55bE3KLYFMlGQjjFdcAvw2bVmKX_ApcUeKF5R03P5eid5MykkBhfoL0k-S8NdJem3c010OHrlmOPKRqofpR6bxnhgHsT-n8r7fPEqYxfto_Wn8RDdlQ7vXHVqcXxD1vzk_sfTdsTedY5r3VW8gtbqve-69ZZnKYzrLrGxDU6nIacJWEYDhAWIXcrxATK47deQ7-Xq8EVp-TBjsfV8LeLg1iAjthlDzZDqnd6Z-O51BtUju6hQ3_KR8rOL5sSNfXssTA73TqZQZ;,user_id=qenf2hlyicucelyckx7gu2n7v;,,"{""name"":""Playlist4"",""description"":""Playlist description 4"",""public"": false}",201,False,"OAS disconformity: [Path '/followers/href'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/primary_color'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/tracks/next'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/tracks/previous'] Instance type (null) does not match any allowed primitive type (allowed: [""string""])","{
+  ""collaborative"" : false,
+  ""description"" : ""Playlist description 4"",
+  ""external_urls"" : {
+    ""spotify"" : ""https://open.spotify.com/playlist/0gItB9G9e6hThCdgoThr0C""
+  },
+  ""followers"" : {
+    ""href"" : null,
+    ""total"" : 0
+  },
+  ""href"" : ""https://api.spotify.com/v1/playlists/0gItB9G9e6hThCdgoThr0C"",
+  ""id"" : ""0gItB9G9e6hThCdgoThr0C"",
+  ""images"" : [ ],
+  ""name"" : ""Playlist4"",
+  ""owner"" : {
+    ""display_name"" : ""qenf2hlyicucelyckx7gu2n7v"",
+    ""external_urls"" : {
+      ""spotify"" : ""https://open.spotify.com/user/qenf2hlyicucelyckx7gu2n7v""
+    },
+    ""href"" : ""https://api.spotify.com/v1/users/qenf2hlyicucelyckx7gu2n7v"",
+    ""id"" : ""qenf2hlyicucelyckx7gu2n7v"",
+    ""type"" : ""user"",
+    ""uri"" : ""spotify:user:qenf2hlyicucelyckx7gu2n7v""
+  },
+  ""primary_color"" : null,
+  ""public"" : false,
+  ""snapshot_id"" : ""MSxmZTlhOWQyY2ZhYzBiYzU4Mzk4NDM4MjM0MWZjMmQ5ZTJlYjkyMTEx"",
+  ""tracks"" : {
+    ""href"" : ""https://api.spotify.com/v1/playlists/0gItB9G9e6hThCdgoThr0C/tracks"",
+    ""items"" : [ ],
+    ""limit"" : 100,
+    ""next"" : null,
+    ""offset"" : 0,
+    ""previous"" : null,
+    ""total"" : 0
+  },
+  ""type"" : ""playlist"",
+  ""uri"" : ""spotify:playlist:0gItB9G9e6hThCdgoThr0C""
+}"
+6,test_vb41bpf6repj_createPlaylist,,createPlaylist,/users/{user_id}/playlists,POST,Authorization=Bearer+BQBuft2A-Sy_HL2VDovdUdwX3rDeKE55bE3KLYFMlGQjjFdcAvw2bVmKX_ApcUeKF5R03P5eid5MykkBhfoL0k-S8NdJem3c010OHrlmOPKRqofpR6bxnhgHsT-n8r7fPEqYxfto_Wn8RDdlQ7vXHVqcXxD1vzk_sfTdsTedY5r3VW8gtbqve-69ZZnKYzrLrGxDU6nIacJWEYDhAWIXcrxATK47deQ7-Xq8EVp-TBjsfV8LeLg1iAjthlDzZDqnd6Z-O51BtUju6hQ3_KR8rOL5sSNfXssTA73TqZQZ;,user_id=qenf2hlyicucelyckx7gu2n7v;,,"{""name"":""Playlist1"",""description"":""Playlist description 1"",""public"": true}",201,False,"OAS disconformity: [Path '/followers/href'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/primary_color'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/tracks/next'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/tracks/previous'] Instance type (null) does not match any allowed primitive type (allowed: [""string""])","{
+  ""collaborative"" : false,
+  ""description"" : ""Playlist description 1"",
+  ""external_urls"" : {
+    ""spotify"" : ""https://open.spotify.com/playlist/3yIA8dA8xuxQe6czO2wJ2e""
+  },
+  ""followers"" : {
+    ""href"" : null,
+    ""total"" : 0
+  },
+  ""href"" : ""https://api.spotify.com/v1/playlists/3yIA8dA8xuxQe6czO2wJ2e"",
+  ""id"" : ""3yIA8dA8xuxQe6czO2wJ2e"",
+  ""images"" : [ ],
+  ""name"" : ""Playlist1"",
+  ""owner"" : {
+    ""display_name"" : ""qenf2hlyicucelyckx7gu2n7v"",
+    ""external_urls"" : {
+      ""spotify"" : ""https://open.spotify.com/user/qenf2hlyicucelyckx7gu2n7v""
+    },
+    ""href"" : ""https://api.spotify.com/v1/users/qenf2hlyicucelyckx7gu2n7v"",
+    ""id"" : ""qenf2hlyicucelyckx7gu2n7v"",
+    ""type"" : ""user"",
+    ""uri"" : ""spotify:user:qenf2hlyicucelyckx7gu2n7v""
+  },
+  ""primary_color"" : null,
+  ""public"" : true,
+  ""snapshot_id"" : ""MSxjODNmZjQ3YzVlMjU0NzMwM2NhMzUxNjM5ZjVlM2JjNDg2ODJhMTIw"",
+  ""tracks"" : {
+    ""href"" : ""https://api.spotify.com/v1/playlists/3yIA8dA8xuxQe6czO2wJ2e/tracks"",
+    ""items"" : [ ],
+    ""limit"" : 100,
+    ""next"" : null,
+    ""offset"" : 0,
+    ""previous"" : null,
+    ""total"" : 0
+  },
+  ""type"" : ""playlist"",
+  ""uri"" : ""spotify:playlist:3yIA8dA8xuxQe6czO2wJ2e""
+}"
+7,test_sopnh1t390e1_createPlaylist,,createPlaylist,/users/{user_id}/playlists,POST,Authorization=Bearer+BQBuft2A-Sy_HL2VDovdUdwX3rDeKE55bE3KLYFMlGQjjFdcAvw2bVmKX_ApcUeKF5R03P5eid5MykkBhfoL0k-S8NdJem3c010OHrlmOPKRqofpR6bxnhgHsT-n8r7fPEqYxfto_Wn8RDdlQ7vXHVqcXxD1vzk_sfTdsTedY5r3VW8gtbqve-69ZZnKYzrLrGxDU6nIacJWEYDhAWIXcrxATK47deQ7-Xq8EVp-TBjsfV8LeLg1iAjthlDzZDqnd6Z-O51BtUju6hQ3_KR8rOL5sSNfXssTA73TqZQZ;,user_id=qenf2hlyicucelyckx7gu2n7v;,,"{""name"":""Playlist8"",""description"":""Playlist description 8"",""public"": false}",201,False,"OAS disconformity: [Path '/followers/href'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/primary_color'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/tracks/next'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/tracks/previous'] Instance type (null) does not match any allowed primitive type (allowed: [""string""])","{
+  ""collaborative"" : false,
+  ""description"" : ""Playlist description 8"",
+  ""external_urls"" : {
+    ""spotify"" : ""https://open.spotify.com/playlist/4JAS1AsG7ifhWKiLh9LpxU""
+  },
+  ""followers"" : {
+    ""href"" : null,
+    ""total"" : 0
+  },
+  ""href"" : ""https://api.spotify.com/v1/playlists/4JAS1AsG7ifhWKiLh9LpxU"",
+  ""id"" : ""4JAS1AsG7ifhWKiLh9LpxU"",
+  ""images"" : [ ],
+  ""name"" : ""Playlist8"",
+  ""owner"" : {
+    ""display_name"" : ""qenf2hlyicucelyckx7gu2n7v"",
+    ""external_urls"" : {
+      ""spotify"" : ""https://open.spotify.com/user/qenf2hlyicucelyckx7gu2n7v""
+    },
+    ""href"" : ""https://api.spotify.com/v1/users/qenf2hlyicucelyckx7gu2n7v"",
+    ""id"" : ""qenf2hlyicucelyckx7gu2n7v"",
+    ""type"" : ""user"",
+    ""uri"" : ""spotify:user:qenf2hlyicucelyckx7gu2n7v""
+  },
+  ""primary_color"" : null,
+  ""public"" : false,
+  ""snapshot_id"" : ""MSwxNzJiZGZkYjJjYmRiZmVhMmY1ZTkxMmNmNmZlMzEwNmZlMTVjZmJm"",
+  ""tracks"" : {
+    ""href"" : ""https://api.spotify.com/v1/playlists/4JAS1AsG7ifhWKiLh9LpxU/tracks"",
+    ""items"" : [ ],
+    ""limit"" : 100,
+    ""next"" : null,
+    ""offset"" : 0,
+    ""previous"" : null,
+    ""total"" : 0
+  },
+  ""type"" : ""playlist"",
+  ""uri"" : ""spotify:playlist:4JAS1AsG7ifhWKiLh9LpxU""
+}"
+8,test_vey5aau2rjub_createPlaylist,,createPlaylist,/users/{user_id}/playlists,POST,Authorization=Bearer+BQBuft2A-Sy_HL2VDovdUdwX3rDeKE55bE3KLYFMlGQjjFdcAvw2bVmKX_ApcUeKF5R03P5eid5MykkBhfoL0k-S8NdJem3c010OHrlmOPKRqofpR6bxnhgHsT-n8r7fPEqYxfto_Wn8RDdlQ7vXHVqcXxD1vzk_sfTdsTedY5r3VW8gtbqve-69ZZnKYzrLrGxDU6nIacJWEYDhAWIXcrxATK47deQ7-Xq8EVp-TBjsfV8LeLg1iAjthlDzZDqnd6Z-O51BtUju6hQ3_KR8rOL5sSNfXssTA73TqZQZ;,user_id=qenf2hlyicucelyckx7gu2n7v;,,"{""name"":""Playlist10"",""description"":""Playlist description 10"",""public"": false}",201,False,"OAS disconformity: [Path '/followers/href'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/primary_color'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/tracks/next'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/tracks/previous'] Instance type (null) does not match any allowed primitive type (allowed: [""string""])","{
+  ""collaborative"" : false,
+  ""description"" : ""Playlist description 10"",
+  ""external_urls"" : {
+    ""spotify"" : ""https://open.spotify.com/playlist/1IMnnea8I4vlwqj6KPArte""
+  },
+  ""followers"" : {
+    ""href"" : null,
+    ""total"" : 0
+  },
+  ""href"" : ""https://api.spotify.com/v1/playlists/1IMnnea8I4vlwqj6KPArte"",
+  ""id"" : ""1IMnnea8I4vlwqj6KPArte"",
+  ""images"" : [ ],
+  ""name"" : ""Playlist10"",
+  ""owner"" : {
+    ""display_name"" : ""qenf2hlyicucelyckx7gu2n7v"",
+    ""external_urls"" : {
+      ""spotify"" : ""https://open.spotify.com/user/qenf2hlyicucelyckx7gu2n7v""
+    },
+    ""href"" : ""https://api.spotify.com/v1/users/qenf2hlyicucelyckx7gu2n7v"",
+    ""id"" : ""qenf2hlyicucelyckx7gu2n7v"",
+    ""type"" : ""user"",
+    ""uri"" : ""spotify:user:qenf2hlyicucelyckx7gu2n7v""
+  },
+  ""primary_color"" : null,
+  ""public"" : false,
+  ""snapshot_id"" : ""MSxjMGQzNzIwOWY1MzFkNGUzYzNhODZmNTNjYjM1MDZjYzZiMGZjZDY4"",
+  ""tracks"" : {
+    ""href"" : ""https://api.spotify.com/v1/playlists/1IMnnea8I4vlwqj6KPArte/tracks"",
+    ""items"" : [ ],
+    ""limit"" : 100,
+    ""next"" : null,
+    ""offset"" : 0,
+    ""previous"" : null,
+    ""total"" : 0
+  },
+  ""type"" : ""playlist"",
+  ""uri"" : ""spotify:playlist:1IMnnea8I4vlwqj6KPArte""
+}"
+9,test_qec71jwbodh5_createPlaylist,,createPlaylist,/users/{user_id}/playlists,POST,Authorization=Bearer+BQBuft2A-Sy_HL2VDovdUdwX3rDeKE55bE3KLYFMlGQjjFdcAvw2bVmKX_ApcUeKF5R03P5eid5MykkBhfoL0k-S8NdJem3c010OHrlmOPKRqofpR6bxnhgHsT-n8r7fPEqYxfto_Wn8RDdlQ7vXHVqcXxD1vzk_sfTdsTedY5r3VW8gtbqve-69ZZnKYzrLrGxDU6nIacJWEYDhAWIXcrxATK47deQ7-Xq8EVp-TBjsfV8LeLg1iAjthlDzZDqnd6Z-O51BtUju6hQ3_KR8rOL5sSNfXssTA73TqZQZ;,user_id=qenf2hlyicucelyckx7gu2n7v;,,"{""name"":""Playlist7"",""description"":""Playlist description 7"",""public"": true}",201,False,"OAS disconformity: [Path '/followers/href'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/primary_color'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/tracks/next'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/tracks/previous'] Instance type (null) does not match any allowed primitive type (allowed: [""string""])","{
+  ""collaborative"" : false,
+  ""description"" : ""Playlist description 7"",
+  ""external_urls"" : {
+    ""spotify"" : ""https://open.spotify.com/playlist/24wP06ii8AcfCLSvC7thPX""
+  },
+  ""followers"" : {
+    ""href"" : null,
+    ""total"" : 0
+  },
+  ""href"" : ""https://api.spotify.com/v1/playlists/24wP06ii8AcfCLSvC7thPX"",
+  ""id"" : ""24wP06ii8AcfCLSvC7thPX"",
+  ""images"" : [ ],
+  ""name"" : ""Playlist7"",
+  ""owner"" : {
+    ""display_name"" : ""qenf2hlyicucelyckx7gu2n7v"",
+    ""external_urls"" : {
+      ""spotify"" : ""https://open.spotify.com/user/qenf2hlyicucelyckx7gu2n7v""
+    },
+    ""href"" : ""https://api.spotify.com/v1/users/qenf2hlyicucelyckx7gu2n7v"",
+    ""id"" : ""qenf2hlyicucelyckx7gu2n7v"",
+    ""type"" : ""user"",
+    ""uri"" : ""spotify:user:qenf2hlyicucelyckx7gu2n7v""
+  },
+  ""primary_color"" : null,
+  ""public"" : true,
+  ""snapshot_id"" : ""MSwyYzI1YmJiNzdmOWM3ZTMyNTQxMzc1M2EzZWQ1NjJkYTg4NmRmZTE5"",
+  ""tracks"" : {
+    ""href"" : ""https://api.spotify.com/v1/playlists/24wP06ii8AcfCLSvC7thPX/tracks"",
+    ""items"" : [ ],
+    ""limit"" : 100,
+    ""next"" : null,
+    ""offset"" : 0,
+    ""previous"" : null,
+    ""total"" : 0
+  },
+  ""type"" : ""playlist"",
+  ""uri"" : ""spotify:playlist:24wP06ii8AcfCLSvC7thPX""
+}"
+10,test_1h7lx4yesolyu_createPlaylist,,createPlaylist,/users/{user_id}/playlists,POST,Authorization=Bearer+BQBuft2A-Sy_HL2VDovdUdwX3rDeKE55bE3KLYFMlGQjjFdcAvw2bVmKX_ApcUeKF5R03P5eid5MykkBhfoL0k-S8NdJem3c010OHrlmOPKRqofpR6bxnhgHsT-n8r7fPEqYxfto_Wn8RDdlQ7vXHVqcXxD1vzk_sfTdsTedY5r3VW8gtbqve-69ZZnKYzrLrGxDU6nIacJWEYDhAWIXcrxATK47deQ7-Xq8EVp-TBjsfV8LeLg1iAjthlDzZDqnd6Z-O51BtUju6hQ3_KR8rOL5sSNfXssTA73TqZQZ;,user_id=qenf2hlyicucelyckx7gu2n7v;,,"{""name"":""Playlist2"",""description"":""Playlist description 2"",""public"": false}",201,False,"OAS disconformity: [Path '/followers/href'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/primary_color'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/tracks/next'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/tracks/previous'] Instance type (null) does not match any allowed primitive type (allowed: [""string""])","{
+  ""collaborative"" : false,
+  ""description"" : ""Playlist description 2"",
+  ""external_urls"" : {
+    ""spotify"" : ""https://open.spotify.com/playlist/3LMlL4YOxz1BXydVgfPp15""
+  },
+  ""followers"" : {
+    ""href"" : null,
+    ""total"" : 0
+  },
+  ""href"" : ""https://api.spotify.com/v1/playlists/3LMlL4YOxz1BXydVgfPp15"",
+  ""id"" : ""3LMlL4YOxz1BXydVgfPp15"",
+  ""images"" : [ ],
+  ""name"" : ""Playlist2"",
+  ""owner"" : {
+    ""display_name"" : ""qenf2hlyicucelyckx7gu2n7v"",
+    ""external_urls"" : {
+      ""spotify"" : ""https://open.spotify.com/user/qenf2hlyicucelyckx7gu2n7v""
+    },
+    ""href"" : ""https://api.spotify.com/v1/users/qenf2hlyicucelyckx7gu2n7v"",
+    ""id"" : ""qenf2hlyicucelyckx7gu2n7v"",
+    ""type"" : ""user"",
+    ""uri"" : ""spotify:user:qenf2hlyicucelyckx7gu2n7v""
+  },
+  ""primary_color"" : null,
+  ""public"" : false,
+  ""snapshot_id"" : ""MSxhODY3ZjczNzg2Mzk2MmIxNGJmNWM5NDJiOTRjMDdhM2JmYTRjZGI5"",
+  ""tracks"" : {
+    ""href"" : ""https://api.spotify.com/v1/playlists/3LMlL4YOxz1BXydVgfPp15/tracks"",
+    ""items"" : [ ],
+    ""limit"" : 100,
+    ""next"" : null,
+    ""offset"" : 0,
+    ""previous"" : null,
+    ""total"" : 0
+  },
+  ""type"" : ""playlist"",
+  ""uri"" : ""spotify:playlist:3LMlL4YOxz1BXydVgfPp15""
+}"
+11,test_1iukx824to9x1_createPlaylist,,createPlaylist,/users/{user_id}/playlists,POST,Authorization=Bearer+BQBuft2A-Sy_HL2VDovdUdwX3rDeKE55bE3KLYFMlGQjjFdcAvw2bVmKX_ApcUeKF5R03P5eid5MykkBhfoL0k-S8NdJem3c010OHrlmOPKRqofpR6bxnhgHsT-n8r7fPEqYxfto_Wn8RDdlQ7vXHVqcXxD1vzk_sfTdsTedY5r3VW8gtbqve-69ZZnKYzrLrGxDU6nIacJWEYDhAWIXcrxATK47deQ7-Xq8EVp-TBjsfV8LeLg1iAjthlDzZDqnd6Z-O51BtUju6hQ3_KR8rOL5sSNfXssTA73TqZQZ;,user_id=qenf2hlyicucelyckx7gu2n7v;,,"{""name"":""Playlist9"",""description"":""Playlist description 9"",""public"": true}",201,False,"OAS disconformity: [Path '/followers/href'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/primary_color'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/tracks/next'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/tracks/previous'] Instance type (null) does not match any allowed primitive type (allowed: [""string""])","{
+  ""collaborative"" : false,
+  ""description"" : ""Playlist description 9"",
+  ""external_urls"" : {
+    ""spotify"" : ""https://open.spotify.com/playlist/0GrS7hhMIeIji7kvccNQWx""
+  },
+  ""followers"" : {
+    ""href"" : null,
+    ""total"" : 0
+  },
+  ""href"" : ""https://api.spotify.com/v1/playlists/0GrS7hhMIeIji7kvccNQWx"",
+  ""id"" : ""0GrS7hhMIeIji7kvccNQWx"",
+  ""images"" : [ ],
+  ""name"" : ""Playlist9"",
+  ""owner"" : {
+    ""display_name"" : ""qenf2hlyicucelyckx7gu2n7v"",
+    ""external_urls"" : {
+      ""spotify"" : ""https://open.spotify.com/user/qenf2hlyicucelyckx7gu2n7v""
+    },
+    ""href"" : ""https://api.spotify.com/v1/users/qenf2hlyicucelyckx7gu2n7v"",
+    ""id"" : ""qenf2hlyicucelyckx7gu2n7v"",
+    ""type"" : ""user"",
+    ""uri"" : ""spotify:user:qenf2hlyicucelyckx7gu2n7v""
+  },
+  ""primary_color"" : null,
+  ""public"" : true,
+  ""snapshot_id"" : ""MSxmMjBlYzEyM2JhNWYzZTdiNDNhNmYxYTZhNzA2MWEzZDZiYmJiYTA4"",
+  ""tracks"" : {
+    ""href"" : ""https://api.spotify.com/v1/playlists/0GrS7hhMIeIji7kvccNQWx/tracks"",
+    ""items"" : [ ],
+    ""limit"" : 100,
+    ""next"" : null,
+    ""offset"" : 0,
+    ""previous"" : null,
+    ""total"" : 0
+  },
+  ""type"" : ""playlist"",
+  ""uri"" : ""spotify:playlist:0GrS7hhMIeIji7kvccNQWx""
+}"
+12,test_uv8mapw5n67l_createPlaylist,,createPlaylist,/users/{user_id}/playlists,POST,Authorization=Bearer+BQBuft2A-Sy_HL2VDovdUdwX3rDeKE55bE3KLYFMlGQjjFdcAvw2bVmKX_ApcUeKF5R03P5eid5MykkBhfoL0k-S8NdJem3c010OHrlmOPKRqofpR6bxnhgHsT-n8r7fPEqYxfto_Wn8RDdlQ7vXHVqcXxD1vzk_sfTdsTedY5r3VW8gtbqve-69ZZnKYzrLrGxDU6nIacJWEYDhAWIXcrxATK47deQ7-Xq8EVp-TBjsfV8LeLg1iAjthlDzZDqnd6Z-O51BtUju6hQ3_KR8rOL5sSNfXssTA73TqZQZ;,user_id=qenf2hlyicucelyckx7gu2n7v;,,"{""name"":""Playlist6"",""description"":""Playlist description 6"",""public"": false}",201,False,"OAS disconformity: [Path '/followers/href'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/primary_color'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/tracks/next'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/tracks/previous'] Instance type (null) does not match any allowed primitive type (allowed: [""string""])","{
+  ""collaborative"" : false,
+  ""description"" : ""Playlist description 6"",
+  ""external_urls"" : {
+    ""spotify"" : ""https://open.spotify.com/playlist/5wlmsPgon52n5pCQ7xoKQb""
+  },
+  ""followers"" : {
+    ""href"" : null,
+    ""total"" : 0
+  },
+  ""href"" : ""https://api.spotify.com/v1/playlists/5wlmsPgon52n5pCQ7xoKQb"",
+  ""id"" : ""5wlmsPgon52n5pCQ7xoKQb"",
+  ""images"" : [ ],
+  ""name"" : ""Playlist6"",
+  ""owner"" : {
+    ""display_name"" : ""qenf2hlyicucelyckx7gu2n7v"",
+    ""external_urls"" : {
+      ""spotify"" : ""https://open.spotify.com/user/qenf2hlyicucelyckx7gu2n7v""
+    },
+    ""href"" : ""https://api.spotify.com/v1/users/qenf2hlyicucelyckx7gu2n7v"",
+    ""id"" : ""qenf2hlyicucelyckx7gu2n7v"",
+    ""type"" : ""user"",
+    ""uri"" : ""spotify:user:qenf2hlyicucelyckx7gu2n7v""
+  },
+  ""primary_color"" : null,
+  ""public"" : false,
+  ""snapshot_id"" : ""MSxhNzFjZDhjMGI2MjZlODMzNmE4ODhmYzFhZjkwMTAzYWIzYTEwMjhj"",
+  ""tracks"" : {
+    ""href"" : ""https://api.spotify.com/v1/playlists/5wlmsPgon52n5pCQ7xoKQb/tracks"",
+    ""items"" : [ ],
+    ""limit"" : 100,
+    ""next"" : null,
+    ""offset"" : 0,
+    ""previous"" : null,
+    ""total"" : 0
+  },
+  ""type"" : ""playlist"",
+  ""uri"" : ""spotify:playlist:5wlmsPgon52n5pCQ7xoKQb""
+}"
+13,test_1hbaetwmtj4mt_createPlaylist,,createPlaylist,/users/{user_id}/playlists,POST,Authorization=Bearer+BQBuft2A-Sy_HL2VDovdUdwX3rDeKE55bE3KLYFMlGQjjFdcAvw2bVmKX_ApcUeKF5R03P5eid5MykkBhfoL0k-S8NdJem3c010OHrlmOPKRqofpR6bxnhgHsT-n8r7fPEqYxfto_Wn8RDdlQ7vXHVqcXxD1vzk_sfTdsTedY5r3VW8gtbqve-69ZZnKYzrLrGxDU6nIacJWEYDhAWIXcrxATK47deQ7-Xq8EVp-TBjsfV8LeLg1iAjthlDzZDqnd6Z-O51BtUju6hQ3_KR8rOL5sSNfXssTA73TqZQZ;,user_id=qenf2hlyicucelyckx7gu2n7v;,,"{""name"":""Playlist7"",""description"":""Playlist description 7"",""public"": true}",201,False,"OAS disconformity: [Path '/followers/href'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/primary_color'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/tracks/next'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/tracks/previous'] Instance type (null) does not match any allowed primitive type (allowed: [""string""])","{
+  ""collaborative"" : false,
+  ""description"" : ""Playlist description 7"",
+  ""external_urls"" : {
+    ""spotify"" : ""https://open.spotify.com/playlist/14JTY8dvqn9oLiKlCseblI""
+  },
+  ""followers"" : {
+    ""href"" : null,
+    ""total"" : 0
+  },
+  ""href"" : ""https://api.spotify.com/v1/playlists/14JTY8dvqn9oLiKlCseblI"",
+  ""id"" : ""14JTY8dvqn9oLiKlCseblI"",
+  ""images"" : [ ],
+  ""name"" : ""Playlist7"",
+  ""owner"" : {
+    ""display_name"" : ""qenf2hlyicucelyckx7gu2n7v"",
+    ""external_urls"" : {
+      ""spotify"" : ""https://open.spotify.com/user/qenf2hlyicucelyckx7gu2n7v""
+    },
+    ""href"" : ""https://api.spotify.com/v1/users/qenf2hlyicucelyckx7gu2n7v"",
+    ""id"" : ""qenf2hlyicucelyckx7gu2n7v"",
+    ""type"" : ""user"",
+    ""uri"" : ""spotify:user:qenf2hlyicucelyckx7gu2n7v""
+  },
+  ""primary_color"" : null,
+  ""public"" : true,
+  ""snapshot_id"" : ""MSxkZWJmYTkyYjkzODM0OTVkNTU1NDU2ZjY4NzA4MDRmZDU4OWJlN2Jm"",
+  ""tracks"" : {
+    ""href"" : ""https://api.spotify.com/v1/playlists/14JTY8dvqn9oLiKlCseblI/tracks"",
+    ""items"" : [ ],
+    ""limit"" : 100,
+    ""next"" : null,
+    ""offset"" : 0,
+    ""previous"" : null,
+    ""total"" : 0
+  },
+  ""type"" : ""playlist"",
+  ""uri"" : ""spotify:playlist:14JTY8dvqn9oLiKlCseblI""
+}"
+14,test_r1dcsajyh5wx_createPlaylist,,createPlaylist,/users/{user_id}/playlists,POST,Authorization=Bearer+BQBuft2A-Sy_HL2VDovdUdwX3rDeKE55bE3KLYFMlGQjjFdcAvw2bVmKX_ApcUeKF5R03P5eid5MykkBhfoL0k-S8NdJem3c010OHrlmOPKRqofpR6bxnhgHsT-n8r7fPEqYxfto_Wn8RDdlQ7vXHVqcXxD1vzk_sfTdsTedY5r3VW8gtbqve-69ZZnKYzrLrGxDU6nIacJWEYDhAWIXcrxATK47deQ7-Xq8EVp-TBjsfV8LeLg1iAjthlDzZDqnd6Z-O51BtUju6hQ3_KR8rOL5sSNfXssTA73TqZQZ;,user_id=qenf2hlyicucelyckx7gu2n7v;,,"{""name"":""Playlist9"",""description"":""Playlist description 9"",""public"": true}",201,False,"OAS disconformity: [Path '/followers/href'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/primary_color'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/tracks/next'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/tracks/previous'] Instance type (null) does not match any allowed primitive type (allowed: [""string""])","{
+  ""collaborative"" : false,
+  ""description"" : ""Playlist description 9"",
+  ""external_urls"" : {
+    ""spotify"" : ""https://open.spotify.com/playlist/3E5XfU1FZIMbVW3lBhmBJ8""
+  },
+  ""followers"" : {
+    ""href"" : null,
+    ""total"" : 0
+  },
+  ""href"" : ""https://api.spotify.com/v1/playlists/3E5XfU1FZIMbVW3lBhmBJ8"",
+  ""id"" : ""3E5XfU1FZIMbVW3lBhmBJ8"",
+  ""images"" : [ ],
+  ""name"" : ""Playlist9"",
+  ""owner"" : {
+    ""display_name"" : ""qenf2hlyicucelyckx7gu2n7v"",
+    ""external_urls"" : {
+      ""spotify"" : ""https://open.spotify.com/user/qenf2hlyicucelyckx7gu2n7v""
+    },
+    ""href"" : ""https://api.spotify.com/v1/users/qenf2hlyicucelyckx7gu2n7v"",
+    ""id"" : ""qenf2hlyicucelyckx7gu2n7v"",
+    ""type"" : ""user"",
+    ""uri"" : ""spotify:user:qenf2hlyicucelyckx7gu2n7v""
+  },
+  ""primary_color"" : null,
+  ""public"" : true,
+  ""snapshot_id"" : ""MSxhZmUwZTEzNWVlNDBmMTM1Yjg4YmNiMzliYjhlMTE2NWViMDRiNjI5"",
+  ""tracks"" : {
+    ""href"" : ""https://api.spotify.com/v1/playlists/3E5XfU1FZIMbVW3lBhmBJ8/tracks"",
+    ""items"" : [ ],
+    ""limit"" : 100,
+    ""next"" : null,
+    ""offset"" : 0,
+    ""previous"" : null,
+    ""total"" : 0
+  },
+  ""type"" : ""playlist"",
+  ""uri"" : ""spotify:playlist:3E5XfU1FZIMbVW3lBhmBJ8""
+}"
+15,test_1jiflso7y9kxd_createPlaylist,,createPlaylist,/users/{user_id}/playlists,POST,Authorization=Bearer+BQBuft2A-Sy_HL2VDovdUdwX3rDeKE55bE3KLYFMlGQjjFdcAvw2bVmKX_ApcUeKF5R03P5eid5MykkBhfoL0k-S8NdJem3c010OHrlmOPKRqofpR6bxnhgHsT-n8r7fPEqYxfto_Wn8RDdlQ7vXHVqcXxD1vzk_sfTdsTedY5r3VW8gtbqve-69ZZnKYzrLrGxDU6nIacJWEYDhAWIXcrxATK47deQ7-Xq8EVp-TBjsfV8LeLg1iAjthlDzZDqnd6Z-O51BtUju6hQ3_KR8rOL5sSNfXssTA73TqZQZ;,user_id=qenf2hlyicucelyckx7gu2n7v;,,"{""name"":""Playlist9"",""description"":""Playlist description 9"",""public"": true}",201,False,"OAS disconformity: [Path '/followers/href'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/primary_color'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/tracks/next'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/tracks/previous'] Instance type (null) does not match any allowed primitive type (allowed: [""string""])","{
+  ""collaborative"" : false,
+  ""description"" : ""Playlist description 9"",
+  ""external_urls"" : {
+    ""spotify"" : ""https://open.spotify.com/playlist/3kIc3bNmqWTrtuoghomqpE""
+  },
+  ""followers"" : {
+    ""href"" : null,
+    ""total"" : 0
+  },
+  ""href"" : ""https://api.spotify.com/v1/playlists/3kIc3bNmqWTrtuoghomqpE"",
+  ""id"" : ""3kIc3bNmqWTrtuoghomqpE"",
+  ""images"" : [ ],
+  ""name"" : ""Playlist9"",
+  ""owner"" : {
+    ""display_name"" : ""qenf2hlyicucelyckx7gu2n7v"",
+    ""external_urls"" : {
+      ""spotify"" : ""https://open.spotify.com/user/qenf2hlyicucelyckx7gu2n7v""
+    },
+    ""href"" : ""https://api.spotify.com/v1/users/qenf2hlyicucelyckx7gu2n7v"",
+    ""id"" : ""qenf2hlyicucelyckx7gu2n7v"",
+    ""type"" : ""user"",
+    ""uri"" : ""spotify:user:qenf2hlyicucelyckx7gu2n7v""
+  },
+  ""primary_color"" : null,
+  ""public"" : true,
+  ""snapshot_id"" : ""MSwyZDRkNGFlODg3YmEyNmYyMGU0MDlmZTM5OGU1NmJhM2E0NzVkYjJi"",
+  ""tracks"" : {
+    ""href"" : ""https://api.spotify.com/v1/playlists/3kIc3bNmqWTrtuoghomqpE/tracks"",
+    ""items"" : [ ],
+    ""limit"" : 100,
+    ""next"" : null,
+    ""offset"" : 0,
+    ""previous"" : null,
+    ""total"" : 0
+  },
+  ""type"" : ""playlist"",
+  ""uri"" : ""spotify:playlist:3kIc3bNmqWTrtuoghomqpE""
+}"
+16,test_1iut7p8xdo3fl_createPlaylist,,createPlaylist,/users/{user_id}/playlists,POST,Authorization=Bearer+BQBuft2A-Sy_HL2VDovdUdwX3rDeKE55bE3KLYFMlGQjjFdcAvw2bVmKX_ApcUeKF5R03P5eid5MykkBhfoL0k-S8NdJem3c010OHrlmOPKRqofpR6bxnhgHsT-n8r7fPEqYxfto_Wn8RDdlQ7vXHVqcXxD1vzk_sfTdsTedY5r3VW8gtbqve-69ZZnKYzrLrGxDU6nIacJWEYDhAWIXcrxATK47deQ7-Xq8EVp-TBjsfV8LeLg1iAjthlDzZDqnd6Z-O51BtUju6hQ3_KR8rOL5sSNfXssTA73TqZQZ;,user_id=qenf2hlyicucelyckx7gu2n7v;,,"{""name"":""Playlist10"",""description"":""Playlist description 10"",""public"": false}",201,False,"OAS disconformity: [Path '/followers/href'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/primary_color'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/tracks/next'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/tracks/previous'] Instance type (null) does not match any allowed primitive type (allowed: [""string""])","{
+  ""collaborative"" : false,
+  ""description"" : ""Playlist description 10"",
+  ""external_urls"" : {
+    ""spotify"" : ""https://open.spotify.com/playlist/0Bm7bTKlcMJCXJ9I2NHwZw""
+  },
+  ""followers"" : {
+    ""href"" : null,
+    ""total"" : 0
+  },
+  ""href"" : ""https://api.spotify.com/v1/playlists/0Bm7bTKlcMJCXJ9I2NHwZw"",
+  ""id"" : ""0Bm7bTKlcMJCXJ9I2NHwZw"",
+  ""images"" : [ ],
+  ""name"" : ""Playlist10"",
+  ""owner"" : {
+    ""display_name"" : ""qenf2hlyicucelyckx7gu2n7v"",
+    ""external_urls"" : {
+      ""spotify"" : ""https://open.spotify.com/user/qenf2hlyicucelyckx7gu2n7v""
+    },
+    ""href"" : ""https://api.spotify.com/v1/users/qenf2hlyicucelyckx7gu2n7v"",
+    ""id"" : ""qenf2hlyicucelyckx7gu2n7v"",
+    ""type"" : ""user"",
+    ""uri"" : ""spotify:user:qenf2hlyicucelyckx7gu2n7v""
+  },
+  ""primary_color"" : null,
+  ""public"" : false,
+  ""snapshot_id"" : ""MSxhZmI5OTJlNDZmNmRiNjNiNjBkZDM4Y2UxNjhhMjFiODBlY2I1NDBh"",
+  ""tracks"" : {
+    ""href"" : ""https://api.spotify.com/v1/playlists/0Bm7bTKlcMJCXJ9I2NHwZw/tracks"",
+    ""items"" : [ ],
+    ""limit"" : 100,
+    ""next"" : null,
+    ""offset"" : 0,
+    ""previous"" : null,
+    ""total"" : 0
+  },
+  ""type"" : ""playlist"",
+  ""uri"" : ""spotify:playlist:0Bm7bTKlcMJCXJ9I2NHwZw""
+}"
+17,test_u85716p4o7z6_createPlaylist,,createPlaylist,/users/{user_id}/playlists,POST,Authorization=Bearer+BQBuft2A-Sy_HL2VDovdUdwX3rDeKE55bE3KLYFMlGQjjFdcAvw2bVmKX_ApcUeKF5R03P5eid5MykkBhfoL0k-S8NdJem3c010OHrlmOPKRqofpR6bxnhgHsT-n8r7fPEqYxfto_Wn8RDdlQ7vXHVqcXxD1vzk_sfTdsTedY5r3VW8gtbqve-69ZZnKYzrLrGxDU6nIacJWEYDhAWIXcrxATK47deQ7-Xq8EVp-TBjsfV8LeLg1iAjthlDzZDqnd6Z-O51BtUju6hQ3_KR8rOL5sSNfXssTA73TqZQZ;,user_id=qenf2hlyicucelyckx7gu2n7v;,,"{""name"":""Playlist1"",""description"":""Playlist description 1"",""public"": true}",201,False,"OAS disconformity: [Path '/followers/href'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/primary_color'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/tracks/next'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/tracks/previous'] Instance type (null) does not match any allowed primitive type (allowed: [""string""])","{
+  ""collaborative"" : false,
+  ""description"" : ""Playlist description 1"",
+  ""external_urls"" : {
+    ""spotify"" : ""https://open.spotify.com/playlist/4O5zONiqRHCZUaissWiM50""
+  },
+  ""followers"" : {
+    ""href"" : null,
+    ""total"" : 0
+  },
+  ""href"" : ""https://api.spotify.com/v1/playlists/4O5zONiqRHCZUaissWiM50"",
+  ""id"" : ""4O5zONiqRHCZUaissWiM50"",
+  ""images"" : [ ],
+  ""name"" : ""Playlist1"",
+  ""owner"" : {
+    ""display_name"" : ""qenf2hlyicucelyckx7gu2n7v"",
+    ""external_urls"" : {
+      ""spotify"" : ""https://open.spotify.com/user/qenf2hlyicucelyckx7gu2n7v""
+    },
+    ""href"" : ""https://api.spotify.com/v1/users/qenf2hlyicucelyckx7gu2n7v"",
+    ""id"" : ""qenf2hlyicucelyckx7gu2n7v"",
+    ""type"" : ""user"",
+    ""uri"" : ""spotify:user:qenf2hlyicucelyckx7gu2n7v""
+  },
+  ""primary_color"" : null,
+  ""public"" : true,
+  ""snapshot_id"" : ""MSw0YjM1Zjc0NTZiNWMwOGU5ZTE3ZTZhZTdiYzc4ODdmYmYwYTJiNTg5"",
+  ""tracks"" : {
+    ""href"" : ""https://api.spotify.com/v1/playlists/4O5zONiqRHCZUaissWiM50/tracks"",
+    ""items"" : [ ],
+    ""limit"" : 100,
+    ""next"" : null,
+    ""offset"" : 0,
+    ""previous"" : null,
+    ""total"" : 0
+  },
+  ""type"" : ""playlist"",
+  ""uri"" : ""spotify:playlist:4O5zONiqRHCZUaissWiM50""
+}"
+18,test_rhlmthoysj8m_createPlaylist,,createPlaylist,/users/{user_id}/playlists,POST,Authorization=Bearer+BQBuft2A-Sy_HL2VDovdUdwX3rDeKE55bE3KLYFMlGQjjFdcAvw2bVmKX_ApcUeKF5R03P5eid5MykkBhfoL0k-S8NdJem3c010OHrlmOPKRqofpR6bxnhgHsT-n8r7fPEqYxfto_Wn8RDdlQ7vXHVqcXxD1vzk_sfTdsTedY5r3VW8gtbqve-69ZZnKYzrLrGxDU6nIacJWEYDhAWIXcrxATK47deQ7-Xq8EVp-TBjsfV8LeLg1iAjthlDzZDqnd6Z-O51BtUju6hQ3_KR8rOL5sSNfXssTA73TqZQZ;,user_id=qenf2hlyicucelyckx7gu2n7v;,,"{""name"":""Playlist10"",""description"":""Playlist description 10"",""public"": false}",201,False,"OAS disconformity: [Path '/followers/href'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/primary_color'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/tracks/next'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/tracks/previous'] Instance type (null) does not match any allowed primitive type (allowed: [""string""])","{
+  ""collaborative"" : false,
+  ""description"" : ""Playlist description 10"",
+  ""external_urls"" : {
+    ""spotify"" : ""https://open.spotify.com/playlist/6Xfnfi2vB7TMG7oFN5VpJe""
+  },
+  ""followers"" : {
+    ""href"" : null,
+    ""total"" : 0
+  },
+  ""href"" : ""https://api.spotify.com/v1/playlists/6Xfnfi2vB7TMG7oFN5VpJe"",
+  ""id"" : ""6Xfnfi2vB7TMG7oFN5VpJe"",
+  ""images"" : [ ],
+  ""name"" : ""Playlist10"",
+  ""owner"" : {
+    ""display_name"" : ""qenf2hlyicucelyckx7gu2n7v"",
+    ""external_urls"" : {
+      ""spotify"" : ""https://open.spotify.com/user/qenf2hlyicucelyckx7gu2n7v""
+    },
+    ""href"" : ""https://api.spotify.com/v1/users/qenf2hlyicucelyckx7gu2n7v"",
+    ""id"" : ""qenf2hlyicucelyckx7gu2n7v"",
+    ""type"" : ""user"",
+    ""uri"" : ""spotify:user:qenf2hlyicucelyckx7gu2n7v""
+  },
+  ""primary_color"" : null,
+  ""public"" : false,
+  ""snapshot_id"" : ""MSw4OTQ1NDI3NmMwMDk1OTljNmMyZGQzMGEzM2U3YTZjMWVmNDk1MDdh"",
+  ""tracks"" : {
+    ""href"" : ""https://api.spotify.com/v1/playlists/6Xfnfi2vB7TMG7oFN5VpJe/tracks"",
+    ""items"" : [ ],
+    ""limit"" : 100,
+    ""next"" : null,
+    ""offset"" : 0,
+    ""previous"" : null,
+    ""total"" : 0
+  },
+  ""type"" : ""playlist"",
+  ""uri"" : ""spotify:playlist:6Xfnfi2vB7TMG7oFN5VpJe""
+}"
+19,test_qe74ksjctdgl_createPlaylist,,createPlaylist,/users/{user_id}/playlists,POST,Authorization=Bearer+BQBuft2A-Sy_HL2VDovdUdwX3rDeKE55bE3KLYFMlGQjjFdcAvw2bVmKX_ApcUeKF5R03P5eid5MykkBhfoL0k-S8NdJem3c010OHrlmOPKRqofpR6bxnhgHsT-n8r7fPEqYxfto_Wn8RDdlQ7vXHVqcXxD1vzk_sfTdsTedY5r3VW8gtbqve-69ZZnKYzrLrGxDU6nIacJWEYDhAWIXcrxATK47deQ7-Xq8EVp-TBjsfV8LeLg1iAjthlDzZDqnd6Z-O51BtUju6hQ3_KR8rOL5sSNfXssTA73TqZQZ;,user_id=qenf2hlyicucelyckx7gu2n7v;,,"{""name"":""Playlist1"",""description"":""Playlist description 1"",""public"": true}",201,False,"OAS disconformity: [Path '/followers/href'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/primary_color'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/tracks/next'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/tracks/previous'] Instance type (null) does not match any allowed primitive type (allowed: [""string""])","{
+  ""collaborative"" : false,
+  ""description"" : ""Playlist description 1"",
+  ""external_urls"" : {
+    ""spotify"" : ""https://open.spotify.com/playlist/5o8hpenbUF0JAPhpxbGkIi""
+  },
+  ""followers"" : {
+    ""href"" : null,
+    ""total"" : 0
+  },
+  ""href"" : ""https://api.spotify.com/v1/playlists/5o8hpenbUF0JAPhpxbGkIi"",
+  ""id"" : ""5o8hpenbUF0JAPhpxbGkIi"",
+  ""images"" : [ ],
+  ""name"" : ""Playlist1"",
+  ""owner"" : {
+    ""display_name"" : ""qenf2hlyicucelyckx7gu2n7v"",
+    ""external_urls"" : {
+      ""spotify"" : ""https://open.spotify.com/user/qenf2hlyicucelyckx7gu2n7v""
+    },
+    ""href"" : ""https://api.spotify.com/v1/users/qenf2hlyicucelyckx7gu2n7v"",
+    ""id"" : ""qenf2hlyicucelyckx7gu2n7v"",
+    ""type"" : ""user"",
+    ""uri"" : ""spotify:user:qenf2hlyicucelyckx7gu2n7v""
+  },
+  ""primary_color"" : null,
+  ""public"" : true,
+  ""snapshot_id"" : ""MSw2YzYyZTY0ZmZiNWU3NmE0MTQxNTVjMTA1OWYyZjBkZDhkZGYyZDUx"",
+  ""tracks"" : {
+    ""href"" : ""https://api.spotify.com/v1/playlists/5o8hpenbUF0JAPhpxbGkIi/tracks"",
+    ""items"" : [ ],
+    ""limit"" : 100,
+    ""next"" : null,
+    ""offset"" : 0,
+    ""previous"" : null,
+    ""total"" : 0
+  },
+  ""type"" : ""playlist"",
+  ""uri"" : ""spotify:playlist:5o8hpenbUF0JAPhpxbGkIi""
+}"

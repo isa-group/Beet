@@ -1,0 +1,79 @@
+---
+auth:
+  required: true
+  queryParams: {}
+  headerParams:
+    x-RapidAPI-Host: airport-info.p.rapidapi.com
+    x-rapidapi-key: 6a615b46f4mshab392a25b2bc44dp16cee9jsn2bd2d62e5f69
+  apiKeysPath: null
+  headersPath: null
+  oauthPath: null
+testConfiguration:
+  operations:
+  - testPath: /airport
+    operationId: findAirports
+    method: get
+    testParameters:
+    - name: iata
+      in: query
+      weight: 0.5
+      generators:
+      - type: RandomInputValue
+        genParameters:
+        - name: values
+          values:
+          - BBA
+          - SCQ
+          - BBC
+          - SCS
+          - BBB
+          - SCU
+          - SCT
+          - BBD
+          - BBG
+          - SCW
+          - SCV
+          - BBI
+          - SCY
+          - SCX
+          - BBH
+          - BBK
+          - SCZ
+          - BBJ
+          - BBM
+          - BBL
+          - BBO
+          - BBN
+          - BBQ
+          - SDB
+          - BBP
+          - SDD
+          - BBS
+          - BBR
+          - SDF
+          objectValues: null
+        valid: true
+    - name: icao
+      in: query
+      weight: 0.5
+      generators:
+      - type: RandomInputValue
+        genParameters:
+        - name: values
+          values:
+          - GQNE
+          - GQNF
+          - GQNI
+          - GQNK
+          - GQNJ
+          - GQNL
+          - GQNO
+          - GQNS
+          - GQNT
+          - SCOV
+          - KLYH
+          - UIUU
+          - FNKU
+          objectValues: null
+        valid: true
+    expectedResponse: 200

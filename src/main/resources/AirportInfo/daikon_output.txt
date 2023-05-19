@@ -1,0 +1,94 @@
+Daikon version 5.8.8, released March 2, 2021; http://plse.cs.washington.edu/daikon.
+Reading declaration files .(read 1 decls file)
+Processing trace data; reading 1 dtrace file:
+
+===========================================================================
+main.airport.findAirports(main.findAirports_Input):::ENTER
+input.iata != input.icao
+===========================================================================
+main.airport.findAirports(main.findAirports_Input):::EXIT
+input == orig(input)
+input.iata == return.iata
+input.iata == orig(input.iata)
+input.icao == orig(input.icao)
+input.iata != input.icao
+input.iata != return.icao
+input.iata != return.name
+input.iata != return.location
+input.iata > return.street_number
+input.iata != return.street
+input.iata != return.city
+input.iata != return.county
+input.iata != return.state
+input.iata != return.country_iso
+input.iata != return.country
+input.iata != return.postal_code
+input.iata > return.phone
+input.iata != return.website
+input.icao != return.iata
+input.icao != return.name
+input.icao != return.location
+input.icao != return.street_number
+input.icao != return.street
+input.icao != return.city
+input.icao != return.county
+input.icao != return.state
+input.icao != return.country_iso
+input.icao != return.country
+input.icao != return.postal_code
+input.icao > return.phone
+input.icao != return.website
+return.id != return.uct
+return.iata != return.icao
+return.iata != return.name
+return.iata != return.location
+return.iata > return.street_number
+return.iata != return.street
+return.iata != return.city
+return.iata != return.county
+return.iata != return.state
+return.iata != return.country_iso
+return.iata != return.country
+return.iata != return.postal_code
+return.iata > return.phone
+return.iata != return.website
+return.icao != return.name
+return.icao != return.location
+return.icao != return.street_number
+return.icao != return.street
+return.icao != return.city
+return.icao != return.county
+return.icao != return.state
+return.icao != return.country_iso
+return.icao != return.country
+return.icao != return.postal_code
+return.icao > return.phone
+return.icao != return.website
+return.name != return.location
+return.name > return.street_number
+return.name != return.street
+return.name != return.city
+return.name != return.county
+return.name != return.state
+return.name != return.country_iso
+return.name != return.country
+return.name != return.postal_code
+return.name > return.phone
+return.name != return.website
+return.location > return.street_number
+return.location != return.street
+return.location != return.city
+return.location != return.county
+return.location != return.state
+return.location != return.country_iso
+return.location != return.country
+return.location != return.postal_code
+return.location > return.phone
+return.location != return.website
+return.street_number <= return.city
+return.street_number <= return.country
+return.street_number <= return.website
+return.state >= return.phone
+return.country_iso >= return.phone
+return.country >= return.phone
+Exiting Daikon.

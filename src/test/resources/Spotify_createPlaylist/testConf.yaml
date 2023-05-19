@@ -1,0 +1,58 @@
+---
+auth:
+  required: true
+  queryParams: {}
+  headerParams:
+    Authorization: Bearer BQBuft2A-Sy_HL2VDovdUdwX3rDeKE55bE3KLYFMlGQjjFdcAvw2bVmKX_ApcUeKF5R03P5eid5MykkBhfoL0k-S8NdJem3c010OHrlmOPKRqofpR6bxnhgHsT-n8r7fPEqYxfto_Wn8RDdlQ7vXHVqcXxD1vzk_sfTdsTedY5r3VW8gtbqve-69ZZnKYzrLrGxDU6nIacJWEYDhAWIXcrxATK47deQ7-Xq8EVp-TBjsfV8LeLg1iAjthlDzZDqnd6Z-O51BtUju6hQ3_KR8rOL5sSNfXssTA73TqZQZ
+  apiKeysPath: null
+  headersPath: null
+  oauthPath: null
+testConfiguration:
+  operations:
+  - testPath: "/users/{user_id}/playlists"
+    operationId: createPlaylist
+    method: post
+    testParameters:
+    - name: user_id
+      in: path
+      weight: null
+      generators:
+      - type: RandomInputValue
+        genParameters:
+        - name: values
+          values:
+          - qwerty
+          objectValues: null
+        valid: true
+    - name: Accept
+      in: header
+      weight: 0.0
+      generators:
+      - type: RandomEnglishWord
+        genParameters:
+        - name: maxWords
+          values:
+          - 1
+          objectValues: null
+        valid: true
+    - name: body
+      in: body
+      weight: null
+      generators:
+      - type: RandomInputValue
+        genParameters:
+        - name: values
+          values:
+          - "{\"name\":\"Playlist1\",\"description\":\"Playlist description 1\",\"public\": true}"
+          - "{\"name\":\"Playlist2\",\"description\":\"Playlist description 2\",\"public\": false}"
+          - "{\"name\":\"Playlist3\",\"description\":\"Playlist description 3\",\"public\": true}"
+          - "{\"name\":\"Playlist4\",\"description\":\"Playlist description 4\",\"public\": false}"
+          - "{\"name\":\"Playlist5\",\"description\":\"Playlist description 5\",\"public\": true}"
+          - "{\"name\":\"Playlist6\",\"description\":\"Playlist description 6\",\"public\": false}"
+          - "{\"name\":\"Playlist7\",\"description\":\"Playlist description 7\",\"public\": true}"
+          - "{\"name\":\"Playlist8\",\"description\":\"Playlist description 8\",\"public\": false}"
+          - "{\"name\":\"Playlist9\",\"description\":\"Playlist description 9\",\"public\": true}"
+          - "{\"name\":\"Playlist10\",\"description\":\"Playlist description 10\",\"public\": false}"
+          objectValues: null
+        valid: true
+    expectedResponse: 200

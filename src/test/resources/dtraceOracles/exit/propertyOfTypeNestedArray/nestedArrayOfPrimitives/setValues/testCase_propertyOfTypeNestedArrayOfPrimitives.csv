@@ -1,0 +1,2 @@
+,testCaseId,queryParameters,operationId,path,httpMethod,headerParameters,pathParameters,formParameters,bodyParameter,statusCode,passed,failReason,responseBody
+0,test_020,inputParameter=parameterValue,exitOfTypeNestedArrayEndpoint;,/exitOfTypeNestedArrayEndpoint,GET,,,,,200,True,none,"{""stringProperty"": ""stringPropertyValue"",""nestedArrayProperty"":[[[1.0,2.0],[3.0]],[[4.0]]]}"

@@ -1,0 +1,3 @@
+,testCaseId,queryParameters,operationId,path,httpMethod,headerParameters,pathParameters,formParameters,bodyParameter,statusCode,passed,failReason,responseBody
+0,test_014,inputParameter=parameterValue,multipleOperationsEndpoint;,/multipleOperationsEndpoint,GET,,,,,200,True,none,"{""stringProperty"": ""stringPropertyValue"",""arrayOfObjectsProperty"":[{""property1"": ""property1Value1""},{""property1"": ""property1Value2""}]}"
+1,test_015,inputParameter=WRONGVALUE,multipleOperationsEndpoint;,/multipleOperationsEndpoint,GET,,,,,400,True,none,"{""errorDescription"":""Unexpected error""}"

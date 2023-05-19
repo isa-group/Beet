@@ -1,0 +1,75 @@
+basePath: /
+host: rapidapi.p.rapidapi.com
+info:
+  description: 'Fastest and most complete database of airport codes and data, including
+    address, phone number, website and more. '
+  title: airportInfo
+  version: 1.0
+schemes:
+  - https
+swagger: '2.0'
+paths:
+  /airport:
+    get:
+      description: Lookup an airport by its IATA or ICAO code
+      operationId: findAirports
+      parameters:
+        - description: IATA code of the airport to retrieve
+          in: query
+          name: iata
+          required: false
+          type: string
+        - description: ICAO code of the airport to retrieve
+          in: query
+          name: icao
+          required: false
+          type: string
+      x-dependencies:
+        - Or(iata, icao);
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: object
+            properties:
+              id:
+                description: "Airport id"
+                type: integer
+              iata:
+                description: "Iata code"
+                type: string
+              icao:
+                description: "Icao code"
+                type: string
+              name:
+                description: "Airport name"
+                type: string
+              location:
+                description: "Airport location"
+                type: string
+              street_number:
+                type: string
+              street:
+                type: string
+              city:
+                type: string
+              county:
+                type: string
+              state:
+                type: string
+              country_iso:
+                type: string
+              country:
+                type: string
+              postal_code:
+                type: string
+              phone:
+                type: string
+              latitude:
+                type: number
+              longitude:
+                type: number
+              uct:
+                type: integer
+              website:
+                type: string

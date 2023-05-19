@@ -1,0 +1,24 @@
+/exitOfTypeArrayPrimitiveElementsEndpoint&exitOfTypeArrayPrimitiveElementsEndpoint&200%array():::ENTER
+input
+575057660
+1
+input.inputParameter
+"parameterValue"
+1
+
+/exitOfTypeArrayPrimitiveElementsEndpoint&exitOfTypeArrayPrimitiveElementsEndpoint&200%array():::EXIT1
+input
+575057660
+1
+input.inputParameter
+"parameterValue"
+1
+return
+1964923734
+1
+return.array
+428739094
+1
+return.array[..]
+[null 3.0]
+1

@@ -1,0 +1,2 @@
+,testCaseId,queryParameters,operationId,path,httpMethod,headerParameters,pathParameters,formParameters,bodyParameter,statusCode,passed,failReason,responseBody
+0,test_005,inputParameter=parameterValue,objectExitEndpoint;,/objectExitEndpoint,GET,,,,,200,True,none,"{""stringProperty"": ""stringPropertyValue1"",""objectProperty"": null}"

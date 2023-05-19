@@ -1,0 +1,11 @@
+testCaseId,queryParameters,operationId,path,httpMethod,headerParameters,pathParameters,formParameters,bodyParameter,statusCode,passed,failReason,responseBody
+test_1hb878rv7d9ib_browseCategoriesByCategoryId,country=SE;,browseCategoriesByCategoryId,/browse/categories/{category_id},GET,Authorization=Bearer+BQCdz3NcqZ7gAgNcJCNSoKN0i9LHh5wIpigz_qfMsfWBGUPujohFWDstxzP97xe4ni-Hf7wU7pUuwONglHKFOiw3bxeIQVWw4D37DJYZXDA5GW6EkSZ0kTnz24pk_Rse-4fXralxjD9KE5xgwhvx4AadLkMBSb6uY3bACika_tDUprrH8gn5mlWFLDO46WZbR1Q2m-v36DrpVWpQpWaCgs1mWA6_PKDAj5ZmpWuUN839tH8p6Cn5oT2imxHGyFKVnkai1o7EBiHYp6WXWUkQI4KgS1HmydsZE0HA--Yg;,category_id=hiphop;,,,200,True,,"{
+  ""href"" : ""https://api.spotify.com/v1/browse/categories/hiphop"",
+  ""icons"" : [ {
+    ""height"" : 274,
+    ""url"" : ""https://t.scdn.co/media/original/hip-274_0a661854d61e29eace5fe63f73495e68_274x274.jpg"",
+    ""width"" : 274
+  } ],
+  ""id"" : ""hiphop"",
+  ""name"" : ""Hip Hop""
+}"

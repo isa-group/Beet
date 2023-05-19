@@ -1,0 +1,138 @@
+swagger: '2.0'
+schemes:
+  - https
+host: api.spotify.com
+basePath: /v1
+info:
+  title: Spotify
+  version: v1
+  x-apisguru-categories:
+    - media
+  x-logo:
+    url: 'https://api.apis.guru/v2/cache/logo/https_logo-core.clearbit.com_spotify.com'
+  x-origin:
+    - format: raml
+      url: 'https://raw.githubusercontent.com/spotify/web-api/master/specifications/raml/api.raml'
+      version: '0.8'
+  x-preferred: true
+  x-providerName: spotify.com
+externalDocs:
+  url: 'https://developer.spotify.com/'
+consumes:
+  - application/json
+produces:
+  - application/json
+securityDefinitions:
+  oauth_2_0_accessCode:
+    authorizationUrl: 'https://accounts.spotify.com/authorize'
+    description: |
+      Spotify supports OAuth 2.0 for authenticating all API requests.
+    flow: accessCode
+    scopes:
+      playlist-modify-private: ''
+      playlist-modify-public: ''
+      playlist-read-collaborative: ''
+      playlist-read-private: ''
+      user-follow-modify: ''
+      user-follow-read: ''
+      user-library-modify: ''
+      user-library-read: ''
+      user-read-birthdate: ''
+      user-read-email: ''
+      user-read-private: ''
+    tokenUrl: 'https://accounts.spotify.com/api/token'
+    type: oauth2
+  oauth_2_0_implicit:
+    authorizationUrl: 'https://accounts.spotify.com/authorize'
+    description: |
+      Spotify supports OAuth 2.0 for authenticating all API requests.
+    flow: implicit
+    scopes:
+      playlist-modify-private: ''
+      playlist-modify-public: ''
+      playlist-read-collaborative: ''
+      playlist-read-private: ''
+      user-follow-modify: ''
+      user-follow-read: ''
+      user-library-modify: ''
+      user-library-read: ''
+      user-read-birthdate: ''
+      user-read-email: ''
+      user-read-private: ''
+    type: oauth2
+paths:
+  '/albums/{id}/tracks':
+    get:
+      operationId: 'getAlbumTracks'
+      parameters:
+        - name: id
+          description: |
+            'The Spotify ID for the album'
+          in: path
+          required: true
+          type: string
+        - name: market
+          description: |
+            'An ISO 3166-1 alpha-2 country code'
+          in: query
+          required: false
+          type: string
+        - name: limit
+          description: |
+            'The maximum number of items to return'
+          in: query
+          required: false
+          type: integer
+      responses:
+        '200':
+          description: 'OK'
+          schema:
+            type: object
+            properties:
+              total:
+                type: integer
+              href:
+                type: string
+              items:          # Array de objetos
+                type: array
+                items:
+                  type: object
+                  properties:
+                    artists:  # Array de objetos
+                      type: array
+                      items:
+                        type: object
+                        properties:
+                          id:
+                            type: string
+                          name:
+                            type: string
+                    # Array de strings
+                    available_markets:
+                      type: array
+                      items:
+                        type: string
+                    id:
+                      type: string
+                    name:
+                      type: string
+#                    track_number:
+#                      type: integer
+                    explicit:
+                      type: boolean
+                    linked_from:  # Objeto anidado
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                        uri:
+                          type: string
+        '400':
+          description: 'Invalid input'
+          schema:
+            type: object
+            properties:
+              status:
+                type: integer
+              message:
+                type: string

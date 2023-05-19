@@ -1,0 +1,2 @@
+,testCaseId,queryParameters,operationId,path,httpMethod,headerParameters,pathParameters,formParameters,bodyParameter,statusCode,passed,failReason,responseBody
+0,test_012,inputParameter=parameterValue,exitOfTypeArrayPrimitiveElementsEndpoint;,/exitOfTypeArrayPrimitiveElementsEndpoint,GET,,,,,200,True,none,"[2.0, 3.0]"

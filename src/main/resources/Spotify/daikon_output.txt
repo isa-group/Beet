@@ -1,0 +1,22 @@
+Daikon version 5.8.8, released March 2, 2021; http://plse.cs.washington.edu/daikon.
+Reading declaration files .(read 1 decls file)
+Processing trace data; reading 1 dtrace file:
+
+===========================================================================
+main.browsecategories{category_id}.browseCategoriesByCategoryId(main.browseCategoriesByCategoryId_Input):::ENTER
+input.country one of { "SE", "US" }
+===========================================================================
+main.browsecategories{category_id}.browseCategoriesByCategoryId(main.browseCategoriesByCategoryId_Input):::EXIT
+input == orig(input)
+input.category_id == return.id
+input.category_id == orig(input.category_id)
+input.country == orig(input.country)
+return.icons[].height == return.icons[].width
+input.country one of { "SE", "US" }
+return.icons[].height == [274]
+return.icons[].height elements == 274
+size(return.icons[]) == 1
+input.category_id != return.href
+input.category_id > return.name
+return.href > return.name
+Exiting Daikon.

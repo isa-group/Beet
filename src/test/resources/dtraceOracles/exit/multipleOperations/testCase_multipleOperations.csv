@@ -1,0 +1,3 @@
+,testCaseId,queryParameters,operationId,path,httpMethod,headerParameters,pathParameters,formParameters,bodyParameter,statusCode,passed,failReason,responseBody
+0,test_014,parameterOperation1=inputOp1,operation1;,/operation1,GET,,,,,200,True,none,"{""stringPropertyOperation1"": ""outputValueOp1"",""arrayOfObjectsPropertyOperation1"":[{""property1Operation1"": ""itemArray1""},{""property1Operation1"": ""itemArray2""}]}"
+1,test_015,parameterOperation2=inputOp2,operation2;,/operation2,GET,,,,,200,True,none,"{""stringPropertyOperation2"": ""outputValueOp2""}"

@@ -1,0 +1,76 @@
+swagger: '2.0'
+info:
+  version: "1.4.0"
+  title: sampleApi_nestedArrays
+  description: "Example of nested arrays"
+host: es.us.isa
+basePath: /sampleApi/v1
+schemes:
+  - https
+
+securityDefinitions:
+  "API Key":
+    type: apiKey
+    in: header
+    name: SAMPLE-API-Key
+
+security:
+  - "API Key": []
+
+paths:
+  '/sampleEndpoint':
+    x-summary: SampleEndpoint
+    get:
+      summary: Sample endpoint
+      operationId: sampleEndpointId
+      description: Get sample results
+      produces:
+        - application/json
+
+      parameters:
+        - $ref: '#/parameters/parameter1'
+        - $ref: '#/parameters/parameter2'
+
+      responses:
+        '200':
+          description: "Sample response"
+          schema:
+            $ref: '#/definitions/supermodelIoLogisticsPUDOLocations'
+
+parameters:
+
+  parameter1:
+    name: parameter1
+    in: query
+    description: parameter1
+    required: true
+    type: string
+
+  parameter2:
+    name: parameter2
+    in: query
+    description: parameter2
+    required: true
+    type: string
+
+definitions:
+  supermodelIoLogisticsPUDOLocations:
+    title: Location Collection
+    description: DHL Service Point location collection
+    type: object
+    properties:
+      locations:
+        type: array
+        items:
+          type: array
+          items:
+            type: array
+            items:
+              type: object
+              properties:
+                locationId:
+                  type: string
+                provider:
+                  type: string
+                location.info:
+                  type: string

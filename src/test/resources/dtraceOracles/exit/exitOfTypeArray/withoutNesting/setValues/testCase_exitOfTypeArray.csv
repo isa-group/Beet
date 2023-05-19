@@ -1,0 +1,2 @@
+,testCaseId,queryParameters,operationId,path,httpMethod,headerParameters,pathParameters,formParameters,bodyParameter,statusCode,passed,failReason,responseBody
+0,test_010,inputParameter=parameterValue,exitOfTypeArrayEndpoint;,/exitOfTypeArrayEndpoint,GET,,,,,200,True,none,"[{""property1"": ""firstValueOfProperty1"",""property.2"": ""firstValueOfProperty2""},{""property1"": ""secondValueOfProperty1"",""property.2"": ""secondValueOfProperty2""}]"

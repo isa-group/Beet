@@ -1,0 +1,126 @@
+swagger: '2.0'
+schemes:
+  - https
+host: api.spotify.com
+basePath: /v1
+info:
+  title: Spotify
+  version: v1
+  x-apisguru-categories:
+    - media
+  x-logo:
+    url: 'https://api.apis.guru/v2/cache/logo/https_logo-core.clearbit.com_spotify.com'
+  x-origin:
+    - format: raml
+      url: 'https://raw.githubusercontent.com/spotify/web-api/master/specifications/raml/api.raml'
+      version: '0.8'
+  x-preferred: true
+  x-providerName: spotify.com
+externalDocs:
+  url: 'https://developer.spotify.com/'
+consumes:
+  - application/json
+produces:
+  - application/json
+securityDefinitions:
+  oauth_2_0_accessCode:
+    authorizationUrl: 'https://accounts.spotify.com/authorize'
+    description: |
+      Spotify supports OAuth 2.0 for authenticating all API requests.
+    flow: accessCode
+    scopes:
+      playlist-modify-private: ''
+      playlist-modify-public: ''
+      playlist-read-collaborative: ''
+      playlist-read-private: ''
+      user-follow-modify: ''
+      user-follow-read: ''
+      user-library-modify: ''
+      user-library-read: ''
+      user-read-birthdate: ''
+      user-read-email: ''
+      user-read-private: ''
+    tokenUrl: 'https://accounts.spotify.com/api/token'
+    type: oauth2
+  oauth_2_0_implicit:
+    authorizationUrl: 'https://accounts.spotify.com/authorize'
+    description: |
+      Spotify supports OAuth 2.0 for authenticating all API requests.
+    flow: implicit
+    scopes:
+      playlist-modify-private: ''
+      playlist-modify-public: ''
+      playlist-read-collaborative: ''
+      playlist-read-private: ''
+      user-follow-modify: ''
+      user-follow-read: ''
+      user-library-modify: ''
+      user-library-read: ''
+      user-read-birthdate: ''
+      user-read-email: ''
+      user-read-private: ''
+    type: oauth2
+paths:
+  '/browse/categories/{category_id}':
+    get:
+      operationId: browseCategoriesByCategoryId
+      description: |
+        [Get a Single Browse Category](https://developer.spotify.com/web-api/get-category/)
+      parameters:
+        - description: The Spotify ID of the category you wish to fetch.
+          in: path
+          name: category_id
+          required: true
+          type: string
+        - description: The country (an ISO 3166-1 alpha-2 country code)
+          in: query
+          name: country
+          required: false
+          type: string
+        - description: |
+            The desired language, consisting of an ISO 639 language code and an ISO 3166-1 alpha-2 country code, joined by an underscore. For example: es_MX, meaning "Spanish (Mexico)".
+          in: query
+          name: locale
+          required: false
+          type: string
+        - description: It is used to set specified media type.
+          in: header
+          name: Accept
+          type: string
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/category'
+        '429':
+          description: |
+            API rate limit exceeded. See http://developer.spotify.com/web-api/user-guide/#rate-limiting for details.
+definitions:
+  category:
+    properties:
+      href:
+        description: A link to the Web API endpoint returning full details of the category.
+        type: string
+      icons:
+        items:
+          $ref: '#/definitions/image'
+        type: array
+      id:
+        description: The Spotify category ID of the category.
+        type: string
+      name:
+        description: The name of the category.
+        type: string
+    type: object
+  image:
+    properties:
+      height:
+        description: 'The image height in pixels. If unknown: null or not returned.'
+        type: integer
+      url:
+        description: The source URL of the image.
+        type: string
+      width:
+        description: 'The image width in pixels. If unknown: null or not returned.'
+        type: integer
+    type: object

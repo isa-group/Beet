@@ -1,0 +1,46 @@
+swagger: '2.0'
+info:
+  version: "1.4.0"
+  title: sampleApi_exitOfTypeArray
+  description: "Example of API that contains inputs of primitive types (Double, String, Integer, boolean, array of string, array of double)
+  in all the possible sources, excepting the body (query, path, header, form)"
+host: es.us.isa
+basePath: /sampleApi/v1
+schemes:
+  - https
+
+securityDefinitions:
+  "API Key":
+    type: apiKey
+    in: header
+    name: SAMPLE-API-Key
+
+security:
+  - "API Key": []
+
+paths:
+  '/exitOfTypeArrayPrimitiveElementsEndpoint':
+    x-summary: exitOfTypeArray
+    get:
+      summary: Sample endpoint exit of type array
+      operationId: exitOfTypeArrayPrimitiveElementsEndpoint
+      description: Get sample results
+      produces:
+        - application/json
+      parameters:
+        - name: inputParameter
+          in: query
+          required: true
+          type: string
+      responses:
+        '200':
+          description: "Sample response"
+          schema:
+            $ref: '#/definitions/referenced'
+definitions:
+  referenced:
+    title: ExampleResponse
+    description: Example response
+    type: array
+    items:
+      type: number  # double

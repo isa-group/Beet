@@ -1,0 +1,65 @@
+---
+openapi: '3.0.0'
+info:
+  title: LanguageTool API
+  description: 'Check texts for style and grammar issues with LanguageTool. Please
+    consider the following default limitations:<ul><li>your daily request limit depending
+    on <a href=''https://languagetool.org/editor/settings/api''>your plan</a> <li>maximum
+    number of requests per minute: 20 (free) / 80 (Premium) <li>maximum number of
+    characters per minute: 75,000 (free) / 300,000 (Premium) <li>maximum number of
+    characters per request: 20,000 (free) / 60,000 (Premium) <li>for the free version,
+    also consider the <a href=''https://dev.languagetool.org/public-http-api''>limitations
+    documented here</a> <li><b>Note:</b> any parameters or outputs not part of this
+    documentation are internal and must not be relied on</ul> Need more generous limits?
+    Just <a href=''https://languagetool.org/proofreading-api''>contact us</a>.'
+  version: 1.1.2
+host: api.languagetoolplus.com
+schemes:
+  - https
+basePath: "/v2"
+produces:
+  - application/json
+consumes:
+  - application/x-www-form-urlencoded
+paths:
+  "/check":
+    post:
+      summary: Check a text
+      description: The main feature - check a text with LanguageTool for possible
+        style and grammar issues.
+      operationId: check
+      parameters:
+        - name: text
+          in: formData
+          type: string
+          description: The text to be checked. This or 'data' is required.
+          required: false
+#        - name: data
+#          in: formData
+#          required: false
+#          schema:
+#            type: object
+#            properties:
+#              name:
+#                type: string
+#              location:
+#                type: object
+#                properties:
+#                  locationId:
+#                    type: string
+#                  keywords:
+#                    type: array
+#                    items:
+#                      type: string
+      x-dependencies:
+        - OnlyOne(text, data);
+        - IF preferredVariants THEN language=='auto';
+        - IF enabledOnly==true THEN (enabledRules OR enabledCategories);
+      responses:
+        '200':
+          description: the result of checking the text
+          schema:
+            type: object
+            properties:
+              software:
+                type: string

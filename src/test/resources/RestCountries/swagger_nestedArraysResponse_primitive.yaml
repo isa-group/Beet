@@ -1,0 +1,36 @@
+openapi: '3.0.0'
+servers:
+  - url: 'https://restcountries.eu/rest'
+info:
+  description: 'REST countries API'
+  title: REST countries API
+  version: v2.0.5
+paths:
+  /v1/name/{name}:
+    get:
+      description: Search locations by name
+      operationId: v1Name
+      parameters:
+        - name: name
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: fullText
+          in: query
+          required: false
+          schema:
+            type: boolean
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: array
+                  items:
+                    type: array
+                    items:
+                      type: number    # Location

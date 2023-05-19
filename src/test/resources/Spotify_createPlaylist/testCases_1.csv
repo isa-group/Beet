@@ -1,0 +1,40 @@
+,testCaseId,queryParameters,operationId,path,httpMethod,headerParameters,pathParameters,formParameters,bodyParameter,statusCode,passed,failReason,responseBody
+0,test_1hruuxxu0artx_createPlaylist,,createPlaylist,/users/{user_id}/playlists,POST,Authorization=Bearer+BQBuft2A-Sy_HL2VDovdUdwX3rDeKE55bE3KLYFMlGQjjFdcAvw2bVmKX_ApcUeKF5R03P5eid5MykkBhfoL0k-S8NdJem3c010OHrlmOPKRqofpR6bxnhgHsT-n8r7fPEqYxfto_Wn8RDdlQ7vXHVqcXxD1vzk_sfTdsTedY5r3VW8gtbqve-69ZZnKYzrLrGxDU6nIacJWEYDhAWIXcrxATK47deQ7-Xq8EVp-TBjsfV8LeLg1iAjthlDzZDqnd6Z-O51BtUju6hQ3_KR8rOL5sSNfXssTA73TqZQZ;,user_id=qenf2hlyicucelyckx7gu2n7v;,,"{""name"":""Playlist6"",""description"":""Playlist description 6"",""public"": false}",201,False,"OAS disconformity: [Path '/followers/href'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/primary_color'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/tracks/next'] Instance type (null) does not match any allowed primitive type (allowed: [""string""]) --- [Path '/tracks/previous'] Instance type (null) does not match any allowed primitive type (allowed: [""string""])","{
+  ""collaborative"" : false,
+  ""description"" : ""Playlist description 6"",
+  ""external_urls"" : {
+    ""spotify"" : ""https://open.spotify.com/playlist/2uXdDRKhBFwnCKuClCkcl2""
+  },
+  ""followers"" : {
+    ""href"" : null,
+    ""total"" : 0
+  },
+  ""href"" : ""https://api.spotify.com/v1/playlists/2uXdDRKhBFwnCKuClCkcl2"",
+  ""id"" : ""2uXdDRKhBFwnCKuClCkcl2"",
+  ""images"" : [ ],
+  ""name"" : ""Playlist6"",
+  ""owner"" : {
+    ""display_name"" : ""qenf2hlyicucelyckx7gu2n7v"",
+    ""external_urls"" : {
+      ""spotify"" : ""https://open.spotify.com/user/qenf2hlyicucelyckx7gu2n7v""
+    },
+    ""href"" : ""https://api.spotify.com/v1/users/qenf2hlyicucelyckx7gu2n7v"",
+    ""id"" : ""qenf2hlyicucelyckx7gu2n7v"",
+    ""type"" : ""user"",
+    ""uri"" : ""spotify:user:qenf2hlyicucelyckx7gu2n7v""
+  },
+  ""primary_color"" : null,
+  ""public"" : false,
+  ""snapshot_id"" : ""MSw5M2UwYTRmNjUxNzAwODIzYjk2YjdhOGJmNDMxM2Y5YTg5MDdmMDg0"",
+  ""tracks"" : {
+    ""href"" : ""https://api.spotify.com/v1/playlists/2uXdDRKhBFwnCKuClCkcl2/tracks"",
+    ""items"" : [ ],
+    ""limit"" : 100,
+    ""next"" : null,
+    ""offset"" : 0,
+    ""previous"" : null,
+    ""total"" : 0
+  },
+  ""type"" : ""playlist"",
+  ""uri"" : ""spotify:playlist:2uXdDRKhBFwnCKuClCkcl2""
+}"

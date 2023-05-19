@@ -1,0 +1,103 @@
+openapi: '3.0.0'
+servers:
+  - url: 'https://restcountries.eu/rest'
+info:
+  description: 'REST countries API'
+  title: REST countries API
+  version: v2.0.5
+paths:
+  /v1/name/{name}:
+    get:
+      description: Search locations by name
+      operationId: v1Name
+      parameters:
+        - name: name
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: fullText
+          in: query
+          required: false
+          schema:
+            type: boolean
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object    # Location
+                  properties:
+                    name:
+                      description: "Location name"
+                      type: string
+                    topLevelDomain:
+                      type: string
+                    alpha2Code:
+                      type: string
+                    alpha3Code:
+                      type: string
+                    callingCodes:
+                      type: array
+                      items:
+                        type: string
+                    capital:
+                      type: string
+                    altSpellings:
+                      type: array
+                      items:
+                        type: string
+                    region:
+                      type: string
+                    subregion:
+                      type: string
+                    population:
+                      type: int
+                    latlng:
+                      type: array
+                      items:
+                        type: number
+                    demonym:
+                      type: string
+                    area:
+                      type: number
+                    gini:
+                      type: number
+                    timezones:
+                      type: array
+                      items:
+                        type: string
+                    borders:
+                      type: array
+                      items:
+                        type: string
+                    nativeName:
+                      type: string
+                    numericCode:
+                      type: string
+                    currencies:
+                      type: array
+                      items:
+                        type: string
+                    languages:
+                      type: array
+                      items:
+                        type: string
+                    translations:
+                      type: object
+                      properties:
+                        de:
+                          type: string
+                        es:
+                          type: string
+                        fr:
+                          type: string
+                        ja:
+                          type: string
+                        it:
+                          type: string
+                    relevance:
+                      type: string

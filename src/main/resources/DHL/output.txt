@@ -1,0 +1,221 @@
+Daikon version 5.8.8, released March 2, 2021; http://plse.cs.washington.edu/daikon.
+Reading declaration files .(read 1 decls file)
+Processing trace data; reading 1 dtrace file:
+
+===========================================================================
+main.find-by-address.findByAddress_200(main.findByAddress_Input):::ENTER
+input == "test_1ji7sea6bstba_findByAddress_input_input"
+input.countryCode == "DE"
+input.addressLocality == "Bonn"
+input.postalCode == "53113"
+input.streetAddress == "Charles-de-Gaulle-Str.+20"
+input.radius == 500.0
+input.limit == 20.0
+===========================================================================
+main.find-by-address.findByAddress_200(main.findByAddress_Input):::EXIT
+input == orig(input)
+input.countryCode == orig(input.countryCode)
+input.addressLocality == orig(input.addressLocality)
+input.postalCode == orig(input.postalCode)
+input.streetAddress == orig(input.streetAddress)
+input.radius == orig(input.radius)
+input.limit == orig(input.limit)
+input == "test_1ji7sea6bstba_findByAddress_input_input"
+input.countryCode == "DE"
+input.addressLocality == "Bonn"
+input.postalCode == "53113"
+input.streetAddress == "Charles-de-Gaulle-Str.+20"
+input.radius == 500.0
+input.limit == 20.0
+return == "test_1ji7sea6bstba_findByAddress_return_output"
+return.locations == "test_1ji7sea6bstba_findByAddress_return.locations_output"
+return.locations[] == [test_1ji7sea6bstba_findByAddress_return.locations_output_1, test_1ji7sea6bstba_findByAddress_return.locations_output_2, test_1ji7sea6bstba_findByAddress_return.locations_output_3, test_1ji7sea6bstba_findByAddress_return.locations_output_4]
+size(return.locations[]) == 4
+===========================================================================
+main.find-by-address.findByAddress_200_locations(main.findByAddress_Input):::ENTER
+input == "test_1ji7sea6bstba_findByAddress_input_input"
+input.countryCode == "DE"
+input.addressLocality == "Bonn"
+input.postalCode == "53113"
+input.streetAddress == "Charles-de-Gaulle-Str.+20"
+input.radius == 500.0
+input.limit == 20.0
+===========================================================================
+main.find-by-address.findByAddress_200_locations(main.findByAddress_Input):::EXIT
+input == orig(input)
+input.countryCode == return.place.address.countryCode
+input.countryCode == orig(input.countryCode)
+input.addressLocality == return.place.address.addressLocality
+input.addressLocality == orig(input.addressLocality)
+input.postalCode == return.place.address.postalCode
+input.postalCode == orig(input.postalCode)
+input.streetAddress == orig(input.streetAddress)
+input.radius == orig(input.radius)
+input.limit == orig(input.limit)
+size(return.location.ids[])-1 == size(return.closurePeriods[])
+input == "test_1ji7sea6bstba_findByAddress_input_input"
+input.countryCode == "DE"
+input.addressLocality == "Bonn"
+input.postalCode == "53113"
+input.streetAddress == "Charles-de-Gaulle-Str.+20"
+input.radius == 500.0
+input.limit == 20.0
+return == "test_1ji7sea6bstba_findByAddress_return_output"
+return.location == "test_1ji7sea6bstba_findByAddress_return.location_output"
+return.location.ids == "test_1ji7sea6bstba_findByAddress_return.location.ids_output"
+return.location.ids[] == [test_1ji7sea6bstba_findByAddress_return.location.ids_output_1]
+return.location.ids[] elements == "test_1ji7sea6bstba_findByAddress_return.location.ids_output_1"
+return.location.keyword one of { "Packstation", "Postfiliale" }
+return.location.type one of { "locker", "postoffice" }
+return.place == "test_1ji7sea6bstba_findByAddress_return.place_output"
+return.place.address == "test_1ji7sea6bstba_findByAddress_return.place.address_output"
+return.place.address.streetAddress one of { "Charles-de-Gaulle-Str. 20", "Heinrich-Br\303\274ning-Str. 5", "Str\303\244\303\237chensweg 10" }
+return.place.geo == "test_1ji7sea6bstba_findByAddress_return.place.geo_output"
+return.place.geo.latitude == 50.7160101
+return.place.geo.longitude one of { 7.12575, 7.1298043, 7.131924 }
+return.serviceTypes one of { "[\"parcel:drop-off-unregistered\",\"parcel:pick-up-registered\"]", "[\"parcel:pick-up\",\"postident\",\"cash-on-delivery\",\"letter-service\",\"parcel:drop-off\",\"parking\",\"age-verification\"]" }
+return.serviceTypes[] one of { [test_1ji7sea6bstba_findByAddress_return.serviceTypes_output_1, test_1ji7sea6bstba_findByAddress_return.serviceTypes_output_2], [test_1ji7sea6bstba_findByAddress_return.serviceTypes_output_1, test_1ji7sea6bstba_findByAddress_return.serviceTypes_output_2, test_1ji7sea6bstba_findByAddress_return.serviceTypes_output_3, test_1ji7sea6bstba_findByAddress_return.serviceTypes_output_4, test_1ji7sea6bstba_findByAddress_return.serviceTypes_output_5, test_1ji7sea6bstba_findByAddress_return.serviceTypes_output_6, test_1ji7sea6bstba_findByAddress_return.serviceTypes_output_7] }
+return.averageCapacityDayOfWeek == "test_1ji7sea6bstba_findByAddress_return.averageCapacityDayOfWeek_output"
+return.averageCapacityDayOfWeek[] one of { [], [test_1ji7sea6bstba_findByAddress_return.averageCapacityDayOfWeek_output_1, test_1ji7sea6bstba_findByAddress_return.averageCapacityDayOfWeek_output_2, test_1ji7sea6bstba_findByAddress_return.averageCapacityDayOfWeek_output_3, test_1ji7sea6bstba_findByAddress_return.averageCapacityDayOfWeek_output_4, test_1ji7sea6bstba_findByAddress_return.averageCapacityDayOfWeek_output_5, test_1ji7sea6bstba_findByAddress_return.averageCapacityDayOfWeek_output_6, test_1ji7sea6bstba_findByAddress_return.averageCapacityDayOfWeek_output_7] }
+return.availableCapacity == "null"
+return.openingHours == "test_1ji7sea6bstba_findByAddress_return.openingHours_output"
+return.openingHours[] one of { [test_1ji7sea6bstba_findByAddress_return.openingHours_output_1, test_1ji7sea6bstba_findByAddress_return.openingHours_output_2, test_1ji7sea6bstba_findByAddress_return.openingHours_output_3, test_1ji7sea6bstba_findByAddress_return.openingHours_output_4, test_1ji7sea6bstba_findByAddress_return.openingHours_output_5, test_1ji7sea6bstba_findByAddress_return.openingHours_output_6], [test_1ji7sea6bstba_findByAddress_return.openingHours_output_1, test_1ji7sea6bstba_findByAddress_return.openingHours_output_2, test_1ji7sea6bstba_findByAddress_return.openingHours_output_3, test_1ji7sea6bstba_findByAddress_return.openingHours_output_4, test_1ji7sea6bstba_findByAddress_return.openingHours_output_5, test_1ji7sea6bstba_findByAddress_return.openingHours_output_6, test_1ji7sea6bstba_findByAddress_return.openingHours_output_7] }
+return.closurePeriods == "test_1ji7sea6bstba_findByAddress_return.closurePeriods_output"
+return.closurePeriods[] == []
+size(return.location.ids[]) == 1
+size(return.serviceTypes[]) one of { 2, 7 }
+size(return.averageCapacityDayOfWeek[]) one of { 0, 7 }
+size(return.openingHours[]) one of { 6, 7 }
+1062568037 * return.distance + 1.9984723346456576E16 * return.place.geo.latitude - 1.0135454587113664E18 == 0
+3.475653012423E12 * return.place.geo.latitude + 1.383168035556E12 * return.place.geo.longitude - 1.8612731042912E14 == 0
+===========================================================================
+main.find-by-address.findByAddress_200_locations_averageCapacityDayOfWeek(main.findByAddress_Input):::ENTER
+input == "test_1ji7sea6bstba_findByAddress_input_input"
+input.countryCode == "DE"
+input.addressLocality == "Bonn"
+input.postalCode == "53113"
+input.streetAddress == "Charles-de-Gaulle-Str.+20"
+input.radius == 500.0
+input.limit == 20.0
+input.countryCode > input.addressLocality
+input.countryCode > input.postalCode
+input.countryCode > input.streetAddress
+input.addressLocality > input.postalCode
+input.addressLocality < input.streetAddress
+input.postalCode < input.streetAddress
+===========================================================================
+main.find-by-address.findByAddress_200_locations_averageCapacityDayOfWeek(main.findByAddress_Input):::EXIT
+input == orig(input)
+input.countryCode == orig(input.countryCode)
+input.addressLocality == orig(input.addressLocality)
+input.postalCode == orig(input.postalCode)
+input.streetAddress == orig(input.streetAddress)
+input.radius == orig(input.radius)
+input.limit == orig(input.limit)
+input == "test_1ji7sea6bstba_findByAddress_input_input"
+input.countryCode == "DE"
+input.addressLocality == "Bonn"
+input.postalCode == "53113"
+input.streetAddress == "Charles-de-Gaulle-Str.+20"
+input.radius == 500.0
+input.limit == 20.0
+return == "test_1ji7sea6bstba_findByAddress_return_output"
+return.capacity == "high"
+input.countryCode > input.addressLocality
+input.countryCode > input.postalCode
+input.countryCode > input.streetAddress
+input.countryCode < return.dayOfWeek
+input.countryCode < return.capacity
+input.addressLocality > input.postalCode
+input.addressLocality < input.streetAddress
+input.addressLocality < return.dayOfWeek
+input.addressLocality < return.capacity
+input.postalCode < input.streetAddress
+input.postalCode < return.dayOfWeek
+input.postalCode < return.capacity
+input.streetAddress < return.dayOfWeek
+input.streetAddress < return.capacity
+return.dayOfWeek < return.capacity
+===========================================================================
+main.find-by-address.findByAddress_200_locations_location_ids(main.findByAddress_Input):::ENTER
+input == "test_1ji7sea6bstba_findByAddress_input_input"
+input.countryCode == "DE"
+input.addressLocality == "Bonn"
+input.postalCode == "53113"
+input.streetAddress == "Charles-de-Gaulle-Str.+20"
+input.radius == 500.0
+input.limit == 20.0
+===========================================================================
+main.find-by-address.findByAddress_200_locations_location_ids(main.findByAddress_Input):::EXIT
+input == orig(input)
+input.countryCode == orig(input.countryCode)
+input.addressLocality == orig(input.addressLocality)
+input.postalCode == orig(input.postalCode)
+input.streetAddress == orig(input.streetAddress)
+input.radius == orig(input.radius)
+input.limit == orig(input.limit)
+input == "test_1ji7sea6bstba_findByAddress_input_input"
+input.countryCode == "DE"
+input.addressLocality == "Bonn"
+input.postalCode == "53113"
+input.streetAddress == "Charles-de-Gaulle-Str.+20"
+input.radius == 500.0
+input.limit == 20.0
+return == "test_1ji7sea6bstba_findByAddress_return_output"
+return.provider == "parcel"
+===========================================================================
+main.find-by-address.findByAddress_200_locations_openingHours(main.findByAddress_Input):::ENTER
+input == "test_1ji7sea6bstba_findByAddress_input_input"
+input.countryCode == "DE"
+input.addressLocality == "Bonn"
+input.postalCode == "53113"
+input.streetAddress == "Charles-de-Gaulle-Str.+20"
+input.radius == 500.0
+input.limit == 20.0
+input.countryCode > input.addressLocality
+input.countryCode > input.postalCode
+input.countryCode > input.streetAddress
+input.addressLocality > input.postalCode
+input.addressLocality < input.streetAddress
+input.postalCode < input.streetAddress
+===========================================================================
+main.find-by-address.findByAddress_200_locations_openingHours(main.findByAddress_Input):::EXIT
+input == orig(input)
+input.countryCode == orig(input.countryCode)
+input.addressLocality == orig(input.addressLocality)
+input.postalCode == orig(input.postalCode)
+input.streetAddress == orig(input.streetAddress)
+input.radius == orig(input.radius)
+input.limit == orig(input.limit)
+input == "test_1ji7sea6bstba_findByAddress_input_input"
+input.countryCode == "DE"
+input.addressLocality == "Bonn"
+input.postalCode == "53113"
+input.streetAddress == "Charles-de-Gaulle-Str.+20"
+input.radius == 500.0
+input.limit == 20.0
+return == "test_1ji7sea6bstba_findByAddress_return_output"
+return.closes one of { "12:00:00", "17:00:00", "23:59:59" }
+return.opens one of { "00:00:00", "08:00:00", "10:00:00" }
+input.countryCode > input.addressLocality
+input.countryCode > input.postalCode
+input.countryCode > input.streetAddress
+input.countryCode > return.closes
+input.countryCode > return.opens
+input.countryCode < return.dayOfWeek
+input.addressLocality > input.postalCode
+input.addressLocality < input.streetAddress
+input.addressLocality > return.closes
+input.addressLocality > return.opens
+input.addressLocality < return.dayOfWeek
+input.postalCode < input.streetAddress
+input.postalCode > return.closes
+input.postalCode > return.opens
+input.postalCode < return.dayOfWeek
+input.streetAddress > return.closes
+input.streetAddress > return.opens
+input.streetAddress < return.dayOfWeek
+return.closes > return.opens
+return.closes < return.dayOfWeek
+return.opens < return.dayOfWeek
+Exiting Daikon.

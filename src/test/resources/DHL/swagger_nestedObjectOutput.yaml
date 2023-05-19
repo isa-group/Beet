@@ -1,0 +1,424 @@
+swagger: '2.0'
+info:
+  version: "1.4.0"
+  title: DHL
+  description: >-
+    The DHL Location Finder API provides Service Point locations of Deutsche Post DHL Group. This service is also known as pick up and drop off (PUDO).
+
+    Detailed documentation and release notes are available at https://developer.dhl/api-reference/location-finder.
+
+host: api.dhl.com
+basePath: /location-finder/v1
+schemes:
+  - https
+
+securityDefinitions:
+  "API Key":
+    type: apiKey
+    in: header
+    name: DHL-API-Key
+
+security:
+  - "API Key": []
+
+tags:
+  - name: locations
+    description: 'Retrieve information about DHL Service Point locations'
+
+paths:
+  '/find-by-address':
+    x-summary: DHL Service Point locations found by address
+
+    get:
+      summary: Search for DHL Service Point locations by address.
+      operationId: findByAddress
+      description: >-
+        This method will find DHL locations based on an address by first
+        converting the address to a reference point (latitude, longitude) and
+        then finding locations near that point. To convert an address to a
+        reference point, this API uses the ``Google Geocoding API Address``. To
+        optimize results, besides ``countryCode`` you need to provide
+        ``addressLocality`` and /or ``postalCode``. The more address fields you
+        provide, the better results you may get.
+
+
+        Please read Google Geocoding API Terms of Use:
+        https://cloud.google.com/maps-platform/terms
+
+
+        ``Limitations:`` Address fields are not filters. 3rd party Geocoding
+        API hence limited control over results.
+
+      tags:
+        - locations
+
+      produces:
+        - application/json
+
+      parameters:
+        - $ref: '#/parameters/countryCode'
+        - $ref: '#/parameters/addressLocality'
+        - $ref: '#/parameters/postalCode'
+        - $ref: '#/parameters/streetAddress'
+        - $ref: '#/parameters/providerType'
+        - $ref: '#/parameters/locationType'
+        - $ref: '#/parameters/serviceType'
+        - $ref: '#/parameters/radius'
+        - $ref: '#/parameters/limit'
+
+      responses:
+        '200':
+          description: >-
+            List of DHL Service Point locations.
+          schema:
+            $ref: '#/definitions/supermodelIoLogisticsPUDOLocation'
+parameters:
+
+  providerType:
+    name: providerType
+    in: query
+    description: >-
+      This parameter allows to filter by DPDHL's internal Business Units. When
+      this parameter is specified at least once per request, only locations
+      known by that providerType (a.k.a Business Unit) will be returned.
+      There may be locations with more than one providerType. The available
+      providerTypes are: ``express`` (DHL Express Global), ``parcel`` (eCommerce
+      Solutions Europe and Post & Parcel Germany)
+    required: false
+    type: string
+    enum:
+      - express
+      - parcel
+
+  locationType:
+    name: locationType
+    in: query
+    description: >-
+      Type of the DHL Service Point location. This parameter can be added
+      multiple times in each API request. The response will include only
+      locations of the type that matches any of the requested ones.
+    required: false
+    type: string
+    enum:
+      - servicepoint
+      - locker
+      - postoffice
+      - postbank
+
+  serviceType:
+    name: serviceType
+    in: query
+    description: >-
+      Each location can offer more than one service. This parameter can be
+      added multiple times in each API request. The response will include only
+      locations with at least all of the serviceTypes requested.
+    required: false
+    type: string
+    enum:
+      - parcel:pick-up
+      - parcel:drop-off
+      - express:pick-up
+      - express:drop-off
+      - parcel:pick-up-registered
+      - parcel:pick-up-unregistered
+      - parcel:drop-off-unregistered
+      - letter-service
+      - postbank
+      - cash-on-delivery
+      - franking
+      - cash-service
+      - packaging-material
+      - postident
+      - age-verification
+      - handicapped-access
+      - parking
+      - "express:drop-off-easy"
+      - "express:drop-off-prelabeled"
+      - "express:drop-off-account"
+
+  countryCode:
+    name: countryCode
+    in: query
+    description: >-
+      A two-letter ISO 3166-1 alpha-2 code (https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) specifying the country. https://gs1.org/voc/Country
+    required: true
+    type: string
+    x-example: 'DE'
+
+  postalCode:
+    name: postalCode
+    in: query
+    description: >-
+      Text specifying the postal code for an address. https://gs1.org/voc/postalCode
+    required: false
+    type: string
+    x-example: '53113'
+
+  addressLocality:
+    name: addressLocality
+    in: query
+    description: >-
+      Text specifying the name of the locality, for example a city. https://gs1.org/voc/addressLocality
+    required: false
+    type: string
+    x-example: 'Bonn'
+
+  streetAddress:
+    name: streetAddress
+    in: query
+    description: >-
+      The street address is expressed as free form text. The street address is
+      printed on paper as the first lines below the name. For example, the name
+      of the street and the number in the street, or the name of a building.
+      https://www.gs1.org/voc/streetAddress
+    required: false
+    type: string
+    x-example: 'Charles-de-Gaulle-Str. 20'
+
+  radius:
+    name: radius
+    in: query
+    description: >-
+      Specifies the radius in meters around the provided location, to search
+      within. Maximum radius: 25 000 meters. Default radius: 500 meters.
+    required: false
+    type: number
+    default: 500
+    maximum: 25000
+    x-example: 2500
+
+  limit:
+    name: limit
+    in: query
+    description: >-
+      Number specifying the maximum amount of locations included in the results.
+      Maximum limit: 50 locations. Default limit: 15 locations.
+    required: false
+    type: number
+    default: 15
+    maximum: 50
+    x-example: 20
+
+definitions:
+  supermodelIoLogisticsPUDOLocation:
+    title: Location
+    description: One DHL Service Point location
+    type: object
+    properties:
+      url:
+        type: string
+        description: "The 'self' link relation - globally unique identifier of this DHL Service Point location."
+        example: /locations/8003-4103535
+      location:
+        type: object
+        properties:
+          ids:
+            type: array
+            description: "One location can be known within different business units
+              (providerTypes). They will be known under a unique ID within
+              each business unit domain, as provided."
+            items:
+              properties:
+                locationId:
+                  type: string
+                  description: The ID as how the location is know within this business unit / provider.
+                  example: 8003-4103535
+                provider:
+                  type: string
+                  description: The business unit of the DHL Service Point location.
+                  example: parcel
+          keyword:
+            type: string
+            description: >-
+              Address to put on a label, to send a shipment to a service point or
+              locker for pick up / drop off. For German locations, keyword and
+              keywordId are placed as street name and house number, streetAddress
+              is omitted on the label of a shipment. For locations outside of
+              Germany, keyword and keywordId are placed in addition to
+              streetAddress.
+          keywordId:
+            type: string
+            description: >-
+              Id belonging to keyword that together with the keywordId build up the
+              streetAddress for direct addressing to a service point or locker for
+              pick up / drop off.
+            example: '443'
+          type:
+            type: string
+            description: Type of the DHL Service Point location.
+            enum:
+              - servicepoint
+              - locker
+              - postoffice
+              - postbank
+            example: servicepoint
+      lat.lng:
+        type: object
+        properties:
+          lat:
+            type: number
+          lng:
+            type: number
+          coordinates.info:
+            type: string
+  supermodelIoLogisticsPUDOApiProblemDetail:
+    title: Location Problem Detail
+    description: >-
+      Definition of RFC7807(https://tools.ietf.org/html/rfc7807) Problem Detail
+      for HTTP APIs
+    type: object
+    properties:
+      status:
+        type: number
+      title:
+        type: string
+      detail:
+        type: string
+  supermodelIoLogisticsSupportingPlace:
+    title: Place
+    description: 'Place model description. https://gs1.org/voc/Place'
+    type: object
+    properties:
+      address:
+        type: object
+        properties:
+          countryCode:
+            type: string
+            description: >-
+              A short text string code (ISO 3166-1 alpha-2 country code)
+              specifying the country.
+            allOf:
+              - $ref: '#/definitions/supermodelIoGs1PropertiesCountryCode'
+          postalCode:
+            type: string
+            description: >-
+              Text specifying the postal code for an address.
+              https://gs1.org/voc/postalCode
+          addressLocality:
+            type: string
+            description: >-
+              Text specifying the name of the locality, for example a city.
+              https://gs1.org/voc/addressLocality
+          addressLocalityServicing:
+            type: string
+            description: >-
+              A globally-recognised and defined operational area within which
+              services are provided.
+          streetAddress:
+            type: string
+            description: >-
+              The street address expressed as free form text. The street address
+              is printed on paper as the first lines below the name. For
+              example, the name of the street and the number in the street or
+              the name of a building. https://www.gs1.org/voc/streetAddress
+    example:
+      address:
+        countryCode: NL
+        postalCode: 1043 AG
+        addressLocality: 'Oderweg 2, AMSTERDAM'
+  supermodelIoGs1PropertiesCountryCode:
+    title: Country Code
+    type: string
+    description: Code specifying the country for the address using ISO 3166-1.
+  supermodelIoSchemaorgPropertiesCloses:
+    title: closes
+    description: The closing hour of the place or service on the given day(s) of the week.
+    allOf:
+      - $ref: '#/definitions/supermodelIoSchemaorgTime'
+  supermodelIoSchemaorgTime:
+    title: Time
+    type: string
+    description: >-
+      A point in time recurring on multiple days in the form
+      hh:mm:ss[Z|(+|-)hh:mm] (see <a
+      href="http://www.w3.org/TR/xmlschema-2/#time">XML schema for details</a>).
+    allOf:
+      - $ref: '#/definitions/supermodelIoSchemaorgDataType'
+  supermodelIoSchemaorgDataType:
+    title: DataType
+    description: 'The basic data types such as Integers, Strings, etc.'
+  supermodelIoSchemaorgPropertiesOpens:
+    title: opens
+    description: The opening hour of the place or service on the given day(s) of the week.
+    allOf:
+      - $ref: '#/definitions/supermodelIoSchemaorgTime'
+  supermodelIoSchemaorgPropertiesDayOfWeek:
+    title: dayOfWeek
+    description: The day of the week for which these opening hours are valid.
+    allOf:
+      - $ref: '#/definitions/supermodelIoSchemaorgDayOfWeek'
+  supermodelIoSchemaorgDayOfWeek:
+    title: DayOfWeek
+    type: string
+    description: >-
+      The day of the week, e.g. used to specify to which day the opening hours
+      of an OpeningHoursSpecification refer.<br/><br/>
+
+
+      Originally, URLs from <a
+      href="http://purl.org/goodrelations/v1">GoodRelations</a> were used (for
+      <a class="localLink" href="http://schema.org/Monday">Monday</a>, <a
+      class="localLink" href="http://schema.org/Tuesday">Tuesday</a>, <a
+      class="localLink" href="http://schema.org/Wednesday">Wednesday</a>, <a
+      class="localLink" href="http://schema.org/Thursday">Thursday</a>, <a
+      class="localLink" href="http://schema.org/Friday">Friday</a>, <a
+      class="localLink" href="http://schema.org/Saturday">Saturday</a>, <a
+      class="localLink" href="http://schema.org/Sunday">Sunday</a> plus a
+      special entry for <a class="localLink"
+      href="http://schema.org/PublicHolidays">PublicHolidays</a>); these have
+      now been integrated directly into schema.org.
+    enum:
+      - "http://schema.org/Wednesday"
+      - "http://schema.org/Sunday"
+      - "http://schema.org/PublicHolidays"
+      - "http://schema.org/Monday"
+      - "http://schema.org/Friday"
+      - "http://schema.org/Tuesday"
+      - "http://schema.org/Saturday"
+      - "http://schema.org/Thursday"
+      - ""
+      - "Wednesday"
+      - "Sunday"
+      - "PublicHolidays"
+      - "Monday"
+      - "Friday"
+      - "Tuesday"
+      - "Saturday"
+      - "Thursday"
+  supermodelIoLogisticsSupportingTimestamp:
+    title: Timestamp
+    description: >-
+      A date value in ISO 8601 format (`2017-06-21`) or a combination of date
+      and time of day (`2017-06-21T14:07:17Z`) (see Chapter 5.4 of ISO 8601).
+    allOf:
+      - $ref: '#/definitions/supermodelIoSchemaorgDateTime'
+      - $ref: '#/definitions/supermodelIoSchemaorgDate'
+    example: '2018-03-02T07:53:47Z'
+  supermodelIoSchemaorgDateTime:
+    title: DateTime
+    type: string
+    description: >-
+      A combination of date and time of day in the form
+      [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm] (see Chapter 5.4 of ISO 8601).
+    allOf:
+      - $ref: '#/definitions/supermodelIoSchemaorgDataType'
+  supermodelIoSchemaorgDate:
+    title: Date
+    type: string
+    description: >-
+      A date value in <a href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601
+      date format</a>.
+    allOf:
+      - $ref: '#/definitions/supermodelIoSchemaorgDataType'
+  supermodelIoSchemaorgCapacity:
+    title: Capacity
+    type: string
+    description: >-
+      Information on the average availability of locker capacity (only
+      available in Germany).
+    enum:
+      - high
+      - low
+      - very-low
+      - unknown
+    example: high

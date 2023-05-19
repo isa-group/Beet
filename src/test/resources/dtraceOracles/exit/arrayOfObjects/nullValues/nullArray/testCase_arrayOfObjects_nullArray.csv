@@ -1,0 +1,2 @@
+,testCaseId,queryParameters,operationId,path,httpMethod,headerParameters,pathParameters,formParameters,bodyParameter,statusCode,passed,failReason,responseBody
+0,test_009,inputParameter=parameterValue,arrayOfObjectsEndpoint;,/arrayOfObjectsEndpoint,GET,,,,,200,True,none,"{""stringProperty"": ""stringProperty1"",""arrayOfObjectsProperty"": null}"

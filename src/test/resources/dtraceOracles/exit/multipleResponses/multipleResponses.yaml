@@ -1,0 +1,66 @@
+swagger: '2.0'
+info:
+  version: "1.4.0"
+  title: sampleApi_nestedArrays
+  description: "Example of API that contains inputs of primitive types (Double, String, Integer, boolean, array of string, array of double)
+  in all the possible sources, excepting the body (query, path, header, form)"
+host: es.us.isa
+basePath: /sampleApi/v1
+schemes:
+  - https
+
+securityDefinitions:
+  "API Key":
+    type: apiKey
+    in: header
+    name: SAMPLE-API-Key
+
+security:
+  - "API Key": []
+
+paths:
+  '/multipleOperationsEndpoint':
+    x-summary: SampleEndpoint
+    get:
+      summary: Sample endpoint
+      operationId: multipleOperationsEndpoint
+      description: Get sample results
+      produces:
+        - application/json
+      parameters:
+        - name: inputParameter
+          in: query
+          required: true
+          type: string
+      responses:
+        '200':
+          description: "Sample response"
+          schema:
+            $ref: '#/definitions/200Response'
+        '400':
+          description: "Error response"
+          schema:
+            $ref: '#/definitions/400Response'
+definitions:
+  200Response:
+    title: ExampleResponse
+    description: Example response
+    type: object
+    properties:
+      stringProperty:
+        type: string
+      arrayOfObjectsProperty:
+        type: array
+        items:
+          type: object
+          properties:
+            property1:
+              type: string
+
+  400Response:
+    title: Error Response
+    description: Error response
+    type: object
+    properties:
+      errorDescription:
+        type: string

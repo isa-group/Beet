@@ -1,0 +1,2 @@
+,testCaseId,queryParameters,operationId,path,httpMethod,headerParameters,pathParameters,formParameters,bodyParameter,statusCode,passed,failReason,responseBody
+0,test_003,inputParameter=parameterValue,primitiveExitEndpoint;,/primitiveExitEndpoint,GET,,,,,200,True,none,"{""stringProperty"": ""stringValue"",""double.Property"": 12.0,""integerProperty"": 5,""boolean.Property"": true}"

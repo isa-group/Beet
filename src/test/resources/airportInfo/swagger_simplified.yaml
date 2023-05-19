@@ -1,0 +1,55 @@
+basePath: /
+host: rapidapi.p.rapidapi.com
+info:
+  description: 'Fastest and most complete database of airport codes and data, including
+    address, phone number, website and more. '
+  title: airportInfo
+  version: apiversion_0dede419-a738-4de7-a7c4-5a2febd4c628
+schemes:
+- https
+swagger: '2.0'
+paths:
+  /airport:
+    get:
+      description: Lookup an airport by its IATA or ICAO code
+      operationId: findAirports
+      parameters:
+      - description: IATA code of the airport to retrieve
+        in: query
+        name: iata
+        required: false
+        type: string
+      - description: ICAO code of the airport to retrieve
+        in: query
+        name: icao
+        required: false
+        type: string
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: object
+            properties:
+              id:
+                description: "Airport id"
+                type: integer
+              iata:
+                description: "Iata code"
+                type: string
+              icao:
+                description: "Icao code"
+                type: string
+              name:
+                description: "Airport name"
+                type: string
+              version:
+                description: "API version"
+                type: number
+              lat.lng:
+                description: "Coordinates"
+                type: string
+
+
+#        default:
+#          description: Unexpected error
+#      summary: ''
