@@ -1,14 +1,14 @@
 decl-version 2.0
 var-comparability implicit
 
-ppt main.albums{id}tracks:::CLASS
+ppt /albums/{id}/tracks:::CLASS
 ppt-type class
 
-ppt main.albums{id}tracks.getAlbumTracks&200(main.getAlbumTracks&Input):::ENTER
+ppt /albums/{id}/tracks&getAlbumTracks&200():::ENTER
 ppt-type enter
 variable input
 	var-kind variable
-	dec-type main.getAlbumTracks&Input
+	dec-type getAlbumTracks&Input
 	rep-type hashcode
 variable input.id
 	var-kind field id
@@ -31,11 +31,11 @@ variable input.market
 	dec-type java.lang.String
 	rep-type java.lang.String
 
-ppt main.albums{id}tracks.getAlbumTracks&200&items&artists(main.getAlbumTracks&Input):::ENTER
+ppt /albums/{id}/tracks&getAlbumTracks&200&items&artists():::ENTER
 ppt-type enter
 variable input
 	var-kind variable
-	dec-type main.getAlbumTracks&Input
+	dec-type getAlbumTracks&Input
 	rep-type hashcode
 variable input.id
 	var-kind field id
@@ -58,11 +58,11 @@ variable input.market
 	dec-type java.lang.String
 	rep-type java.lang.String
 
-ppt main.albums{id}tracks.getAlbumTracks&200&items(main.getAlbumTracks&Input):::ENTER
+ppt /albums/{id}/tracks&getAlbumTracks&200&items():::ENTER
 ppt-type enter
 variable input
 	var-kind variable
-	dec-type main.getAlbumTracks&Input
+	dec-type getAlbumTracks&Input
 	rep-type hashcode
 variable input.id
 	var-kind field id
@@ -85,11 +85,11 @@ variable input.market
 	dec-type java.lang.String
 	rep-type java.lang.String
 
-ppt main.albums{id}tracks.getAlbumTracks&200(main.getAlbumTracks&Input):::EXIT1
+ppt /albums/{id}/tracks&getAlbumTracks&200():::EXIT1
 ppt-type subexit
 variable input
 	var-kind variable
-	dec-type main.getAlbumTracks&Input
+	dec-type getAlbumTracks&Input
 	rep-type hashcode
 variable input.id
 	var-kind field id
@@ -113,7 +113,7 @@ variable input.market
 	rep-type java.lang.String
 variable return
 	var-kind return
-	dec-type main.getAlbumTracks&Output&200
+	dec-type getAlbumTracks&Output&200
 	rep-type hashcode
 variable return.href
 	var-kind field href
@@ -123,13 +123,13 @@ variable return.href
 variable return.items
 	var-kind field items
 	enclosing-var return
-	dec-type main.items[]
+	dec-type items[]
 	rep-type hashcode
 variable return.items[..]
 	var-kind array
 	enclosing-var return.items
 	array 1
-	dec-type main.items[]
+	dec-type items[]
 	rep-type hashcode[]
 variable return.limit
 	var-kind field limit
@@ -157,11 +157,11 @@ variable return.total
 	dec-type int
 	rep-type int
 
-ppt main.albums{id}tracks.getAlbumTracks&200&items&artists(main.getAlbumTracks&Input):::EXIT2
+ppt /albums/{id}/tracks&getAlbumTracks&200&items&artists():::EXIT2
 ppt-type subexit
 variable input
 	var-kind variable
-	dec-type main.getAlbumTracks&Input
+	dec-type getAlbumTracks&Input
 	rep-type hashcode
 variable input.id
 	var-kind field id
@@ -185,12 +185,12 @@ variable input.market
 	rep-type java.lang.String
 variable return
 	var-kind return
-	dec-type main.getAlbumTracks&Output&200&items&artists
+	dec-type getAlbumTracks&Output&200&items&artists
 	rep-type hashcode
 variable return.external_urls
 	var-kind field external_urls
 	enclosing-var return
-	dec-type main.getAlbumTracks&Output&200&items&artists&external_urls
+	dec-type getAlbumTracks&Output&200&items&artists&external_urls
 	rep-type hashcode
 variable return.href
 	var-kind field href
@@ -218,11 +218,11 @@ variable return.uri
 	dec-type java.lang.String
 	rep-type java.lang.String
 
-ppt main.albums{id}tracks.getAlbumTracks&200&items(main.getAlbumTracks&Input):::EXIT3
+ppt /albums/{id}/tracks&getAlbumTracks&200&items():::EXIT3
 ppt-type subexit
 variable input
 	var-kind variable
-	dec-type main.getAlbumTracks&Input
+	dec-type getAlbumTracks&Input
 	rep-type hashcode
 variable input.id
 	var-kind field id
@@ -246,18 +246,18 @@ variable input.market
 	rep-type java.lang.String
 variable return
 	var-kind return
-	dec-type main.getAlbumTracks&Output&200&items
+	dec-type getAlbumTracks&Output&200&items
 	rep-type hashcode
 variable return.artists
 	var-kind field artists
 	enclosing-var return
-	dec-type main.artists[]
+	dec-type artists[]
 	rep-type hashcode
 variable return.artists[..]
 	var-kind array
 	enclosing-var return.artists
 	array 1
-	dec-type main.artists[]
+	dec-type artists[]
 	rep-type hashcode[]
 variable return.available_markets
 	var-kind field available_markets
@@ -288,7 +288,7 @@ variable return.explicit
 variable return.external_urls
 	var-kind field external_urls
 	enclosing-var return
-	dec-type main.getAlbumTracks&Output&200&items&external_urls
+	dec-type getAlbumTracks&Output&200&items&external_urls
 	rep-type hashcode
 variable return.href
 	var-kind field href
@@ -313,12 +313,12 @@ variable return.is_playable
 variable return.linked_from
 	var-kind field linked_from
 	enclosing-var return
-	dec-type main.getAlbumTracks&Output&200&items&linked_from
+	dec-type getAlbumTracks&Output&200&items&linked_from
 	rep-type hashcode
 variable return.linked_from.external_urls
 	var-kind field external_urls
 	enclosing-var return.linked_from
-	dec-type main.getAlbumTracks&Output&200&items&external_urls
+	dec-type getAlbumTracks&Output&200&items&external_urls
 	rep-type hashcode
 variable return.linked_from.href
 	var-kind field href
@@ -353,7 +353,7 @@ variable return.preview_url
 variable return.restrictions
 	var-kind field restrictions
 	enclosing-var return
-	dec-type main.getAlbumTracks&Output&200&items&restrictions
+	dec-type getAlbumTracks&Output&200&items&restrictions
 	rep-type hashcode
 variable return.restrictions.reason
 	var-kind field reason

@@ -26,8 +26,8 @@ import java.util.stream.Collectors;
  */
 public class GenerateInstrumentation {
 
-    private static String openApiSpecPath = "src/test/resources/dtraceOracles/exit/arrayOfObjects/arrayOfObjectsSpecialCharacters.yaml";
-    private static String testCasesFilePath = "src/test/resources/dtraceOracles/exit/arrayOfObjects/specialCharacters/testCase_arrayOfObjectsSpecialCharacters.csv";
+    private static String openApiSpecPath = "src/test/resources/evaluationOracles/Spotify/getAlbumTracks/swagger_albumTracks.yaml";
+    private static String testCasesFilePath = "src/test/resources/evaluationOracles/Spotify/getAlbumTracks/50/Spotify_GetAlbumTracks_50.csv";
     private static boolean generateDtrace = true;
 
     public static String[] stringsToConsiderAsNull = {};
