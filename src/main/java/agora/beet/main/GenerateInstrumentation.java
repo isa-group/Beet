@@ -26,11 +26,12 @@ import java.util.stream.Collectors;
  */
 public class GenerateInstrumentation {
 
-    private static String openApiSpecPath = "src/test/resources/evaluationOracles/Spotify/getAlbumTracks/swagger_albumTracks.yaml";
-    private static String testCasesFilePath = "src/test/resources/evaluationOracles/Spotify/getAlbumTracks/50/Spotify_GetAlbumTracks_50.csv";
+    private static String openApiSpecPath = "src/test/resources/examples/Spotify/getAlbumTracks/swagger_albumTracks.yaml";
+    private static String testCasesFilePath = "src/test/resources/examples/Spotify/getAlbumTracks/50/Spotify_GetAlbumTracks_50.csv";
     private static boolean generateDtrace = true;
-
     public static String[] stringsToConsiderAsNull = {};
+
+
     public static String HIERARCHY_SEPARATOR = "&";
     public static String ARRAY_NESTING_SEPARATOR = "%";
     public static int bufferSize = 20;
