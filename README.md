@@ -25,7 +25,7 @@ Our reports have guided developers in improving their APIs, including bug fixes 
 # Wiki
 In this page, you can find a brief description of Beet and AGORA workflows with an illustrating example. If you want to know more details about 
 Beet instrumentation process, the types of invariants supported by our modified version of Daikon and the different configuration options, 
-please refer to our Wiki.
+please refer to our [Wiki](https://github.com/isa-group/Beet/wiki).
 
 # AGORA Overview
 The image below shows an overview of the complete workflow of AGORA. At the core of the approach is Beet, that receives two inputs:
