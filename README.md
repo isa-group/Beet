@@ -13,6 +13,15 @@ Our reports have guided developers in improving their APIs, including bug fixes 
 
 # Index
 
+1. [Wiki](#wiki)
+2. [AGORA Overview](#agora-overview)
+3. [Publication](#publication)
+4. [Motivational example](#motivational-example)
+5. [Types of errors detected by AGORA](#types-of-errors-detected-by-agora)
+6. [Executing Beet](#executing-beet)
+7. [Executing modified version of Daikon](#executing-modified-version-of-daikon)
+
+
 # Wiki
 In this page, you can find a brief description of Beet and AGORA workflows with an illustrating example. If you want to know more details about 
 Beet instrumentation process, the types of invariants supported by our modified version of Daikon and the different configuration options, 
