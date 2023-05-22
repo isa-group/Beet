@@ -128,7 +128,7 @@ To execute Beet, run the `GenerateInstrumentation` class inside the main package
 Beet requires Java JDK 17 to run. The `src/test/resources/examples` directory of the repository contains examples belonging to different industrial APIs 
 (Amadeus Hotel, GitHub, Marvel, OMDb, Spotify, Yelp and YouTube). 
 
-The **Input CSV format** section of the repository wiki describes the format that the CSV files provided to Beet must follow.
+The [Input CSV format](https://github.com/isa-group/Beet/wiki/Beet#input-csv-format) section of the repository wiki describes the format that the CSV files provided to Beet must follow.
 
 
 # Executing modified version of Daikon
@@ -159,7 +159,7 @@ For instance, if the folder `C:\myUser\instrumentation` contains the declaration
 docker run --rm -v C:\myUser\instrumentation:/files javalenzuela/daikon_agora java -jar daikon_modified.jar /files/declsFile.decls /files/dtraceFile.dtrace > invariants.csv
 ```
 
-This will result in a file in csv format  (as the one in the snippet below) containing the invariants detected in each program point. The Daikon container configuration options section of the repository 
+This will result in a file in csv format  (as the one in the snippet below) containing the invariants detected in each program point. The [Daikon container configuration options](https://github.com/isa-group/Beet/wiki/Modified-version-of-Daikon#daikon-container-configuration-options) section of the repository 
 Wiki describes the available configuration options when running this version of Daikon, such as the possibility of automatically discarding invariants of the Arithmetic 
 comparisons category, which are the main cause behind the false positives reported by AGORA (according to the evaluation conducted in our paper).
 
