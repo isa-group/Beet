@@ -42,7 +42,7 @@ test oracles, once confirmed by the developer.
 
 # Publication
 AGORA has been accepted for publication in the technical track of the [*ACM SIGSOFT International Symposium on Software Testing and Analysis 2023 (ISSTA 2023)*](https://dl.acm.org/doi/10.1145/3597926.3598114) (pre-print available [here](https://www.javalenzuela.com/publication/2023_issta_agora/2023_issta_agora.pdf)). 
-A very preliminary version of AGORA (two-page abstract) obtained the first prize (graduate category) in the ACM Student Research Competition of ESEC/FSE 2022, and the [second prize in the ACM Student Research Competition Grand Finals](https://src.acm.org/grand-finalists/2023).
+A very preliminary version of AGORA (two-page abstract) obtained the first prize (graduate category) in the [ACM Student Research Competition of ESEC/FSE 2022](https://src.acm.org/candidates/2023), and the [second prize in the ACM Student Research Competition Grand Finals](https://src.acm.org/grand-finalists/2023).
 
 If you want to cite Beet or AGORA in your research, please use the BibTeX entry below.
 
