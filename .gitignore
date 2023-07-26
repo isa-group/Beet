@@ -1,2 +1,16 @@
 target
 .idea
+
+# Declaration files with more than 100 MB
+src/test/resources/examples/AmadeusHotel/10000/dtraceFile.dtrace
+src/test/resources/examples/GitHub/createOrganizationRepository/10000/dtraceFile.dtrace
+src/test/resources/examples/GitHub/getOrganizationRepositories/1000/dtraceFile.dtrace
+src/test/resources/examples/GitHub/getOrganizationRepositories/10000/dtraceFile.dtrace
+src/test/resources/examples/GitHub/getOrganizationRepositories/10000/GitHub_GetOrganizationRepositories_10K.csv
+src/test/resources/examples/GitHub/getOrganizationRepositories/500/dtraceFile.dtrace
+src/test/resources/examples/Marvel/getComicById/10000/dtraceFile.dtrace
+src/test/resources/examples/Spotify/getAlbumTracks/10000/dtraceFile.dtrace
+src/test/resources/examples/Spotify/getArtistAlbums/10000/dtraceFile.dtrace
+src/test/resources/examples/Yelp/10000/dtraceFile.dtrace
+src/test/resources/examples/YouTube/1000/dtraceFile.dtrace
+src/test/resources/examples/YouTube/10000/dtraceFile.dtrace
