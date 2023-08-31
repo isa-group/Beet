@@ -31,33 +31,6 @@ variable input.market
 	dec-type java.lang.String
 	rep-type java.lang.String
 
-ppt /albums/{id}/tracks&getAlbumTracks&200&items&artists():::ENTER
-ppt-type enter
-variable input
-	var-kind variable
-	dec-type getAlbumTracks&Input
-	rep-type hashcode
-variable input.id
-	var-kind field id
-	enclosing-var input
-	dec-type java.lang.String
-	rep-type java.lang.String
-variable input.limit
-	var-kind field limit
-	enclosing-var input
-	dec-type int
-	rep-type int
-variable input.offset
-	var-kind field offset
-	enclosing-var input
-	dec-type int
-	rep-type int
-variable input.market
-	var-kind field market
-	enclosing-var input
-	dec-type java.lang.String
-	rep-type java.lang.String
-
 ppt /albums/{id}/tracks&getAlbumTracks&200&items():::ENTER
 ppt-type enter
 variable input
@@ -127,68 +100,7 @@ variable return.items[..]
 	dec-type items[]
 	rep-type hashcode[]
 
-ppt /albums/{id}/tracks&getAlbumTracks&200&items&artists():::EXIT2
-ppt-type subexit
-variable input
-	var-kind variable
-	dec-type getAlbumTracks&Input
-	rep-type hashcode
-variable input.id
-	var-kind field id
-	enclosing-var input
-	dec-type java.lang.String
-	rep-type java.lang.String
-variable input.limit
-	var-kind field limit
-	enclosing-var input
-	dec-type int
-	rep-type int
-variable input.offset
-	var-kind field offset
-	enclosing-var input
-	dec-type int
-	rep-type int
-variable input.market
-	var-kind field market
-	enclosing-var input
-	dec-type java.lang.String
-	rep-type java.lang.String
-variable return
-	var-kind return
-	dec-type getAlbumTracks&Output&200&items&artists
-	rep-type hashcode
-variable return.external_urls
-	var-kind field external_urls
-	enclosing-var return
-	dec-type getAlbumTracks&Output&200&items&artists&external_urls
-	rep-type hashcode
-variable return.href
-	var-kind field href
-	enclosing-var return
-	dec-type java.lang.String
-	rep-type java.lang.String
-variable return.id
-	var-kind field id
-	enclosing-var return
-	dec-type java.lang.String
-	rep-type java.lang.String
-variable return.name
-	var-kind field name
-	enclosing-var return
-	dec-type java.lang.String
-	rep-type java.lang.String
-variable return.type
-	var-kind field type
-	enclosing-var return
-	dec-type java.lang.String
-	rep-type java.lang.String
-variable return.uri
-	var-kind field uri
-	enclosing-var return
-	dec-type java.lang.String
-	rep-type java.lang.String
-
-ppt /albums/{id}/tracks&getAlbumTracks&200&items():::EXIT3
+ppt /albums/{id}/tracks&getAlbumTracks&200&items():::EXIT2
 ppt-type subexit
 variable input
 	var-kind variable
@@ -218,17 +130,6 @@ variable return
 	var-kind return
 	dec-type getAlbumTracks&Output&200&items
 	rep-type hashcode
-variable return.artists
-	var-kind field artists
-	enclosing-var return
-	dec-type artists[]
-	rep-type hashcode
-variable return.artists[..]
-	var-kind array
-	enclosing-var return.artists
-	array 1
-	dec-type artists[]
-	rep-type hashcode[]
 variable return.available_markets
 	var-kind field available_markets
 	enclosing-var return

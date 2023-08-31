@@ -1845,11 +1845,6 @@ definitions:
     type: object
   track-simple:
     properties:
-      artists:
-        description: The artists who performed the track. Each artist object includes a link in href to more detailed information about the artist.
-        items:
-          $ref: '#/definitions/artist-simple'
-        type: array
       available_markets:
         description: 'A list of the countries in which the track can be played, identified by their ISO 3166-1 alpha-2 code. '
         items:
