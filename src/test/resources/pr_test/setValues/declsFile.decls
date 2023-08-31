@@ -115,11 +115,6 @@ variable return
 	var-kind return
 	dec-type getAlbumTracks&Output&200
 	rep-type hashcode
-variable return.href
-	var-kind field href
-	enclosing-var return
-	dec-type java.lang.String
-	rep-type java.lang.String
 variable return.items
 	var-kind field items
 	enclosing-var return
@@ -131,31 +126,6 @@ variable return.items[..]
 	array 1
 	dec-type items[]
 	rep-type hashcode[]
-variable return.limit
-	var-kind field limit
-	enclosing-var return
-	dec-type int
-	rep-type int
-variable return.next
-	var-kind field next
-	enclosing-var return
-	dec-type java.lang.String
-	rep-type java.lang.String
-variable return.offset
-	var-kind field offset
-	enclosing-var return
-	dec-type int
-	rep-type int
-variable return.previous
-	var-kind field previous
-	enclosing-var return
-	dec-type java.lang.String
-	rep-type java.lang.String
-variable return.total
-	var-kind field total
-	enclosing-var return
-	dec-type int
-	rep-type int
 
 ppt /albums/{id}/tracks&getAlbumTracks&200&items&artists():::EXIT2
 ppt-type subexit

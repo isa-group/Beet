@@ -1926,31 +1926,11 @@ definitions:
     type: object
   track-simple-page:
     properties:
-      href:
-        description: A link to the Web API endpoint returning the full result of the request.
-        type: string
       items:
         description: The requested data.
         items:
           $ref: '#/definitions/track-simple'
         type: array
-      limit:
-        description: The maximum number of items in the response (as set in the query or by default).
-        type: integer
-      next: # nullable added
-        description: URL to the next page of items. (null if none)
-        type: string
-        x-nullable: true
-      offset:
-        description: The offset of the items returned (as set in the query or by default).
-        type: integer
-      previous: # nullable added
-        description: URL to the previous page of items. (null if none)
-        type: string
-        x-nullable: true
-      total:
-        description: The total number of items available to return.
-        type: integer
     type: object
   user-followed:
     properties:
