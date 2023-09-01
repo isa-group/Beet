@@ -81,7 +81,7 @@ return.available_markets
 668418388
 1
 return.available_markets[..]
-["AD" "AE" "AG" "AL" "AM"]
+[null "AE" null "AL" "AM"]
 1
 
 /albums/{id}/tracks&getAlbumTracks&200():::ENTER
