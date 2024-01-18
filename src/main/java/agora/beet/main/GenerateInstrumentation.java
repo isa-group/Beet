@@ -26,8 +26,8 @@ import java.util.stream.Collectors;
  */
 public class GenerateInstrumentation {
 
-    private static String openApiSpecPath = "src/test/resources/pr_test/swagger_albumTracks.yaml";
-    private static String testCasesFilePath = "src/test/resources/pr_test/nullValues/Spotify_GetAlbumTracks_nullValues.csv";
+    private static String openApiSpecPath = "src/---/resources/examples/NYTimesBooks/swagger.yaml";
+    private static String testCasesFilePath = "src/---/resources/examples/NYTimesBooks/10000/NYTimesBooks_GET_lists-format_10K.csv";
     private static boolean generateDtrace = true;
     public static String[] stringsToConsiderAsNull = {};
 

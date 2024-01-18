@@ -81,7 +81,7 @@ return.available_markets
 668418388
 1
 return.available_markets[..]
-[null "AE" null "AL" "AM"]
+[null null null null null]
 1
 
 /albums/{id}/tracks&getAlbumTracks&200():::ENTER
@@ -167,7 +167,7 @@ return.available_markets
 1032322091
 1
 return.available_markets[..]
-["ES" "JP" "IT"]
+[null null null]
 1
 
 /albums/{id}/tracks&getAlbumTracks&200():::ENTER
@@ -253,7 +253,7 @@ return.available_markets
 1389440332
 1
 return.available_markets[..]
-["US" "HU"]
+[null null]
 1
 
 /albums/{id}/tracks&getAlbumTracks&200():::ENTER
@@ -339,6 +339,6 @@ return.available_markets
 311300147
 1
 return.available_markets[..]
-["AF" "CA" "GE" "GB"]
+[null null null null]
 1
 
