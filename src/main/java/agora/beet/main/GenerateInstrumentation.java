@@ -67,7 +67,8 @@ public class GenerateInstrumentation {
             openApiSpecPath = args[0];
             testCasesFilePath = args[1];
             generateDtrace = true;
-            stringsToConsiderAsNull = new String[]{args[2]};
+            // The set of strings to consider as null must be a list of strings separated by ";"
+            stringsToConsiderAsNull = args[2].split(";");
         }
 
         OpenAPI specification = getOpenAPISpecification();
