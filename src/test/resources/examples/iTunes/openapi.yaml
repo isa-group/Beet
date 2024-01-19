@@ -230,16 +230,6 @@ paths:
                           type: string
                         hasITunesExtras:
                           type: boolean
-                        advisories:
-                          type: array
-                          items:
-                            type: string
-                        appletvScreenshotUrls:
-                          type: array
-                          items:
-                            type: string
-                        artworkUrl512:
-                          type: string
                         averageUserRating:
                           type: number
                         averageUserRatingForCurrentVersion:
@@ -250,26 +240,14 @@ paths:
                           type: string
                         currentVersionReleaseDate:
                           type: string
-                        features:
-                          type: array
-                          items:
-                            type: string
                         fileSizeBytes:
                           type: integer # In some cases, its value is a string
                         formattedPrice:
                           type: string
-                        ipadScreenshotUrls:
-                          type: array
-                          items:
-                            type: string
                         isGameCenterEnabled:
                           type: boolean
                         isVppDeviceBasedLicensingEnabled:
                           type: boolean
-                        languageCodesISO2A:
-                          type: array
-                          items:
-                            type: string
                         minimumOsVersion:
                           type: string
                         price:
@@ -278,18 +256,10 @@ paths:
                           type: integer
                         releaseNotes:
                           type: string
-                        screenshotUrls:
-                          type: array
-                          items:
-                            type: string
                         sellerName:
                           type: string
                         sellerUrl:
                           type: string
-                        supportedDevices:
-                          type: array
-                          items:
-                            type: string
                         trackContentRating:
                           type: string
                         userRatingCount:
