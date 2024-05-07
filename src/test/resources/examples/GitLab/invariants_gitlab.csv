@@ -1,0 +1,91 @@
+pptname;invariant
+/projects/{id}/jobs&listProjectJobs&200%array():::ENTER;size(input.scope[]) == 1
+/projects/{id}/jobs&listProjectJobs&200%array():::EXIT;size(input.scope[]) == 1
+/projects/{id}/jobs&listProjectJobs&200&artifacts():::ENTER;size(input.scope[]) == 1
+/projects/{id}/jobs&listProjectJobs&200&artifacts():::EXIT;return.file_format one of { "gzip", "raw", "zip" }
+/projects/{id}/jobs&listProjectJobs&200&artifacts():::EXIT;size(input.scope[]) == 1
+/projects/{id}/jobs&listProjectJobs&200():::ENTER;size(input.scope[]) == 1
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;input.id == return.pipeline.project_id
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.commit.id == return.pipeline.sha
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.commit.created_at == return.commit.committed_date
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.commit.author_name == return.commit.committer_name
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.commit.author_email == return.commit.committer_email
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.commit.author_email == return.user.public_email
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.archived == return.project.ci_job_token_scope_enabled
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.archived == return.user.locked
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.archived == return.runner.paused
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.ref == return.pipeline.ref
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.user.username == return.user.skype
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.user.linkedin == return.user.skype
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.user.linkedin == return.user.twitter
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.user.skype == return.user.twitter
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;LENGTH(return.created_at)==24
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.created_at is Timestamp. Format: YYYY-MM-DDTHH:MM:SS.mmZ (Miliseconds are optional)
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;LENGTH(return.started_at)==24
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.started_at is Timestamp. Format: YYYY-MM-DDTHH:MM:SS.mmZ (Miliseconds are optional)
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;LENGTH(return.finished_at)==24
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.finished_at is Timestamp. Format: YYYY-MM-DDTHH:MM:SS.mmZ (Miliseconds are optional)
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;LENGTH(return.commit.id)==40
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;LENGTH(return.commit.short_id)==8
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;LENGTH(return.commit.created_at)==29
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.commit.created_at is Timestamp. Format: YYYY-MM-DDTHH:MM:SS.mmZ (Miliseconds are optional)
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;All the elements of return.commit.parent_ids[] have LENGTH=40
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;LENGTH(return.commit.authored_date)==29
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.commit.authored_date is Timestamp. Format: YYYY-MM-DDTHH:MM:SS.mmZ (Miliseconds are optional)
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.commit.web_url is Url
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.archived == false
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.web_url is Url
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.user.state == "active"
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;LENGTH(return.user.state)==6
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.user.avatar_url is Url
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.user.custom_attributes == null
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.user.web_url is Url
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.user.bio one of { "!", "Ingeniero DevOps de d\355a y aprendiz de Barman en mis tiempos libres, con experiencia en Kubernetes, Cloud, y DevOps. Tambi\351n disfruta de hacer stream de juegos, hablar de CI/CD y desplegar en producci\363n un viernes con Terraform.", "https://github.com/goodbit22" }
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;LENGTH(return.user.created_at)==24
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.user.created_at is Timestamp. Format: YYYY-MM-DDTHH:MM:SS.mmZ (Miliseconds are optional)
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.user.discord == "670009585721147413"
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;LENGTH(return.user.discord)==18
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.user.discord is Numeric
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.user.followers >= 0
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.user.following one of { 0, 1, 12 }
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.user.job_title one of { "Cloud / DevOps ", "DevOps Engineer", "Ingeniero Inform\341tico" }
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;LENGTH(return.user.local_time)==7
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.user.local_time is Hour: HH:MM 12-hour format, optional leading 0, mandatory meridiems (AM/PM)
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.user.pronouns == "he/him"
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;LENGTH(return.user.pronouns)==6
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.user.public_email is Email
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.user.skype == "enmanuelmoreira"
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;LENGTH(return.user.skype)==15
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;LENGTH(return.artifacts_expire_at)==24
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.artifacts_expire_at is Timestamp. Format: YYYY-MM-DDTHH:MM:SS.mmZ (Miliseconds are optional)
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.artifacts_file.filename one of { "Lint_Analysis_artifacts_from_opentofu_on_main.zip", "artifacts.zip" }
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.runner.active == true
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.runner.paused == false
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.runner.runner_type one of { "group_type", "instance_type", "project_type" }
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.runner.name == "gitlab-runner"
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;LENGTH(return.runner.name)==13
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.runner.status one of { "offline", "online" }
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.pipeline.iid >= 1
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;LENGTH(return.pipeline.created_at)==24
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.pipeline.created_at is Timestamp. Format: YYYY-MM-DDTHH:MM:SS.mmZ (Miliseconds are optional)
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;LENGTH(return.pipeline.updated_at)==24
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.pipeline.updated_at is Timestamp. Format: YYYY-MM-DDTHH:MM:SS.mmZ (Miliseconds are optional)
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.pipeline.web_url is Url
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;size(input.scope[]) == 1
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;size(return.commit.parent_ids[]) one of { 0, 1, 2 }
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;size(return.tag_list[]) one of { 0, 1, 2 }
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.status in input.scope[]
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.commit.short_id is a substring of return.commit.id
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.commit.id is a substring of return.commit.web_url
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.commit.title is a substring of return.commit.message
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.user.skype is a substring of return.commit.author_email
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.user.username is a substring of return.user.web_url
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.user.skype is a substring of return.user.web_url
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.user.job_title is a substring of return.user.work_information
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.user.linkedin is a substring of return.user.public_email
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.user.organization is a substring of return.user.work_information
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.user.skype is a substring of return.user.public_email
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.user.skype is a substring of return.user.website_url
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.pipeline.iid >= size(input.scope[])
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;return.pipeline.iid >= size(return.commit.parent_ids[])
+/projects/{id}/jobs&listProjectJobs&200():::EXIT;size(input.scope[]) <= size(return.commit.parent_ids[])

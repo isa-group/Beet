@@ -1,0 +1,226 @@
+pptname;invariant
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CBSA == return.data.CBSA_METRO_NAME
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CHANGEC2 == return.data.CHANGEC8
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CHANGEC2 == return.data.CHANGEC10
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CHANGEC3 == return.data.CHANGEC8
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CHANGEC3 == return.data.CHANGEC10
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CHANGEC4 == return.data.CHANGEC8
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CHANGEC4 == return.data.CHANGEC10
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CHANGEC5 == return.data.CHANGEC8
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CHANGEC5 == return.data.CHANGEC10
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CHANGEC6 == return.data.CHANGEC8
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CHANGEC6 == return.data.CHANGEC10
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CHANGEC7 == return.data.CHANGEC8
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CHANGEC7 == return.data.CHANGEC10
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CHANGEC8 == return.data.CHANGEC9
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CHANGEC8 == return.data.CHANGEC10
+/institutions&searchInstitutions&200&data():::EXIT;return.data.ACTIVE one of { "0", "1" }
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.ACTIVE)==1
+/institutions&searchInstitutions&200&data():::EXIT;return.data.ACTIVE is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;return.data.ASSET >= 1.0
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CB one of { "0", "1" }
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.CB)==1
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CB is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CBSA_DIV_FLG one of { "0", "1" }
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.CBSA_DIV_FLG)==1
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CBSA_DIV_FLG is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.CBSA_DIV_NO)==5
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CBSA_DIV_NO is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CBSA_METRO is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CBSA_METRO_FLG one of { "0", "1" }
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.CBSA_METRO_FLG)==1
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CBSA_METRO_FLG is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CBSA_MICRO_FLG one of { "0", "1" }
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.CBSA_MICRO_FLG)==1
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CBSA_MICRO_FLG is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.CBSA_NO)==5
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CBSA_NO is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CERT is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.CFPBEFFDTE)==10
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.CFPBENDDTE)==10
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CFPBFLAG one of { "0", "1" }
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.CFPBFLAG)==1
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CFPBFLAG is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;return.data.PRIORNAME8 one of 
+				{ "AMERIANA BANK OF INDIANA, F.S.B.", "Farmers' Bank of Clinton", 
+				"First Interstate Bank of South Dakota, National Association" }
+/institutions&searchInstitutions&200&data():::EXIT;return.data.PRIORNAME9 == "Farmers' Bank of Deepwater"
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.PRIORNAME9)==26
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.CHANGEC1)==3
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CHANGEC1 is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.CHANGEC2)==3
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CHANGEC2 is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.CHANGEC3)==3
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CHANGEC3 is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.CHANGEC4)==3
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CHANGEC4 is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.CHANGEC5)==3
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CHANGEC5 is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.CHANGEC6)==3
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CHANGEC6 is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.CHANGEC7)==3
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CHANGEC7 is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CHANGEC8 == "810"
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.CHANGEC8)==3
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CHANGEC8 is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CHANGEC10 == "810"
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.CHANGEC10)==3
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CHANGEC10 is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CHANGEC11 one of { "410", "510", "810" }
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.CHANGEC11)==3
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CHANGEC11 is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CHANGEC12 == "470"
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.CHANGEC12)==3
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CHANGEC12 is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CHANGEC13 == "440"
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.CHANGEC13)==3
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CHANGEC13 is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CHANGEC14 == "430"
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.CHANGEC14)==3
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CHANGEC14 is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CHANGEC15 == "110"
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.CHANGEC15)==3
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CHANGEC15 is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CHARTER is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CHRTAGNT one of { "OCC", "OTS", "STATE" }
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CMSA_NO is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CONSERVE one of { "N", "Y" }
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.CONSERVE)==1
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.CSA_NO)==3
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CSA_NO is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CSA_FLG one of { "0", "1" }
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.CSA_FLG)==1
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CSA_FLG is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.DATEUPDT)==10
+/institutions&searchInstitutions&200&data():::EXIT;return.data.DENOVO one of { "0", "1" }
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.DENOVO)==1
+/institutions&searchInstitutions&200&data():::EXIT;return.data.DENOVO is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;return.data.DEP >= 0.0
+/institutions&searchInstitutions&200&data():::EXIT;return.data.DEPDOM >= 0.0
+/institutions&searchInstitutions&200&data():::EXIT;return.data.DOCKET is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.EFFDATE)==10
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.ENDEFYMD)==10
+/institutions&searchInstitutions&200&data():::EXIT;return.data.EQ is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.ESTYMD)==10
+/institutions&searchInstitutions&200&data():::EXIT;return.data.FDICDBS is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;return.data.FED is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;return.data.FED_RSSD is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;return.data.FEDCHRTR one of { "0", "1" }
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.FEDCHRTR)==1
+/institutions&searchInstitutions&200&data():::EXIT;return.data.FEDCHRTR is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;return.data.FORM31 one of { "0", "1" }
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.FORM31)==1
+/institutions&searchInstitutions&200&data():::EXIT;return.data.FORM31 is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;return.data.HCTMULT == "1"
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.HCTMULT)==1
+/institutions&searchInstitutions&200&data():::EXIT;return.data.HCTMULT is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;return.data.IBA one of { "0", "1" }
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.IBA)==1
+/institutions&searchInstitutions&200&data():::EXIT;return.data.IBA is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;return.data.INACTIVE one of { "0", "1" }
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.INACTIVE)==1
+/institutions&searchInstitutions&200&data():::EXIT;return.data.INACTIVE is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;return.data.INSBIF one of { "0", "1" }
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.INSBIF)==1
+/institutions&searchInstitutions&200&data():::EXIT;return.data.INSBIF is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;return.data.INSCOML one of { "0", "1" }
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.INSCOML)==1
+/institutions&searchInstitutions&200&data():::EXIT;return.data.INSCOML is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.INSDATE)==10
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.INSDROPDATE)==10
+/institutions&searchInstitutions&200&data():::EXIT;return.data.INSDIF one of { "0", "1" }
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.INSDIF)==1
+/institutions&searchInstitutions&200&data():::EXIT;return.data.INSDIF is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;return.data.INSFDIC == 1.0
+/institutions&searchInstitutions&200&data():::EXIT;return.data.INSSAIF one of { "0", "1" }
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.INSSAIF)==1
+/institutions&searchInstitutions&200&data():::EXIT;return.data.INSSAIF is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;return.data.INSSAVE one of { "0", "1" }
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.INSSAVE)==1
+/institutions&searchInstitutions&200&data():::EXIT;return.data.INSSAVE is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;return.data.INSTAG one of { "0", "1" }
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.INSTAG)==1
+/institutions&searchInstitutions&200&data():::EXIT;return.data.INSTAG is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;return.data.INSTCRCD one of { "0", "1" }
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.INSTCRCD)==1
+/institutions&searchInstitutions&200&data():::EXIT;return.data.INSTCRCD is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;return.data.LATITUDE >= 0.0
+/institutions&searchInstitutions&200&data():::EXIT;return.data.LAW_SASSER_FLG one of { "N", "Y" }
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.LAW_SASSER_FLG)==1
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.MDI_STATUS_CODE)==2
+/institutions&searchInstitutions&200&data():::EXIT;return.data.MSA_NO is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;return.data.MUTUAL one of { "0", "1" }
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.MUTUAL)==1
+/institutions&searchInstitutions&200&data():::EXIT;return.data.MUTUAL is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;return.data.NEWCERT is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;return.data.OAKAR one of { "0", "1" }
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.OAKAR)==1
+/institutions&searchInstitutions&200&data():::EXIT;return.data.OAKAR is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.OCCDIST)==1
+/institutions&searchInstitutions&200&data():::EXIT;return.data.OCCDIST is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;return.data.OFFDOM >= 0.0
+/institutions&searchInstitutions&200&data():::EXIT;return.data.OFFFOR >= 0.0
+/institutions&searchInstitutions&200&data():::EXIT;return.data.OFFICES >= 1.0
+/institutions&searchInstitutions&200&data():::EXIT;return.data.OFFOA >= 0.0
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.OTSDIST)==1
+/institutions&searchInstitutions&200&data():::EXIT;return.data.OTSDIST is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;return.data.PARCERT is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.PROCDATE)==10
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.QBPRCOML)==1
+/institutions&searchInstitutions&200&data():::EXIT;return.data.QBPRCOML is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.REPDTE)==10
+/institutions&searchInstitutions&200&data():::EXIT;return.data.RISDATE == "12/31/2023"
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.RISDATE)==10
+/institutions&searchInstitutions&200&data():::EXIT;return.data.RSSDHCR is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;return.data.RUNDATE == "05/03/2024"
+/institutions&searchInstitutions&200&data():::EXIT;return.data.RUNDATE is a Date. Format: DD/MM/YYYY
+/institutions&searchInstitutions&200&data():::EXIT;return.data.SASSER one of { "0", "1" }
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.SASSER)==1
+/institutions&searchInstitutions&200&data():::EXIT;return.data.SASSER is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.STALP)==2
+/institutions&searchInstitutions&200&data():::EXIT;return.data.STCHRTR one of { "0", "1" }
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.STCHRTR)==1
+/institutions&searchInstitutions&200&data():::EXIT;return.data.STCHRTR is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.STCNTY)==5
+/institutions&searchInstitutions&200&data():::EXIT;return.data.STNUM is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;return.data.SUBCHAPS one of { "0", "1" }
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.SUBCHAPS)==1
+/institutions&searchInstitutions&200&data():::EXIT;return.data.SUBCHAPS is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.SUPRV_FD)==2
+/institutions&searchInstitutions&200&data():::EXIT;return.data.TRACT one of { "0", "1" }
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.TRACT)==1
+/institutions&searchInstitutions&200&data():::EXIT;return.data.TRACT is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;return.data.TRUST one of { "0", "1" }
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.TRUST)==1
+/institutions&searchInstitutions&200&data():::EXIT;return.data.TRUST is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;return.data.ULTCERT is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;return.data.UNINUM is Numeric
+/institutions&searchInstitutions&200&data():::EXIT;LENGTH(return.data.ZIP)==5
+/institutions&searchInstitutions&200&data():::EXIT;return.data.ASSET >= return.data.INSFDIC
+/institutions&searchInstitutions&200&data():::EXIT;return.data.ASSET > return.data.LONGITUDE
+/institutions&searchInstitutions&200&data():::EXIT;return.data.ASSET >= return.data.OFFDOM
+/institutions&searchInstitutions&200&data():::EXIT;return.data.ASSET > return.data.OFFFOR
+/institutions&searchInstitutions&200&data():::EXIT;return.data.ASSET > return.data.OFFICES
+/institutions&searchInstitutions&200&data():::EXIT;return.data.ASSET > return.data.OFFOA
+/institutions&searchInstitutions&200&data():::EXIT;return.data.STALP is a substring of return.data.CBSA
+/institutions&searchInstitutions&200&data():::EXIT;return.data.STALP is a substring of return.data.CBSA_DIV
+/institutions&searchInstitutions&200&data():::EXIT;return.data.STALP is a substring of return.data.CBSA_METRO_NAME
+/institutions&searchInstitutions&200&data():::EXIT;return.data.CMSA_NO is a substring of return.data.CHANGEC12
+/institutions&searchInstitutions&200&data():::EXIT;return.data.STALP is a substring of return.data.CMSA
+/institutions&searchInstitutions&200&data():::EXIT;return.data.STALP is a substring of return.data.CSA
+/institutions&searchInstitutions&200&data():::EXIT;return.data.DEP >= return.data.DEPDOM
+/institutions&searchInstitutions&200&data():::EXIT;return.data.INSFDIC <= return.data.OFFICES
+/institutions&searchInstitutions&200&data():::EXIT;return.data.INSFDIC <= return.data.SPECGRP
+/institutions&searchInstitutions&200&data():::EXIT;return.data.STALP is a substring of return.data.MSA
+/institutions&searchInstitutions&200&data():::EXIT;return.data.OFFFOR < return.data.OFFICES
+/institutions&searchInstitutions&200&data():::EXIT;return.data.OFFICES >= return.data.OFFOA
+/institutions&searchInstitutions&200&data():::EXIT;return.data.STNUM is a substring of return.data.STCNTY
+/institutions&searchInstitutions&200():::EXIT;return.meta.total == 27824
+/institutions&searchInstitutions&200():::EXIT;return.meta.index.name == "institutions_20240503090008"
+/institutions&searchInstitutions&200():::EXIT;LENGTH(return.meta.index.name)==27
+/institutions&searchInstitutions&200():::EXIT;return.meta.index.createTimestamp == "2024-05-03T11:41:19Z"
+/institutions&searchInstitutions&200():::EXIT;LENGTH(return.meta.index.createTimestamp)==20
+/institutions&searchInstitutions&200():::EXIT;return.meta.index.createTimestamp is Timestamp. 
+					Format: YYYY-MM-DDTHH:MM:SS.mmZ (Miliseconds are optional)
+/institutions&searchInstitutions&200():::EXIT;size(return.data[]) one of { 7824, 10000 }
+/institutions&searchInstitutions&200():::EXIT;input.limit >= size(return.data[])
