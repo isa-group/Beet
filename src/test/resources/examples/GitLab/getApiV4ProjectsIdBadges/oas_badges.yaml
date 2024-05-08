@@ -1,0 +1,1140 @@
+openapi: 3.0.1
+info:
+  title: GitLab API
+  version: v4
+  description: |
+    An OpenAPI definition for the GitLab REST API.
+    Few API resources or endpoints are currently included.
+    The intent is to expand this to match the entire Markdown documentation of the API:
+    <https://docs.gitlab.com/ee/api/>. Contributions are welcome.
+
+    When viewing this on gitlab.com, you can test API calls directly from the browser
+    against the `gitlab.com` instance, if you are logged in.
+    The feature uses the current [GitLab session cookie](https://docs.gitlab.com/ee/api/index.html#session-cookie),
+    so each request is made using your account.
+
+    Instructions for using this tool can be found in [Interactive API Documentation](https://docs.gitlab.com/ee/api/openapi/openapi_interactive.html)
+  termsOfService: 'https://about.gitlab.com/terms/'
+  license:
+    name: CC BY-SA 4.0
+    url: 'https://gitlab.com/gitlab-org/gitlab/-/blob/master/LICENSE'
+servers:
+- url: https://gitlab.com/api/v4
+security:
+  - ApiKeyAuth: []
+tags:
+- name: badges
+  description: Operations about badges
+- name: branches
+  description: Operations about branches
+- name: alert_management
+  description: Operations about alert_managements
+- name: batched_background_migrations
+  description: Operations about batched_background_migrations
+- name: admin
+  description: Operations about admins
+- name: migrations
+  description: Operations about migrations
+- name: applications
+  description: Operations about applications
+- name: avatar
+  description: Operations about avatars
+- name: broadcast_messages
+  description: Operations about broadcast_messages
+- name: bulk_imports
+  description: Operations about bulk_imports
+- name: application
+  description: Operations about applications
+- name: access_requests
+  description: Operations related to access requests
+- name: ci_lint
+  description: Operations related to linting a CI config file
+- name: ci_resource_groups
+  description: Operations to manage job concurrency with resource groups
+- name: ci_variables
+  description: Operations related to CI/CD variables
+- name: cluster_agents
+  description: Operations related to the GitLab agent for Kubernetes
+- name: clusters
+  description: Operations related to clusters
+- name: composer_packages
+  description: Operations related to Composer packages
+- name: conan_packages
+  description: Operations related to Conan packages
+- name: container_registry
+  description: Operations related to container registry
+- name: container_registry_event
+  description: Operations related to container registry events
+- name: dashboard_annotations
+  description: Operations related to dashboard annotations
+- name: debian_distribution
+  description: Operations related to Debian Linux distributions
+- name: debian_packages
+  description: Operations related to Debian Linux packages
+- name: dependency_proxy
+  description: Operations to manage dependency proxy for a groups
+- name: deploy_keys
+  description: Operations related to deploy keys
+- name: deploy_tokens
+  description: Operations related to deploy tokens
+- name: deployments
+  description: Operations related to deployments
+- name: dora_metrics
+  description: Operations related to DevOps Research and Assessment (DORA) key metrics
+- name: environments
+  description: Operations related to environments
+- name: error_tracking_client_keys
+  description: Operations related to error tracking client keys
+- name: error_tracking_project_settings
+  description: Operations related to error tracking project settings
+- name: feature_flags_user_lists
+  description: Operations related to accessing GitLab feature flag user lists
+- name: feature_flags
+  description: Operations related to feature flags
+- name: features
+  description: Operations related to managing Flipper-based feature flags
+- name: freeze_periods
+  description: Operations related to deploy freeze periods
+- name: generic_packages
+  description: Operations related to Generic packages
+- name: geo
+  description: Operations related to Geo
+- name: geo_nodes
+  description: Operations related Geo Nodes
+- name: go_proxy
+  description: Operations related to Go Proxy
+- name: group_export
+  description: Operations related to exporting groups
+- name: group_import
+  description: Operations related to importing groups
+- name: group_packages
+  description: Operations related to group packages
+- name: helm_packages
+  description: Operations related to Helm packages
+- name: integrations
+  description: Operations related to integrations
+- name: issue_links
+  description: Operations related to issue links
+- name: jira_connect_subscriptions
+  description: Operations related to JiraConnect subscriptions
+- name: jobs
+  description: Operations related to CI Jobs
+- name: maven_packages
+  description: Operations related to Maven packages
+- name: merge_requests
+  description: Operations related to merge requests
+- name: metadata
+  description: Operations related to metadata of the GitLab instance
+- name: metrics_user_starred_dashboards
+  description: Operations related to User-starred metrics dashboards
+- name: ml_model_registry
+  description: Operations related to Model registry
+- name: npm_packages
+  description: Operations related to NPM packages
+- name: nuget_packages
+  description: Operations related to Nuget packages
+- name: package_files
+  description: Operations about package files
+- name: plan_limits
+  description: Operations related to plan limits
+- name: project_export
+  description: Operations related to exporting projects
+- name: project_hooks
+  description: Operations related to project hooks
+- name: project_import
+  description: Operations related to importing projects
+- name: project_import_bitbucket
+  description: Operations related to importing BitBucket projects
+- name: project_import_github
+  description: Operations related to importing GitHub projects
+- name: project_packages
+  description: Operations related to project packages
+- name: projects
+  description: Operations related to projects
+- name: protected environments
+  description: Operations related to protected environments
+- name: pypi_packages
+  description: Operations related to PyPI packages
+- name: release_links
+  description: Operations related to release assets (links)
+- name: releases
+  description: Operations related to releases
+- name: resource_milestone_events
+  description: Operations about resource milestone events
+- name: rpm_packages
+  description: Operations related to RPM packages
+- name: rubygem_packages
+  description: Operations related to RubyGems
+- name: suggestions
+  description: Operations related to suggestions
+- name: system_hooks
+  description: Operations related to system hooks
+- name: terraform_state
+  description: Operations related to Terraform state files
+- name: terraform_registry
+  description: Operations related to the Terraform module registry
+- name: unleash_api
+  description: Operations related to Unleash API
+paths:
+  /projects/{id}/badges:
+    get:
+      tags:
+      - badges
+      summary: Gets a list of project badges viewable by the authenticated user.
+      description: This feature was introduced in GitLab 10.6.
+      operationId: getApiV4ProjectsIdBadges
+      parameters:
+      - name: id
+        in: path
+        description: The ID or URL-encoded path of the project owned by the authenticated
+          user.
+        required: true
+        schema:
+          type: string
+      - name: page
+        in: query
+        description: Current page number
+        schema:
+          type: integer
+          format: int32
+          default: 1
+      - name: per_page
+        in: query
+        description: Number of items per page
+        schema:
+          type: integer
+          format: int32
+          default: 20
+      - name: name
+        in: query
+        description: Name for the badge
+        schema:
+          type: string
+      responses:
+        200:
+          description: Gets a list of project badges viewable by the authenticated
+            user.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/API_Entities_Badge'
+components:
+  schemas:
+    API_Entities_Badge:
+      type: object
+      properties:
+        name:
+          type: string
+        link_url:
+          type: string
+        image_url:
+          type: string
+        rendered_link_url:
+          type: string
+        rendered_image_url:
+          type: string
+        id:
+          type: integer # Changed from string
+        kind:
+          type: string
+      description: API_Entities_Badge model
+    API_Entities_BasicBadgeDetails:
+      type: object
+      properties:
+        name:
+          type: string
+        link_url:
+          type: string
+        image_url:
+          type: string
+        rendered_link_url:
+          type: string
+        rendered_image_url:
+          type: string
+      description: API_Entities_BasicBadgeDetails model
+    API_Entities_AccessRequester:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int32
+          example: 1
+        username:
+          type: string
+          example: admin
+        name:
+          type: string
+          example: Administrator
+        state:
+          type: string
+          example: active
+        avatar_url:
+          type: string
+          example: https://gravatar.com/avatar/1
+        avatar_path:
+          type: string
+          example: /user/avatar/28/The-Big-Lebowski-400-400.png
+        custom_attributes:
+          type: array
+          items:
+            $ref: '#/components/schemas/API_Entities_CustomAttribute'
+        web_url:
+          type: string
+          example: https://gitlab.example.com/root
+        email:
+          type: string
+        requested_at:
+          type: string
+      description: API_Entities_AccessRequester model
+    API_Entities_CustomAttribute:
+      type: object
+      properties:
+        key:
+          type: string
+          example: foo
+        value:
+          type: string
+          example: bar
+    API_Entities_Branch:
+      type: object
+      properties:
+        name:
+          type: string
+          example: master
+        commit:
+          $ref: '#/components/schemas/API_Entities_Commit'
+        merged:
+          type: boolean
+          example: true
+        protected:
+          type: boolean
+          example: true
+        developers_can_push:
+          type: boolean
+          example: true
+        developers_can_merge:
+          type: boolean
+          example: true
+        can_push:
+          type: boolean
+          example: true
+        default:
+          type: boolean
+          example: true
+        web_url:
+          type: string
+          example: https://gitlab.example.com/Commit921/the-dude/-/tree/master
+      description: API_Entities_Branch model
+    API_Entities_Commit:
+      type: object
+      properties:
+        id:
+          type: string
+          example: 2695effb5807a22ff3d138d593fd856244e155e7
+        short_id:
+          type: string
+          example: 2695effb
+        created_at:
+          type: string
+#          format: date-time
+          example: 2017-07-26T11:08:53+02:00
+        parent_ids:
+          type: array
+          items:
+            type: string
+            example: 2a4b78934375d7f53875269ffd4f45fd83a84ebe
+        title:
+          type: string
+          example: Initial commit
+        message:
+          type: string
+          example: Initial commit
+        author_name:
+          type: string
+          example: John Smith
+        author_email:
+          type: string
+          example: john@example.com
+        authored_date:
+          type: string
+#          format: date-time
+          example: 2012-05-28T04:42:42-07:00
+        committer_name:
+          type: string
+          example: Jack Smith
+        committer_email:
+          type: string
+          example: jack@example.com
+        committed_date:
+          type: string
+#          format: date-time
+          example: 2012-05-28T04:42:42-07:00
+        trailers:
+          type: object
+          properties: {}
+          example: '{ "Merged-By": "Jane Doe janedoe@gitlab.com" }'
+        web_url:
+          type: string
+          example: https://gitlab.example.com/janedoe/gitlab-foss/-/commit/ed899a2f4b50b4370feeea94676502b42383c746
+        extended_trailers:  # Added
+          type: object
+    API_Entities_MetricImage:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int32
+          example: 23
+        created_at:
+          type: string
+          format: date-time
+          example: 2020-11-13T00:06:18.084Z
+        filename:
+          type: string
+          example: file.png
+        file_path:
+          type: string
+          example: /uploads/-/system/alert_metric_image/file/23/file.png
+        url:
+          type: string
+          example: https://example.com/metric
+        url_text:
+          type: string
+          example: An example metric
+      description: API_Entities_MetricImage model
+    API_Entities_BatchedBackgroundMigration:
+      type: object
+      properties:
+        id:
+          type: string
+          example: "1234"
+        job_class_name:
+          type: string
+          example: CopyColumnUsingBackgroundMigrationJob
+        table_name:
+          type: string
+          example: events
+        status:
+          type: string
+          example: active
+        progress:
+          type: number
+          format: float
+          example: 50.0
+        created_at:
+          type: string
+          format: date-time
+          example: 2022-11-28T16:26:39+02:00
+      description: API_Entities_BatchedBackgroundMigration model
+    API_Entities_Ci_Variable:
+      type: object
+      properties:
+        variable_type:
+          type: string
+          example: env_var
+        key:
+          type: string
+          example: TEST_VARIABLE_1
+        value:
+          type: string
+          example: TEST_1
+        protected:
+          type: boolean
+        masked:
+          type: boolean
+        raw:
+          type: boolean
+        environment_scope:
+          type: string
+          example: '*'
+      description: API_Entities_Ci_Variable model
+    API_Entities_Dictionary_Table:
+      type: object
+      properties:
+        table_name:
+          type: string
+          example: users
+        feature_categories:
+          type: array
+          items:
+            type: string
+            example: database
+      description: API_Entities_Dictionary_Table model
+    API_Entities_Cluster:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        created_at:
+          type: string
+        domain:
+          type: string
+        enabled:
+          type: string
+        managed:
+          type: string
+        provider_type:
+          type: string
+        platform_type:
+          type: string
+        environment_scope:
+          type: string
+        cluster_type:
+          type: string
+        namespace_per_environment:
+          type: string
+        user:
+          $ref: '#/components/schemas/API_Entities_UserBasic'
+        platform_kubernetes:
+          $ref: '#/components/schemas/API_Entities_Platform_Kubernetes'
+        provider_gcp:
+          $ref: '#/components/schemas/API_Entities_Provider_Gcp'
+        management_project:
+          $ref: '#/components/schemas/API_Entities_ProjectIdentity'
+      description: API_Entities_Cluster model
+    API_Entities_UserBasic:
+      type: object
+      nullable: true  # Added
+      properties:
+        id:
+          type: integer
+          format: int32
+          example: 1
+        username:
+          type: string
+          example: admin
+        name:
+          type: string
+          example: Administrator
+        state:
+          type: string
+          example: active
+        avatar_url:
+          type: string
+          example: https://gravatar.com/avatar/1
+        avatar_path:
+          type: string
+          example: /user/avatar/28/The-Big-Lebowski-400-400.png
+        custom_attributes:
+          type: array
+          items:
+            $ref: '#/components/schemas/API_Entities_CustomAttribute'
+        web_url:
+          type: string
+          example: https://gitlab.example.com/root
+        email:
+          type: string
+          nullable: true
+        bio:    # Added
+          type: string
+          nullable: true
+        bot:    # Added
+          type: boolean
+          nullable: true
+        created_at:    # Added
+          type: string
+          nullable: true
+        discord:    # Added
+          type: string
+          nullable: true
+        followers:    # Added
+          type: integer
+          nullable: true
+        following:    # Added
+          type: integer
+          nullable: true
+        job_title:    # Added
+          type: string
+          nullable: true
+        linkedin:    # Added
+          type: string
+          nullable: true
+        local_time:    # Added
+          type: string
+          nullable: true
+        location:    # Added
+          type: string
+          nullable: true
+        locked:    # Added
+          type: boolean
+          nullable: true
+        organization:    # Added
+          type: string
+          nullable: true
+        pronouns:    # Added
+          type: string
+          nullable: true
+        public_email:    # Added
+          type: string
+          nullable: true
+        skype:    # Added
+          type: string
+          nullable: true
+        twitter:    # Added
+          type: string
+          nullable: true
+        website_url:    # Added
+          type: string
+          nullable: true
+        work_information:    # Added
+          type: string
+          nullable: true
+    API_Entities_Platform_Kubernetes:
+      type: object
+      properties:
+        api_url:
+          type: string
+        namespace:
+          type: string
+        authorization_type:
+          type: string
+        ca_cert:
+          type: string
+    API_Entities_Provider_Gcp:
+      type: object
+      properties:
+        cluster_id:
+          type: string
+        status_name:
+          type: string
+        gcp_project_id:
+          type: string
+        zone:
+          type: string
+        machine_type:
+          type: string
+        num_nodes:
+          type: string
+        endpoint:
+          type: string
+    API_Entities_ProjectIdentity:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int32
+          example: 1
+        description:
+          type: string
+          example: desc
+        name:
+          type: string
+          example: project1
+        name_with_namespace:
+          type: string
+          example: John Doe / project1
+        path:
+          type: string
+          example: project1
+        path_with_namespace:
+          type: string
+          example: namespace1/project1
+        created_at:
+          type: string
+          format: date-time
+          example: 2020-05-07T04:27:17.016Z
+    API_Entities_Application:
+      type: object
+      properties:
+        id:
+          type: string
+        application_id:
+          type: string
+          example: 5832fc6e14300a0d962240a8144466eef4ee93ef0d218477e55f11cf12fc3737
+        application_name:
+          type: string
+          example: MyApplication
+        callback_url:
+          type: string
+          example: https://redirect.uri
+        confidential:
+          type: boolean
+          example: true
+      description: API_Entities_Application model
+    API_Entities_ApplicationWithSecret:
+      type: object
+      properties:
+        id:
+          type: string
+        application_id:
+          type: string
+          example: 5832fc6e14300a0d962240a8144466eef4ee93ef0d218477e55f11cf12fc3737
+        application_name:
+          type: string
+          example: MyApplication
+        callback_url:
+          type: string
+          example: https://redirect.uri
+        confidential:
+          type: boolean
+          example: true
+        secret:
+          type: string
+          example: ee1dd64b6adc89cf7e2c23099301ccc2c61b441064e9324d963c46902a85ec34
+      description: API_Entities_ApplicationWithSecret model
+    API_Entities_Avatar:
+      type: object
+      properties:
+        avatar_url:
+          type: string
+      description: API_Entities_Avatar model
+    API_Entities_BroadcastMessage:
+      type: object
+      properties:
+        id:
+          type: string
+        message:
+          type: string
+        starts_at:
+          type: string
+        ends_at:
+          type: string
+        color:
+          type: string
+        font:
+          type: string
+        target_access_levels:
+          type: string
+        target_path:
+          type: string
+        broadcast_type:
+          type: string
+        dismissable:
+          type: string
+        active:
+          type: string
+      description: API_Entities_BroadcastMessage model
+    API_Entities_BulkImports:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int32
+          example: 1
+        bulk_import_id:
+          type: integer
+          format: int32
+          example: 1
+        status:
+          type: string
+          example: created
+          enum:
+          - created
+          - started
+          - finished
+          - timeout
+          - failed
+        entity_type:
+          type: string
+          enum:
+          - group
+          - project
+        source_full_path:
+          type: string
+          example: source_group
+        destination_full_path:
+          type: string
+          example: some_group/source_project
+        destination_name:
+          type: string
+          example: destination_slug
+        destination_slug:
+          type: string
+          example: destination_slug
+        destination_namespace:
+          type: string
+          example: destination_path
+        parent_id:
+          type: integer
+          format: int32
+          example: 1
+        namespace_id:
+          type: integer
+          format: int32
+          example: 1
+        project_id:
+          type: integer
+          format: int32
+          example: 1
+        created_at:
+          type: string
+          format: date-time
+          example: 2012-05-28T04:42:42-07:00
+        updated_at:
+          type: string
+          format: date-time
+          example: 2012-05-28T04:42:42-07:00
+        failures:
+          type: array
+          items:
+            $ref: '#/components/schemas/API_Entities_BulkImports_EntityFailure'
+        migrate_projects:
+          type: boolean
+          example: true
+      description: API_Entities_BulkImports model
+    API_Entities_BulkImports_EntityFailure:
+      type: object
+      properties:
+        relation:
+          type: string
+          example: group
+        step:
+          type: string
+          example: extractor
+        exception_message:
+          type: string
+          example: error message
+        exception_class:
+          type: string
+          example: Exception
+        correlation_id_value:
+          type: string
+          example: dfcf583058ed4508e4c7c617bd7f0edd
+        created_at:
+          type: string
+          format: date-time
+          example: 2012-05-28T04:42:42-07:00
+        pipeline_class:
+          type: string
+          example: BulkImports::Groups::Pipelines::GroupPipeline
+        pipeline_step:
+          type: string
+          example: extractor
+    API_Entities_BulkImport:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int32
+          example: 1
+        status:
+          type: string
+          example: finished
+          enum:
+          - created
+          - started
+          - finished
+          - timeout
+          - failed
+        source_type:
+          type: string
+          example: gitlab
+        created_at:
+          type: string
+          format: date-time
+          example: 2012-05-28T04:42:42-07:00
+        updated_at:
+          type: string
+          format: date-time
+          example: 2012-05-28T04:42:42-07:00
+      description: API_Entities_BulkImport model
+    API_Entities_Appearance:
+      type: object
+      properties:
+        title:
+          type: string
+        description:
+          type: string
+        pwa_name:
+          type: string
+        pwa_short_name:
+          type: string
+        pwa_description:
+          type: string
+        logo:
+          type: string
+        pwa_icon:
+          type: string
+        header_logo:
+          type: string
+        favicon:
+          type: string
+        new_project_guidelines:
+          type: string
+        profile_image_guidelines:
+          type: string
+        header_message:
+          type: string
+        footer_message:
+          type: string
+        message_background_color:
+          type: string
+        message_font_color:
+          type: string
+        email_header_and_footer_enabled:
+          type: string
+      description: API_Entities_Appearance model
+    API_Entities_PlanLimit:
+      type: object
+      properties:
+        ci_pipeline_size:
+          type: integer
+          format: int32
+          example: 0
+        ci_active_jobs:
+          type: integer
+          format: int32
+          example: 0
+        ci_project_subscriptions:
+          type: integer
+          format: int32
+          example: 2
+        ci_pipeline_schedules:
+          type: integer
+          format: int32
+          example: 10
+        ci_needs_size_limit:
+          type: integer
+          format: int32
+          example: 50
+        ci_registered_group_runners:
+          type: integer
+          format: int32
+          example: 1000
+        ci_registered_project_runners:
+          type: integer
+          format: int32
+          example: 1000
+        conan_max_file_size:
+          type: integer
+          format: int32
+          example: 3221225472
+        enforcement_limit:
+          type: integer
+          format: int32
+          example: 15000
+        generic_packages_max_file_size:
+          type: integer
+          format: int32
+          example: 5368709120
+        helm_max_file_size:
+          type: integer
+          format: int32
+          example: 5242880
+        limits_history:
+          type: object
+          properties: {}
+          example: |-
+            {"enforcement_limit"=>[{"timestamp"=>1686909124, "user_id"=>1, "username"=>"x", "value"=>5}],
+                               "notification_limit"=>[{"timestamp"=>1686909124, "user_id"=>2, "username"=>"y", "value"=>7}]}
+        maven_max_file_size:
+          type: integer
+          format: int32
+          example: 3221225472
+        notification_limit:
+          type: integer
+          format: int32
+          example: 15000
+        npm_max_file_size:
+          type: integer
+          format: int32
+          example: 524288000
+        nuget_max_file_size:
+          type: integer
+          format: int32
+          example: 524288000
+        pipeline_hierarchy_size:
+          type: integer
+          format: int32
+          example: 1000
+        pypi_max_file_size:
+          type: integer
+          format: int32
+          example: 3221225472
+        terraform_module_max_file_size:
+          type: integer
+          format: int32
+          example: 1073741824
+        storage_size_limit:
+          type: integer
+          format: int32
+          example: 15000
+      description: API_Entities_PlanLimit model
+    API_Entities_Metadata:
+      type: object
+      properties:
+        version:
+          type: string
+          example: 15.2-pre
+        revision:
+          type: string
+          example: c401a659d0c
+        kas:
+          type: object
+          properties:
+            enabled:
+              type: boolean
+            externalUrl:
+              type: string
+              example: grpc://gitlab.example.com:8150
+            version:
+              type: string
+              example: 15.0.0
+        enterprise:
+          type: boolean
+      description: API_Entities_Metadata model
+    API_Entities_Job:
+      type: object
+      properties:
+        id:
+          type: integer
+          description: The ID of the job
+        name:
+          type: string
+          description: The name of the job
+        status:
+          type: string
+          description: The current status of the job
+        stage:
+          type: string
+          description: The stage of the job in the CI/CD pipeline
+        created_at:
+          type: string
+          format: date-time
+          example: 2016-01-11T10:13:33.506Z
+          description: The creation time of the job
+        started_at:
+          type: string
+          format: date-time
+          example: 2016-01-11T10:13:33.506Z
+          description: The start time of the job
+          nullable: true  # Added
+        finished_at:
+          type: string
+#          format: date-time
+          example: 2016-01-11T10:13:33.506Z
+          description: The finish time of the job
+          nullable: true  # Added
+        commit:
+          $ref: '#/components/schemas/API_Entities_Commit'
+        archived:
+          type: boolean
+          description: Indicates if the job is archived
+        allow_failure:
+          type: boolean
+          description: Indicates if the job is allowed to fail
+        erased_at:
+          type: string
+#          format: date-time
+          example: 2016-01-11T10:13:33.506Z
+          description: The time when the job was erased, if applicable
+          nullable: true
+        duration:
+          type: number  # Changed form integer
+          description: The duration of the job in seconds
+          nullable: true # Added
+        queued_duration:
+          type: number
+          description: The duration the job was queued before execution, in seconds
+          nullable: true  # Added
+        ref:
+          type: string
+          description: The reference for the job
+        artifacts:
+          type: array
+          description: The artifacts produced by the job
+          items:
+            type: object
+            properties: # Added
+              file_format:
+                type: string
+                nullable: true
+              file_type:
+                type: string
+              size:
+                type: integer
+              filename:
+                type: string
+        tag:
+          type: boolean
+          description: Indicates if the job is tagged
+        web_url:
+          type: string
+          description: The URL for accessing the job in the web interface
+        project:
+          type: object
+          properties:
+            ci_job_token_scope_enabled:
+              type: boolean
+              description: Indicates if the CI/CD job token scope setting is enabled for the project
+        user:
+          $ref: '#/components/schemas/API_Entities_UserBasic'
+          description: The user that started the job
+        artifacts_expire_at:  # Added
+          type: string
+          nullable: true
+        artifacts_file: # Added
+          type: object
+          properties:
+            filename:
+              type: string
+            size:
+              type: integer
+        failure_reason: # Added
+          type: string
+        tag_list: # Added
+          type: array
+          items:
+            type: string
+        runner:   # Added
+          type: object
+          nullable: true
+          properties:
+            id:
+              type: integer
+            description:
+              type: string
+            ip_address:
+              type: string
+              nullable: true
+            active:
+              type: boolean
+            paused:
+              type: boolean
+            is_shared:
+              type: boolean
+            runner_type:
+              type: string
+            name:
+              type: string
+              nullable: true
+            status:
+              type: string
+            online:
+              type: boolean
+        pipeline:   # Added
+          type: object
+          properties:
+            id:
+              type: integer
+            iid:
+              type: integer
+            project_id:
+              type: integer
+            sha:
+              type: string
+            ref:
+              type: string
+            status:
+              type: string
+            source:
+              type: string
+            created_at:
+              type: string
+            updated_at:
+              type: string
+            web_url:
+              type: string
+        coverage:   # Added
+          type: number
+          nullable: true
+      description: API_Entities_Job model
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: Private-Token
