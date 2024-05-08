@@ -1,0 +1,7 @@
+pptname;invariant
+/projects/{id}/badges&getApiV4ProjectsIdBadges&200%array():::ENTER;input.page < input.per_page
+/projects/{id}/badges&getApiV4ProjectsIdBadges&200%array():::EXIT;input.page < input.per_page
+/projects/{id}/badges&getApiV4ProjectsIdBadges&200%array():::EXIT;input.per_page > size(return.array[])
+/projects/{id}/badges&getApiV4ProjectsIdBadges&200():::EXIT;return.link_url is Url
+/projects/{id}/badges&getApiV4ProjectsIdBadges&200():::EXIT;return.rendered_link_url is Url
+/projects/{id}/badges&getApiV4ProjectsIdBadges&200():::EXIT;return.kind one of { "group", "project" }
