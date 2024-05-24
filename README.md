@@ -38,7 +38,9 @@ inputs and outputs) and a data trace file (specifying the values assigned to eac
 instrumentation is then processed by our customized version of Daikon, resulting in a set of likely invariants that can be potentially used as 
 test oracles, once confirmed by the developer.
 
-![AGORA workflow](https://imgur.com/bOIIMyq.png)
+![AGORA workflow](https://i.imgur.com/hYa5EAl.png)
+
+Additionally, the reported invariants can be converted into executable assertions using [PostmanAssertify](https://github.com/JuanCarlosAlonsoValenzuela/PostmanAssertify), a software tool that automatically generates a Postman collection containing a request for each response code of all the operations for which AGORA has detected invariants, each of them containing a test script with all the confirmed invariants implemented as assertions.
 
 # Publication
 AGORA has been accepted for publication in the technical track of the [*ACM SIGSOFT International Symposium on Software Testing and Analysis 2023 (ISSTA 2023)*](https://dl.acm.org/doi/10.1145/3597926.3598114) (pre-print available [here](https://www.javalenzuela.com/publication/2023_issta_agora/2023_issta_agora.pdf)), and received the [ACM SIGSOFT Distinguished Artifact Award](https://doi.org/10.5281/zenodo.7970822). 
