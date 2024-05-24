@@ -176,7 +176,7 @@ For instance, if the folder `C:\myUser\instrumentation` contains the declaration
 docker run --rm -v C:\myUser\instrumentation:/files javalenzuela/daikon_agora java -jar daikon_modified.jar /files/declsFile.decls /files/dtraceFile.dtrace > invariants.csv
 ```
 
-This will result in a file in csv format  (as the one in the snippet below) containing the invariants detected in each program point. The [Daikon container configuration options](https://github.com/isa-group/Beet/wiki/Modified-version-of-Daikon#daikon-container-configuration-options) section of the repository 
+This will result in a file in csv format  (as the one in the snippet below) containing the invariants detected in each program point. Please, take into account that the `postmanAssertion` column of the CSV is only implemented for the 105 Daikon invariants supported by AGORA. The [Daikon container configuration options](https://github.com/isa-group/Beet/wiki/Modified-version-of-Daikon#daikon-container-configuration-options) section of the repository 
 Wiki describes the available configuration options when running this version of Daikon, such as the possibility of automatically discarding invariants of the Arithmetic 
 comparisons category, which are the main cause behind the false positives reported by AGORA (according to the evaluation conducted in our paper).
 
