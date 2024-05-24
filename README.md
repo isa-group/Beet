@@ -181,12 +181,14 @@ Wiki describes the available configuration options when running this version of 
 comparisons category, which are the main cause behind the false positives reported by AGORA (according to the evaluation conducted in our paper).
 
 ```
-/albums/{id}/tracks&getAlbumTracks&200&items&artists():::EXIT;LENGTH(return.href)==57;daikon.inv.unary.string.FixedLengthString;(return.href)
-/albums/{id}/tracks&getAlbumTracks&200&items&artists():::EXIT;return.href is Url;daikon.inv.unary.string.IsUrl;(return.href)
-/albums/{id}/tracks&getAlbumTracks&200&items&artists():::EXIT;LENGTH(return.id)==22;daikon.inv.unary.string.FixedLengthString;(return.id)
-/albums/{id}/tracks&getAlbumTracks&200&items&artists():::EXIT;return.type == "artist";daikon.inv.unary.string.OneOfString;(return.type)
-/albums/{id}/tracks&getAlbumTracks&200&items&artists():::EXIT;LENGTH(return.type)==6;daikon.inv.unary.string.FixedLengthString;(return.type)
-/albums/{id}/tracks&getAlbumTracks&200&items&artists():::EXIT;LENGTH(return.uri)==37;daikon.inv.unary.string.FixedLengthString;(return.uri)
-/albums/{id}/tracks&getAlbumTracks&200&items&artists():::EXIT;return.id is a substring of return.href;daikon.inv.binary.twoString.StdString$SubString;(return.href, return.id)
+pptname;invariant;invariantType;variables;postmanAssertion
+/albums/{id}/tracks&getAlbumTracks&200&items&artists():::EXIT;LENGTH(return.href)==57;daikon.inv.unary.string.FixedLengthString;(return.href);pm.expect(return_href).to.have.length(57)
+/albums/{id}/tracks&getAlbumTracks&200&items&artists():::EXIT;return.href is Url;daikon.inv.unary.string.IsUrl;(return.href);pm.expect(return_href).to.match(/^(?:(?:
+9]+)(?:\.(?:[\w\u00a1-\uffff0-9]+-)*[\w\u00a1-\uffff0-9]+)*(?:\.(?:[a-zA-Z\u00a1-\uffff]{2,})))(?::\d{2,5})?(?:\/[^\s]*)?$/)
+/albums/{id}/tracks&getAlbumTracks&200&items&artists():::EXIT;LENGTH(return.id)==22;daikon.inv.unary.string.FixedLengthString;(return.id);pm.expect(return_id).to.have.length(22)
+/albums/{id}/tracks&getAlbumTracks&200&items&artists():::EXIT;"return.type == ""artist""";daikon.inv.unary.string.OneOfString;(return.type);"pm.expect([""artist""].includes(return_type)).to.be.true"
+/albums/{id}/tracks&getAlbumTracks&200&items&artists():::EXIT;LENGTH(return.type)==6;daikon.inv.unary.string.FixedLengthString;(return.type);pm.expect(return_type).to.have.length(6)
+/albums/{id}/tracks&getAlbumTracks&200&items&artists():::EXIT;LENGTH(return.uri)==37;daikon.inv.unary.string.FixedLengthString;(return.uri);pm.expect(return_uri).to.have.length(37)
+/albums/{id}/tracks&getAlbumTracks&200&items&artists():::EXIT;return.id is a substring of return.href;daikon.inv.binary.twoString.StdString$SubString;(return.href, return.id);pm.expect(return_href.includes(return_id)).to.be.true
 ...
 ```
