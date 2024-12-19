@@ -13,6 +13,7 @@ import static agora.beet.main.GenerateInstrumentation.*;
 import static agora.beet.main.GenerateInstrumentation.HIERARCHY_SEPARATOR;
 import static agora.beet.util.JSONManager.stringToJsonObject;
 import static agora.beet.util.StringManager.decodeString;
+import static agora.beet.util.StringManager.encodeString;
 import static agora.beet.variable.VariableUtils.decodeVariableName;
 
 /**
@@ -30,15 +31,15 @@ public class ParameterValues {
         String value = null;
 
         String key = decodeVariableName(hierarchy.get(hierarchy.size()-1));
-        value = queryParametersValues.get(key);
+        value = getParameterValueFromSource(queryParametersValues, key);
         if(value == null) {
-            value = pathParametersValues.get(key);
+            value = getParameterValueFromSource(pathParametersValues, key);
         }
         if(value == null) {
-            value = headerParametersValues.get(key);
+            value = getParameterValueFromSource(headerParametersValues, key);
         }
         if(value == null) {
-            value = formParametersValues.get(key);
+            value = getParameterValueFromSource(formParametersValues, key);
         }
 
         // Search in body parameter
@@ -57,6 +58,26 @@ public class ParameterValues {
 
         return value;
 
+    }
+
+    /**
+     * Try to get the parameter value from a specific source (i.e., query/path/header/form). If the key is not found
+     * in the parameter source map, the method tries to find a URL encoded version of that key (e.g., convert image[0]
+     * to images%5B0%5D in Stripe API) in the map.
+     * @param sourceParametersValues: Map<String, String> containing the keys.
+     * @param key: Parameter name to search for.
+     * @return Parameter value, null if the parameter is not present
+     */
+    private static String getParameterValueFromSource(Map<String, String> sourceParametersValues, String key) {
+        String value = sourceParametersValues.get(key);
+
+        // If the key was not present in the map
+        if (value == null) {
+            // Try to find an encoded version of the parameter name in the map
+            value = sourceParametersValues.get(encodeString(key));
+        }
+
+        return value;
     }
 
 
