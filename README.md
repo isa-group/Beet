@@ -1,5 +1,5 @@
 # Beet
-<img src="https://imgur.com/TOkDKjQ.png" alt="Beet logo" width="200">
+<img src="https://github.com/user-attachments/assets/7ef41204-2820-4409-b6bd-80d78d0399c5" alt="Beet logo" width="200">
 
 Beet is a Daikon *front-end* (also known as instrumenter) that converts any OpenAPI specification and a collection of API requests (and responses) 
 into a format processable by the [Daikon invariant detector](https://plse.cs.washington.edu/daikon/). Beet is one of the core components of AGORA, an approach for 
@@ -38,7 +38,7 @@ inputs and outputs) and a data trace file (specifying the values assigned to eac
 instrumentation is then processed by our customized version of Daikon, resulting in a set of likely invariants that can be potentially used as 
 test oracles, once confirmed by the developer.
 
-![AGORA workflow](https://i.imgur.com/hYa5EAl.png)
+![AGORA workflow](https://github.com/user-attachments/assets/1ee61c5d-228f-4fa9-b811-cb7455915b1f)
 
 Additionally, the reported invariants can be converted into executable assertions using [PostmanAssertify](https://github.com/JuanCarlosAlonsoValenzuela/PostmanAssertify), a software tool that automatically generates a Postman collection containing a request for each response code of all the operations for which AGORA has detected invariants, each of them containing a test script with all the confirmed invariants implemented as assertions.
 
