@@ -73,7 +73,7 @@ The image below depicts an excerpt of a simplified version of the `getAlbumTrack
 in terms of the input parameters (lines 5-20) and the possible response formats (lines 21-61). This operation receives as input an album id (`id` parameter), a country 
 code (`market`) and the maximum number of songs to fetch (`limit`) and returns the list of tracks of the album.
 
-![OAS Spotify](https://imgur.com/aBlvpNQ.png)
+![OAS Spotify](https://github.com/user-attachments/assets/c8fc071a-0d10-4a3f-912a-43d95a7efe7f)
 
 The JSON below shows a response for the `getAlbumTracks` operation conforming to the provided specification. Existing approaches for automated testing of REST 
 APIs would label this response as valid because the API is not returning a server error and the response is conformant to the API specification.
@@ -119,7 +119,7 @@ However, there are many domain-specific test oracles that should be taken into c
 AGORA can learn all these test oracles by analyzing a small set of test cases for which only the inputs and outputs are known. The image below shows 
 some of the invariants reported by AGORA for this operation:
 
-![Sample invariants](https://imgur.com/Ck96XHr.png)
+![Sample invariants](https://github.com/user-attachments/assets/1bac9383-76ab-46a6-b2dd-f262f6641bdc)
 
 # Types of errors detected by AGORA
 
@@ -140,7 +140,7 @@ To execute Beet, run the `GenerateInstrumentation` class inside the main package
 - `generateDtrace`: This Boolean parameter indicates whether Beet should generate a data trace file. If set to false, Beet will only generate a declaration file.
 - `stringsToConsiderAsNull`: Some APIs use empty strings (“”) or specific keywords instead of null values. For instance, the OMDb API uses the string “N/A” instead of setting a response field as null. This behavior could result in the undesired suppression of valid invariants (e.g., suppression of the `return.href is an URL` invariant). To prevent this, you can use this parameter to specify a set of keywords that can be considered as null values, and thus ignored.
 
-![Executing Beet](https://i.imgur.com/dXi8EKv.png)
+![Executing Beet](https://github.com/user-attachments/assets/569e6919-39c2-4945-a16b-13f15d47330c)
 
 Beet requires Java JDK 17 to run. The `src/test/resources/examples` directory of the repository contains examples belonging to different industrial APIs 
 (Amadeus Hotel, GitHub, Marvel, OMDb, Spotify, Yelp and YouTube). 
