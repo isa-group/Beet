@@ -124,9 +124,8 @@ public class ParameterValues {
             value = String.valueOf(Math.abs(value.hashCode()));
 
             List<String> hierarchy = Arrays.asList(variableName.split("\\."));
-            hierarchy = hierarchy.subList(1, hierarchy.size());
 
-            if(hierarchy.size()>0) {
+            if(hierarchy.size() > 1) {
                 String key = getEnterParameterValue(testCase, hierarchy);
                 if(key==null){
                     value = null;
