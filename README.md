@@ -139,7 +139,7 @@ However, there are many domain-specific test oracles that should be taken into c
 -	...
 
 AGORA+ can learn all these test oracles by analyzing a small set of test cases for which only the inputs and outputs are known. The image below shows 
-some of the invariants reported by AGORA for this operation:
+some of the invariants reported by AGORA+ for this operation:
 
 ![Sample invariants](https://github.com/user-attachments/assets/1bac9383-76ab-46a6-b2dd-f262f6641bdc)
 
