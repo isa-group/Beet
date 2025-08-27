@@ -55,7 +55,7 @@ A very preliminary version of AGORA (two-page abstract) obtained the first prize
 If you want to cite Beet or AGORA+ in your research, please use the BibTeX entry below.
 
 ```
-@article{Alonso2023AGORA_plus,
+@article{Alonso2025AGORA_plus,
 author = {Alonso, Juan C. and Ernst, Michael D. and Segura, Sergio and Ruiz-Cort\'{e}s, Antonio},
 title = {Test Oracle Generation for REST APIs},
 year = {2025},
@@ -149,7 +149,7 @@ The invariants reported by AGORA+ play a dual role in fault detection:
 - **Invalid invariants:** These are invariants reported by AGORA+ that reveal inconsistent behavior. For example, in the Amadeus Hotel API, AGORA+ detected hotel rooms with zero beds (invariant: `return.room.typeEstimated.beds>=0`). These invariants reveal faults detected during the invariant detection process and require of manual inspection to be confirmed as inconsistent.
 - **Violated valid invariants:** The disappearance of a confirmed invariant (i.e., test oracle) when increasing the size of the input dataset reveals that a counterexample (i.e., failure) has been detected. Violated valid invariants can be automatically detected and indicate faults observed in production.
 
-Our paper contains a section describing all the domain-specific faults detected in industrial APIs with millions of users worldwide.
+Our [paper](https://doi.org/10.1145/3726524) contains a section describing all the domain-specific faults detected in industrial APIs with millions of users worldwide.
 
 
 # Executing Beet
@@ -164,8 +164,9 @@ To execute Beet, run the `GenerateInstrumentation` class inside the main package
 
 ![Executing Beet](https://github.com/user-attachments/assets/569e6919-39c2-4945-a16b-13f15d47330c)
 
-Beet requires Java JDK 17 to run. The `src/test/resources/examples` directory of the repository contains examples belonging to different industrial APIs 
-(Amadeus Hotel, GitHub, Marvel, OMDb, Spotify, Yelp and YouTube). 
+Beet requires Java JDK 17 to run. The `src/test/resources/examples` directory of the repository contains some examples 
+belonging to different industrial APIs that can be used as input for Beet. [This repository](https://github.com/juaaloval/Beet-examples) 
+contains the files used as input for all the APIs used in our publications.
 
 The [Input CSV format](https://github.com/isa-group/Beet/wiki/Beet#input-csv-format) section of the repository wiki describes the format that the CSV files provided to Beet must follow.
 
