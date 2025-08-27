@@ -29,7 +29,7 @@ public class PrimitiveArrayExitTest {
 
         deleteAllDeclsClasses();
 
-        String oasPath = "src/test/resources/DHL/swagger_primitiveOutputArray.yaml";
+        String oasPath = "src/test/resources/testData/DHL/swagger_primitiveOutputArray.yaml";
 
         // Equivalent to the getOpenAPISpecification private function
         ParseOptions parseOptions = new ParseOptions();

@@ -28,7 +28,7 @@ public class NestedArraysPrimitiveExitTest {
     public void testGenerationOfNestedArraysPrimitiveExit() {
         deleteAllDeclsClasses();
 
-        String oasPath = "src/test/resources/sampleAPI/swagger_nestedArraysPrimitive.yaml";
+        String oasPath = "src/test/resources/testData/sampleAPI/swagger_nestedArraysPrimitive.yaml";
 
         // Equivalent to the getOpenAPISpecification private function
         ParseOptions parseOptions = new ParseOptions();

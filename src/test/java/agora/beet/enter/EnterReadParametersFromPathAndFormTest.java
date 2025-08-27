@@ -27,7 +27,7 @@ public class EnterReadParametersFromPathAndFormTest {
     @Test
     public void testEnterReadParametersFromPath() {
         deleteAllDeclsClasses();
-        String oasPath = "src/test/resources/RestCountries/swagger.yaml";
+        String oasPath = "src/test/resources/testData/RestCountries/swagger.yaml";
 
         // Equivalent to the getOpenAPISpecification private function
         ParseOptions parseOptions = new ParseOptions();
@@ -156,7 +156,7 @@ public class EnterReadParametersFromPathAndFormTest {
     @Test
     public void testEnterReadPrimitiveParametersFromForm() {
         deleteAllDeclsClasses();
-        String oasPath = "src/test/resources/LanguageTool/swagger.yaml";
+        String oasPath = "src/test/resources/testData/LanguageTool/swagger.yaml";
 
         // Equivalent to the getOpenAPISpecification private function
         ParseOptions parseOptions = new ParseOptions();

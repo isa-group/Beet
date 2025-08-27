@@ -29,7 +29,7 @@ public class NestedArraysObjectExitTest {
 
         deleteAllDeclsClasses();
 
-        String oasPath = "src/test/resources/sampleAPI/swagger_nestedArraysObject.yaml";
+        String oasPath = "src/test/resources/testData/sampleAPI/swagger_nestedArraysObject.yaml";
 
         // Equivalent to the getOpenAPISpecification private function
         ParseOptions parseOptions = new ParseOptions();
@@ -304,7 +304,7 @@ public class NestedArraysObjectExitTest {
 
         deleteAllDeclsClasses();
 
-        String oasPath = "src/test/resources/sampleAPI/swagger_nestedArraysObjectSpecialCharacters.yaml";
+        String oasPath = "src/test/resources/testData/sampleAPI/swagger_nestedArraysObjectSpecialCharacters.yaml";
 
         // Equivalent to the getOpenAPISpecification private function
         ParseOptions parseOptions = new ParseOptions();

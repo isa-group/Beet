@@ -28,7 +28,7 @@ public class NestedArraysResponseExit {
     @Test
     public void testNestedArraysOfObjectsResponseExit() {
         deleteAllDeclsClasses();
-        String oasPath = "src/test/resources/RestCountries/swagger_nestedArraysResponse.yaml";
+        String oasPath = "src/test/resources/testData/RestCountries/swagger_nestedArraysResponse.yaml";
 
         // Equivalent to the getOpenAPISpecification private function
         ParseOptions parseOptions = new ParseOptions();
@@ -184,7 +184,7 @@ public class NestedArraysResponseExit {
     @Test
     public void testNestedArraysOfPrimitivesResponseExit() {
         deleteAllDeclsClasses();
-        String oasPath = "src/test/resources/RestCountries/swagger_nestedArraysResponse_primitive.yaml";
+        String oasPath = "src/test/resources/testData/RestCountries/swagger_nestedArraysResponse_primitive.yaml";
 
         // Equivalent to the getOpenAPISpecification private function
         ParseOptions parseOptions = new ParseOptions();
@@ -341,7 +341,7 @@ public class NestedArraysResponseExit {
     @Test
     public void testPrimitiveResponseExit() {
         deleteAllDeclsClasses();
-        String oasPath = "src/test/resources/RestCountries/swagger_primitiveResponse.yaml";
+        String oasPath = "src/test/resources/testData/RestCountries/swagger_primitiveResponse.yaml";
 
         // Equivalent to the getOpenAPISpecification private function
         ParseOptions parseOptions = new ParseOptions();

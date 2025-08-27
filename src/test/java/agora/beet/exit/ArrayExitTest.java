@@ -28,7 +28,7 @@ public class ArrayExitTest {
     public void testGenerationOfArrayExit() {
         deleteAllDeclsClasses();
 
-        String oasPath = "src/test/resources/RestCountries/swagger.yaml";
+        String oasPath = "src/test/resources/testData/RestCountries/swagger.yaml";
 
         // Equivalent to the getOpenAPISpecification private function
         ParseOptions parseOptions = new ParseOptions();

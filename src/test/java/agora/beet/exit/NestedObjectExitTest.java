@@ -28,7 +28,7 @@ public class NestedObjectExitTest {
     public void testGenerationOfNestedObjectExitTest() {
         deleteAllDeclsClasses();
 
-        String oasPath = "src/test/resources/DHL/swagger_nestedObjectOutput.yaml";
+        String oasPath = "src/test/resources/testData/DHL/swagger_nestedObjectOutput.yaml";
 
         // Equivalent to the getOpenAPISpecification private function
         ParseOptions parseOptions = new ParseOptions();

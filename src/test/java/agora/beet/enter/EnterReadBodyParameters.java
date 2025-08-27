@@ -27,7 +27,7 @@ public class EnterReadBodyParameters {
     @Test
     public void testEnterReadPrimitiveParametersFromBody() {
         deleteAllDeclsClasses();
-        String oasPath = "src/test/resources/Spotify_createPlaylist/spec.yaml";
+        String oasPath = "src/test/resources/testData/Spotify_createPlaylist/spec.yaml";
 
         // Equivalent to the getOpenAPISpecification private function
         ParseOptions parseOptions = new ParseOptions();
@@ -149,7 +149,7 @@ public class EnterReadBodyParameters {
     @Test
     public void testEnterReadNestedObjectParametersFromBody() {
         deleteAllDeclsClasses();
-        String oasPath = "src/test/resources/Spotify_createPlaylist/spec_nestedObjects_body.yaml";
+        String oasPath = "src/test/resources/testData/Spotify_createPlaylist/spec_nestedObjects_body.yaml";
 
         // Equivalent to the getOpenAPISpecification private function
         ParseOptions parseOptions = new ParseOptions();
@@ -308,7 +308,7 @@ public class EnterReadBodyParameters {
     public void testEnterReadNestedArrayOfObjectsParametersFromBody() {
 
         deleteAllDeclsClasses();
-        String oasPath = "src/test/resources/Spotify_createPlaylist/spec_nestedArrayOfObjects_body.yaml";
+        String oasPath = "src/test/resources/testData/Spotify_createPlaylist/spec_nestedArrayOfObjects_body.yaml";
 
         // Equivalent to the getOpenAPISpecification private function
         ParseOptions parseOptions = new ParseOptions();
@@ -467,7 +467,7 @@ public class EnterReadBodyParameters {
     @Test
     public void testEnterReadPrimitiveArrayParameterFromBody() {
         deleteAllDeclsClasses();
-        String oasPath = "src/test/resources/Spotify_createPlaylist/spec_bodyParameter_primitiveArray.yaml";
+        String oasPath = "src/test/resources/testData/Spotify_createPlaylist/spec_bodyParameter_primitiveArray.yaml";
 
         // Equivalent to the getOpenAPISpecification private function
         ParseOptions parseOptions = new ParseOptions();
@@ -588,7 +588,7 @@ public class EnterReadBodyParameters {
     @Test
     public void testEnterReadObjectArrayParameterFromBody() {
         deleteAllDeclsClasses();
-        String oasPath = "src/test/resources/Spotify_createPlaylist/spec_bodyParameter_objectArray.yaml";
+        String oasPath = "src/test/resources/testData/Spotify_createPlaylist/spec_bodyParameter_objectArray.yaml";
 
         // Equivalent to the getOpenAPISpecification private function
         ParseOptions parseOptions = new ParseOptions();
