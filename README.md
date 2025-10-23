@@ -41,7 +41,7 @@ test oracles, once confirmed by the developer.
 
 ![AGORA+ workflow](https://github.com/user-attachments/assets/1ee61c5d-228f-4fa9-b811-cb7455915b1f)
 
-Additionally, the reported invariants can be converted into executable assertions using [PostmanAssertify](https://github.com/JuanCarlosAlonsoValenzuela/PostmanAssertify), a 
+Additionally, the reported invariants can be converted into executable assertions using [PostmanAssertify](https://github.com/juaaloval/PostmanAssertify), a 
 software tool that automatically generates a Postman collection containing a request for each response code of all the 
 operations for which AGORA+ has detected invariants, each of them containing a test script with all the confirmed invariants implemented as assertions.
 
