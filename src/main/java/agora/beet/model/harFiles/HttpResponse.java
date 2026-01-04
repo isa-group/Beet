@@ -1,6 +1,5 @@
 package agora.beet.model.harFiles;
 
-import java.util.List;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
@@ -49,6 +48,14 @@ public class HttpResponse {
 
     public void setHttpVersion(String httpVersion) {
         this.httpVersion = httpVersion;
+    }
+
+    public HttpResponseContent getContent() {
+        return content;
+    }
+
+    public void setContent(HttpResponseContent content) {
+        this.content = content;
     }
 
     public String getRedirectURL() {

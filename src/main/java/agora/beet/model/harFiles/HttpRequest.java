@@ -23,6 +23,9 @@ public class HttpRequest {
     @SerializedName("queryString")
     @Expose
     private List<Parameter> queryString;
+    @SerializedName("postData")
+    @Expose
+    private PostData postData;  // Contains both request body and form parameters
 
     public String getMethod() {
         return method;
@@ -54,6 +57,14 @@ public class HttpRequest {
 
     public void setQueryString(List<Parameter> queryString) {
         this.queryString = queryString;
+    }
+
+    public PostData getPostData() {
+        return postData;
+    }
+
+    public void setPostData(PostData postData) {
+        this.postData = postData;
     }
 
 }

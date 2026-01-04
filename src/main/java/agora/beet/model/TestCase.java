@@ -1,6 +1,14 @@
 package agora.beet.model;
 
+import agora.beet.model.harFiles.HttpEntry;
+import agora.beet.model.harFiles.Parameter;
+import agora.beet.model.harFiles.PostData;
+
+import java.net.URI;
+import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.UUID;
 
 /**
  * @author Juan C. Alonso
@@ -34,6 +42,53 @@ public class TestCase {
         this.bodyParameter = bodyParameter;
         this.statusCode = statusCode;
         this.responseBody = responseBody;
+    }
+
+    public TestCase(HttpEntry httpEntry) {
+        this.testCaseId = UUID.randomUUID().toString();
+
+        URI uri = URI.create(httpEntry.getRequest().getUrl());
+        this.operationId = ""; // TODO
+        this.path = uri.getPath();
+        this.httpMethod = httpEntry.getRequest().getMethod();
+
+        // Header parameters
+        this.headerParameters = new HashMap<>();
+        List<Parameter> headerParametersList = httpEntry.getRequest().getHeaders();
+        if (headerParametersList != null) {
+            for (Parameter headerParameter: headerParametersList) {
+                headerParameters.put(headerParameter.getName(), headerParameter.getValue());
+            }
+        }
+
+        this.pathParameters = new HashMap<>();  // TODO: Implement
+
+        this.queryParameters = new HashMap<>();
+        List<Parameter> queryParameterList = httpEntry.getRequest().getQueryString();
+        if (queryParameterList != null) {
+            for (Parameter queryParameter: queryParameterList) {
+                queryParameters.put(queryParameter.getName(), queryParameter.getValue());
+            }
+
+        }
+
+        PostData postData = httpEntry.getRequest().getPostData();
+        if (postData != null) {
+            this.bodyParameter = postData.getText();
+
+            this.formParameters = new HashMap<>();
+            List<Parameter> formParametersList = postData.getParams();
+            if (formParametersList != null) {
+                for (Parameter formParameter: formParametersList) {
+                    formParameters.put(formParameter.getName(), formParameter.getValue());
+                }
+            }
+
+        }
+
+        this.statusCode = httpEntry.getResponse().getStatus().toString();
+        this.responseBody = httpEntry.getResponse().getContent().getText();
+
     }
 
     public String getTestCaseId() {
