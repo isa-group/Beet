@@ -2,8 +2,12 @@ package agora.beet.model;
 
 import agora.beet.model.harFiles.HttpEntry;
 import agora.beet.model.harFiles.Parameter;
+import agora.beet.model.harFiles.PathMatch;
 import agora.beet.model.harFiles.PostData;
+import agora.beet.util.OpenApiPathMatcher;
 import io.swagger.v3.oas.models.OpenAPI;
+import io.swagger.v3.oas.models.Operation;
+import io.swagger.v3.oas.models.PathItem;
 
 import java.net.URI;
 import java.util.HashMap;
@@ -45,13 +49,28 @@ public class TestCase {
         this.responseBody = responseBody;
     }
 
-    public TestCase(HttpEntry httpEntry, String oasServer) {
+    public TestCase(HttpEntry httpEntry, OpenAPI specification) {
         this.testCaseId = UUID.randomUUID().toString();
-
-        this.operationId = ""; // TODO
-        // TODO: Replace path parameters
-        this.path = httpEntry.getRequest().getUrl().split(oasServer, 2)[1];
         this.httpMethod = httpEntry.getRequest().getMethod();
+
+        // Extract the relative path by removing the base path from the OAS from the URL of the .har file, this way,
+        // we take into account the base path.
+        // We assume that the first server is the one being used
+        String relativePath = httpEntry.getRequest().getUrl().split(specification.getServers().get(0).getUrl(), 2)[1];
+
+        PathMatch pathMatch = OpenApiPathMatcher.match(relativePath, specification);
+        if (pathMatch == null) {
+            throw new NullPointerException("No corresponding path found for test case with path: " + relativePath);
+        }
+
+        this.path = pathMatch.path();
+
+        // Get the specific operation
+        Operation operation = pathMatch.pathItem().readOperationsMap().get(PathItem.HttpMethod.valueOf(this.httpMethod.toUpperCase()));
+        if (operation == null) {
+            throw new NullPointerException("No corresponding " + this.httpMethod + " operation found for test case with path: " + relativePath);
+        }
+        this.operationId = operation.getOperationId();
 
         // Header parameters
         this.headerParameters = new HashMap<>();
@@ -62,7 +81,7 @@ public class TestCase {
             }
         }
 
-        this.pathParameters = new HashMap<>();  // TODO: Implement
+        this.pathParameters = pathMatch.pathParams();
 
         this.queryParameters = new HashMap<>();
         List<Parameter> queryParameterList = httpEntry.getRequest().getQueryString();

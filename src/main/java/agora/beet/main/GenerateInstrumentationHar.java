@@ -114,8 +114,7 @@ public class GenerateInstrumentationHar {
                                     // Convert HttpEntry to TestCase
                                     HttpEntry httpEntry = GSON.fromJson(reader, HttpEntry.class);
                                     // TODO: Path parameters and operation id are not set yet, they require OAS
-                                    // We assume that the first server is the one being used
-                                    TestCase testCase = new TestCase(httpEntry, specification.getServers().get(0).getUrl());
+                                    TestCase testCase = new TestCase(httpEntry, specification);
 
                                     if(i%50==0){
                                         System.out.println("Generated dtrace for " + i + " test cases");
