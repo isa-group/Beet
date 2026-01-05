@@ -141,31 +141,29 @@ public class GenerateInstrumentation {
                     }
                     i++;
 
-                    for(DeclsClass declsClass: declsFile.getClasses()) {
-                        // The enters and exits belong to the same class
-                        if(declsClass.getClassName().equalsIgnoreCase(testCase.getPath())){
+                    // The enters and exits belong to the same class
+                    DeclsClass declsClass = declsFile.getClasses().stream()
+                            .filter(x-> x.getClassName().equalsIgnoreCase(testCase.getPath()))
+                            .findFirst()
+                            .orElseThrow(() -> new NullPointerException("No declsClass found for test case with path: " + testCase.getPath() + " and operation id: " + testCase.getOperationId()));
 
-                            // Get the correct declsExit by the responseCode
-                            // TODO: Consider HTTP method too
-                            List<DeclsExit> declsExits = declsClass.getDeclsExits().stream()
-                                    .filter(x-> x.getStatusCode().equalsIgnoreCase(testCase.getStatusCode()))
-                                    .toList();
 
-                            for(DeclsExit declsExit: declsExits) {
-                                // Find the corresponding DeclsEnter according to the statusCode and nameSuffix
-                                DeclsEnter declsEnter = declsClass.getDeclsEnters().stream()
-                                        .filter(x-> x.getStatusCode().equals(declsExit.getStatusCode()) && x.getNameSuffix().equals(declsExit.getNameSuffix()))
-                                        .findFirst().orElseThrow(() -> new NullPointerException("Could not find the corresponding DeclsEnter"));
+                    // Get the correct declsExit by the responseCode
+                    // TODO: Consider HTTP method too
+                    List<DeclsExit> declsExits = declsClass.getDeclsExits().stream()
+                            .filter(x-> x.getStatusCode().equalsIgnoreCase(testCase.getStatusCode()))
+                            .toList();
 
-                                // Write the test case in dtrace format
-                                dtraceBuffer.write(declsExit.generateDtrace(testCase, declsEnter));
+                    for(DeclsExit declsExit: declsExits) {
+                        // Find the corresponding DeclsEnter according to the statusCode and nameSuffix
+                        DeclsEnter declsEnter = declsClass.getDeclsEnters().stream()
+                                .filter(x-> x.getStatusCode().equals(declsExit.getStatusCode()) && x.getNameSuffix().equals(declsExit.getNameSuffix()))
+                                .findFirst().orElseThrow(() -> new NullPointerException("Could not find the corresponding DeclsEnter"));
 
-                            }
-
-                        }
+                        // Write the test case in dtrace format
+                        dtraceBuffer.write(declsExit.generateDtrace(testCase, declsEnter));
 
                     }
-
                 }
 
                 // Close the writer
