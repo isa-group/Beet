@@ -113,7 +113,6 @@ public class GenerateInstrumentationHar {
 
                                     // Convert HttpEntry to TestCase
                                     HttpEntry httpEntry = GSON.fromJson(reader, HttpEntry.class);
-                                    // TODO: Path parameters and operation id are not set yet, they require OAS
                                     TestCase testCase = new TestCase(httpEntry, specification);
 
                                     if(i%50==0){
