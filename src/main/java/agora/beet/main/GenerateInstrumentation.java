@@ -142,13 +142,14 @@ public class GenerateInstrumentation {
                     i++;
 
                     for(DeclsClass declsClass: declsFile.getClasses()) {
-                        // The enter and exits belong to the same class
+                        // The enters and exits belong to the same class
                         if(declsClass.getClassName().equalsIgnoreCase(testCase.getPath())){
 
                             // Get the correct declsExit by the responseCode
+                            // TODO: Consider HTTP method too
                             List<DeclsExit> declsExits = declsClass.getDeclsExits().stream()
                                     .filter(x-> x.getStatusCode().equalsIgnoreCase(testCase.getStatusCode()))
-                                    .collect(Collectors.toList());
+                                    .toList();
 
                             for(DeclsExit declsExit: declsExits) {
                                 // Find the corresponding DeclsEnter according to the statusCode and nameSuffix
@@ -156,7 +157,7 @@ public class GenerateInstrumentation {
                                         .filter(x-> x.getStatusCode().equals(declsExit.getStatusCode()) && x.getNameSuffix().equals(declsExit.getNameSuffix()))
                                         .findFirst().orElseThrow(() -> new NullPointerException("Could not find the corresponding DeclsEnter"));
 
-                                // Write the test case in dtrace format the buffer
+                                // Write the test case in dtrace format
                                 dtraceBuffer.write(declsExit.generateDtrace(testCase, declsEnter));
 
                             }
@@ -200,17 +201,17 @@ public class GenerateInstrumentation {
         return new OpenAPIV3Parser().read(openApiSpecPath, null, parseOptions);
     }
 
-    public static void addNewDeclsClass(DeclsClass declsClass){
-        declsClasses.add(declsClass);
-    }
+//    public static void addNewDeclsClass(DeclsClass declsClass){
+//        declsClasses.add(declsClass);
+//    }
 
-    public static List<DeclsClass> getAllDeclsClasses(){
-        return declsClasses;
-    }
-
-    public static void deleteAllDeclsClasses(){
-        declsClasses.clear();
-    }
+//    public static List<DeclsClass> getAllDeclsClasses(){
+//        return declsClasses;
+//    }
+//
+//    public static void deleteAllDeclsClasses(){
+//        declsClasses.clear();
+//    }
 
     private static String getOutputPath(String filename, String folder) {
         Path path = java.nio.file.Paths.get(folder);      // openApiSpecPath

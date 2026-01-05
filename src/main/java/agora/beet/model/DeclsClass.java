@@ -10,6 +10,7 @@ import java.util.Map.Entry;
 import java.util.*;
 
 import static agora.beet.main.GenerateInstrumentation.*;
+import static agora.beet.main.GenerateInstrumentationHar.addNewDeclsClass;
 import static agora.beet.pptNesting.NestedPpts.getAllNestedDeclsExits;
 import static agora.beet.variable.EnterVariables.getListOfDeclsVariables;
 

@@ -3,6 +3,7 @@ package agora.beet.model;
 import agora.beet.model.harFiles.HttpEntry;
 import agora.beet.model.harFiles.Parameter;
 import agora.beet.model.harFiles.PostData;
+import io.swagger.v3.oas.models.OpenAPI;
 
 import java.net.URI;
 import java.util.HashMap;
@@ -44,12 +45,12 @@ public class TestCase {
         this.responseBody = responseBody;
     }
 
-    public TestCase(HttpEntry httpEntry) {
+    public TestCase(HttpEntry httpEntry, String oasServer) {
         this.testCaseId = UUID.randomUUID().toString();
 
-        URI uri = URI.create(httpEntry.getRequest().getUrl());
         this.operationId = ""; // TODO
-        this.path = uri.getPath();
+        // TODO: Replace path parameters
+        this.path = httpEntry.getRequest().getUrl().split(oasServer, 2)[1];
         this.httpMethod = httpEntry.getRequest().getMethod();
 
         // Header parameters
