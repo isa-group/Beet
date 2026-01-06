@@ -6,8 +6,12 @@ import io.swagger.v3.oas.models.media.ArraySchema;
 import java.util.ArrayList;
 import java.util.List;
 
-import static agora.beet.main.GenerateInstrumentation.*;
-import static agora.beet.variable.VariableUtils.*;
+import static agora.beet.main.GenerateInstrumentation.HASHCODE_TYPE_NAME;
+import static agora.beet.main.GenerateInstrumentation.OBJECT_TYPE_NAME;
+import static agora.beet.main.GenerateInstrumentation.ARRAY_TYPE_NAME;
+import static agora.beet.main.GenerateInstrumentation.primitiveTypes;
+import static agora.beet.variable.VariableUtils.translateDatatype;
+import static agora.beet.variable.VariableUtils.encodeVariableName;
 
 /**
  * @author Juan C. Alonso

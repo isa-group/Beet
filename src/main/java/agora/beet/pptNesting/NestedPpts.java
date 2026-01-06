@@ -6,10 +6,18 @@ import io.swagger.v3.oas.models.media.ArraySchema;
 import io.swagger.v3.oas.models.media.MediaType;
 import io.swagger.v3.oas.models.media.Schema;
 
-import java.util.*;
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Map;
+import java.util.HashMap;
+import java.util.Set;
 
-import static agora.beet.main.GenerateInstrumentation.*;
 import static agora.beet.main.GenerateInstrumentation.HIERARCHY_SEPARATOR;
+import static agora.beet.main.GenerateInstrumentation.ARRAY_NESTING_SEPARATOR;
+import static agora.beet.main.GenerateInstrumentation.ARRAY_TYPE_NAME;
+import static agora.beet.main.GenerateInstrumentation.OBJECT_TYPE_NAME;
+import static agora.beet.main.GenerateInstrumentation.primitiveTypes;
 import static agora.beet.variable.VariableUtils.translateDatatype;
 
 /**

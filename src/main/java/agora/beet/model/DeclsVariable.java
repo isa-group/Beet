@@ -3,13 +3,22 @@ package agora.beet.model;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
-import java.util.*;
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 import static agora.beet.dtrace.ExitArray.generateDtraceExitValueOfJSONArray;
 import static agora.beet.dtrace.ParameterValues.getValueOfParameterForDtraceFile;
 import static agora.beet.dtrace.VariableValues.getArrayFromHierarchy;
 import static agora.beet.dtrace.VariableValues.getPrimitiveValueFromHierarchy;
-import static agora.beet.main.GenerateInstrumentation.*;
+import static agora.beet.main.GenerateInstrumentation.ARRAY_TYPE_NAME;
+import static agora.beet.main.GenerateInstrumentation.DOUBLE_TYPE_NAME;
+import static agora.beet.main.GenerateInstrumentation.BOOLEAN_TYPE_NAME;
+import static agora.beet.main.GenerateInstrumentation.INTEGER_TYPE_NAME;
+import static agora.beet.main.GenerateInstrumentation.STRING_TYPE_NAME;
+import static agora.beet.main.GenerateInstrumentation.stringsToConsiderAsNull;
+import static agora.beet.main.GenerateInstrumentation.primitiveTypes;
+import static agora.beet.main.GenerateInstrumentation.HIERARCHY_SEPARATOR;
 import static agora.beet.util.TestCaseFileManager.removeNewLineChars;
 import static agora.beet.variable.VariableUtils.decodeVariableName;
 import static agora.beet.variable.VariableUtils.encodeVariableName;

@@ -1,6 +1,10 @@
 package agora.beet.dtrace;
 
-import agora.beet.model.*;
+import agora.beet.model.DeclsFile;
+import agora.beet.model.TestCase;
+import agora.beet.model.DeclsClass;
+import agora.beet.model.DeclsEnter;
+import agora.beet.model.DeclsExit;
 import agora.beet.model.harFiles.HttpEntry;
 import agora.beet.util.CSVManager;
 import agora.beet.util.FileManager;
@@ -10,7 +14,14 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.MalformedJsonException;
 import io.swagger.v3.oas.models.OpenAPI;
 
-import java.io.*;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.FileNotFoundException;
+
 import java.util.List;
 
 import static agora.beet.main.GenerateInstrumentation.bufferSize;

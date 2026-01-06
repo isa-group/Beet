@@ -6,12 +6,23 @@ import io.swagger.v3.oas.models.media.Schema;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
-import java.util.*;
+import java.util.List;
+import java.util.Map;
+import java.util.ArrayList;
+import java.util.Set;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.stream.Collectors;
 
-import static agora.beet.main.GenerateInstrumentation.*;
+import static agora.beet.main.GenerateInstrumentation.HASHCODE_TYPE_NAME;
+import static agora.beet.main.GenerateInstrumentation.OBJECT_TYPE_NAME;
+import static agora.beet.main.GenerateInstrumentation.HIERARCHY_SEPARATOR;
+import static agora.beet.main.GenerateInstrumentation.ARRAY_TYPE_NAME;
+import static agora.beet.main.GenerateInstrumentation.ARRAY_NESTING_SEPARATOR;
 import static agora.beet.variable.NestedArrays.getDeclsVariablesOfNestedArray;
-import static agora.beet.variable.VariableUtils.*;
+import static agora.beet.variable.VariableUtils.encodeVariableName;
+import static agora.beet.variable.VariableUtils.decodeVariableName;
+import static agora.beet.variable.VariableUtils.translateDatatype;
 
 /**
  * @author Juan C. Alonso

@@ -1,7 +1,12 @@
 package agora.beet.variable;
 
-import static agora.beet.main.GenerateInstrumentation.*;
+import static agora.beet.main.GenerateInstrumentation.DOUBLE_TYPE_NAME;
+import static agora.beet.main.GenerateInstrumentation.INTEGER_TYPE_NAME;
+import static agora.beet.main.GenerateInstrumentation.BOOLEAN_TYPE_NAME;
+import static agora.beet.main.GenerateInstrumentation.OBJECT_TYPE_NAME;
+import static agora.beet.main.GenerateInstrumentation.ARRAY_TYPE_NAME;
 import static agora.beet.main.GenerateInstrumentation.STRING_TYPE_NAME;
+import static agora.beet.main.GenerateInstrumentation.HIERARCHY_SEPARATOR;
 
 /**
  * @author Juan C. Alonso

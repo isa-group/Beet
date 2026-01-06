@@ -4,7 +4,9 @@ import agora.beet.model.TestCase;
 import org.apache.commons.csv.CSVRecord;
 
 import java.io.IOException;
-import java.util.*;
+import java.util.Map;
+import java.util.HashMap;
+import java.util.Arrays;
 import java.util.stream.Collectors;
 
 import static agora.beet.util.CSVManager.getCSVRecord;
