@@ -2,17 +2,8 @@ package agora.beet.main;
 
 import agora.beet.model.DeclsFile;
 import agora.beet.model.DeclsClass;
-import agora.beet.model.DeclsEnter;
-import agora.beet.model.DeclsExit;
-import agora.beet.model.TestCase;
 import agora.beet.model.Comparability;
-import agora.beet.model.harFiles.HttpEntry;
-import agora.beet.util.CSVManager;
 import agora.beet.util.FileManager;
-import agora.beet.util.TestCaseFileManager;
-import com.google.gson.Gson;
-import com.google.gson.stream.JsonReader;
-import com.google.gson.stream.MalformedJsonException;
 import io.swagger.v3.oas.models.Operation;
 import io.swagger.v3.oas.models.PathItem.HttpMethod;
 import io.swagger.v3.oas.models.OpenAPI;
@@ -21,15 +12,6 @@ import io.swagger.v3.oas.models.Paths;
 import io.swagger.v3.parser.OpenAPIV3Parser;
 import io.swagger.v3.parser.core.models.ParseOptions;
 
-
-import java.io.FileWriter;
-import java.io.File;
-import java.io.FileReader;
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.IOException;
-import java.io.FileNotFoundException;
-
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -37,7 +19,6 @@ import java.util.List;
 import java.util.Map.Entry;
 
 import static agora.beet.dtrace.DtraceFileWriter.generateDtraceFile;
-import static agora.beet.dtrace.DtraceFileWriter.generateDtraceFromHar;
 
 /**
  * @author Juan C. Alonso
