@@ -1,9 +1,18 @@
 package agora.beet.main;
 
-import agora.beet.model.*;
+import agora.beet.model.DeclsFile;
+import agora.beet.model.DeclsClass;
+import agora.beet.model.DeclsEnter;
+import agora.beet.model.DeclsExit;
+import agora.beet.model.TestCase;
+import agora.beet.model.Comparability;
+import agora.beet.model.harFiles.HttpEntry;
 import agora.beet.util.CSVManager;
 import agora.beet.util.FileManager;
 import agora.beet.util.TestCaseFileManager;
+import com.google.gson.Gson;
+import com.google.gson.stream.JsonReader;
+import com.google.gson.stream.MalformedJsonException;
 import io.swagger.v3.oas.models.Operation;
 import io.swagger.v3.oas.models.PathItem.HttpMethod;
 import io.swagger.v3.oas.models.OpenAPI;
@@ -13,21 +22,30 @@ import io.swagger.v3.parser.OpenAPIV3Parser;
 import io.swagger.v3.parser.core.models.ParseOptions;
 
 
-import java.io.*;
+import java.io.FileWriter;
+import java.io.File;
+import java.io.FileReader;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.FileNotFoundException;
+
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map.Entry;
-import java.util.stream.Collectors;
+
+import static agora.beet.dtrace.DtraceFileWriter.generateDtraceFile;
+import static agora.beet.dtrace.DtraceFileWriter.generateDtraceFromHar;
 
 /**
  * @author Juan C. Alonso
  */
 public class GenerateInstrumentation {
 
-    private static String openApiSpecPath = "src/test/resources/examples/Spotify/getAlbumTracks/swagger_albumTracks.yaml";
-    private static String testCasesFilePath = "src/test/resources/examples/Spotify/getAlbumTracks/50/Spotify_GetAlbumTracks_50.csv";
+    private static String openApiSpecPath = "src/test/resources/har_examples/yelp/oas.yaml";
+    private static String testCasesFilePath = "src/test/resources/har_examples/yelp/yelp.har";
     private static boolean generateDtrace = true;
     public static String[] stringsToConsiderAsNull = {};
 
@@ -108,71 +126,9 @@ public class GenerateInstrumentation {
         FileManager.deleteFile(declsFilePath);
         FileManager.writeFile(declsFilePath, declsFile.toString());
 
-
-        // Generate dTrace file
+        // Generate data trace file
         if(generateDtrace){
-            int i = 0;
-            String dtraceFilePath = getOutputPath("dtraceFile.dtrace", testCasesFilePath);      // openApiSpecPath testCasesFilePath
-            FileManager.deleteFile(dtraceFilePath);     // Delete file if exists
-
-            try {
-                // Read test cases
-                File testCasesFile = new File(testCasesFilePath);
-                FileReader testCasesFileReader = new FileReader(testCasesFile);
-                BufferedReader testCasesBR = new BufferedReader(testCasesFileReader,bufferSize*1024);
-                String testCasesLine = "";
-
-                // The first line must be the header
-                String header = testCasesBR.readLine();
-                if (header == null) {
-                    throw new NullPointerException("The csv file containing the test cases is empty");
-                }
-
-                TestCaseFileManager testCaseFileManager = new TestCaseFileManager(header);
-
-                FileWriter dtraceFile = new FileWriter(dtraceFilePath);
-                BufferedWriter dtraceBuffer = new BufferedWriter(dtraceFile,bufferSize*1024);
-
-                while((testCasesLine = testCasesBR.readLine()) != null) {
-                    TestCase testCase = testCaseFileManager.getTestCase(CSVManager.getCSVRecord(testCasesLine));
-
-                    if(i%50==0){
-                        System.out.println("Generated dtrace for " + i + " test cases");
-                    }
-                    i++;
-
-                    // The enters and exits belong to the same class
-                    DeclsClass declsClass = declsFile.getClasses().stream()
-                            .filter(x-> x.getClassName().equalsIgnoreCase(testCase.getPath()))
-                            .findFirst()
-                            .orElseThrow(() -> new NullPointerException("No declsClass found for test case with path: " + testCase.getPath() + " and operation id: " + testCase.getOperationId()));
-
-
-                    // Get the correct declsExit by the responseCode
-                    // TODO: Consider HTTP method too
-                    List<DeclsExit> declsExits = declsClass.getDeclsExits().stream()
-                            .filter(x-> x.getStatusCode().equalsIgnoreCase(testCase.getStatusCode()))
-                            .toList();
-
-                    for(DeclsExit declsExit: declsExits) {
-                        // Find the corresponding DeclsEnter according to the statusCode and nameSuffix
-                        DeclsEnter declsEnter = declsClass.getDeclsEnters().stream()
-                                .filter(x-> x.getStatusCode().equals(declsExit.getStatusCode()) && x.getNameSuffix().equals(declsExit.getNameSuffix()))
-                                .findFirst().orElseThrow(() -> new NullPointerException("Could not find the corresponding DeclsEnter"));
-
-                        // Write the test case in dtrace format
-                        dtraceBuffer.write(declsExit.generateDtrace(testCase, declsEnter));
-
-                    }
-                }
-
-                // Close the writer
-                dtraceBuffer.close();
-
-            } catch (IOException e){
-                e.printStackTrace();
-            }
-
+            generateDtraceFile(testCasesFilePath, declsFile, specification);
         }
 
     }
@@ -199,19 +155,19 @@ public class GenerateInstrumentation {
         return new OpenAPIV3Parser().read(openApiSpecPath, null, parseOptions);
     }
 
-//    public static void addNewDeclsClass(DeclsClass declsClass){
-//        declsClasses.add(declsClass);
-//    }
+    public static void addNewDeclsClass(DeclsClass declsClass){
+        declsClasses.add(declsClass);
+    }
 
-//    public static List<DeclsClass> getAllDeclsClasses(){
-//        return declsClasses;
-//    }
-//
-//    public static void deleteAllDeclsClasses(){
-//        declsClasses.clear();
-//    }
+    public static List<DeclsClass> getAllDeclsClasses(){
+        return declsClasses;
+    }
 
-    private static String getOutputPath(String filename, String folder) {
+    public static void deleteAllDeclsClasses(){
+        declsClasses.clear();
+    }
+
+    public static String getOutputPath(String filename, String folder) {
         Path path = java.nio.file.Paths.get(folder);      // openApiSpecPath
         Path dir = path.getParent();
         Path fn = path.getFileSystem().getPath(filename);
