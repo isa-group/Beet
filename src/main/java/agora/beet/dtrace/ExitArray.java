@@ -6,8 +6,10 @@ import org.json.simple.JSONArray;
 
 import java.util.Arrays;
 
-import static agora.beet.main.GenerateInstrumentation.*;
 import static agora.beet.main.GenerateInstrumentation.HIERARCHY_SEPARATOR;
+import static agora.beet.main.GenerateInstrumentation.primitiveTypes;
+import static agora.beet.main.GenerateInstrumentation.STRING_TYPE_NAME;
+import static agora.beet.main.GenerateInstrumentation.stringsToConsiderAsNull;
 
 /**
  * @author Juan C. Alonso

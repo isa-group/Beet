@@ -14,9 +14,13 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import static agora.beet.dtrace.ExitArray.generateDtraceExitValueOfJSONArray;
-import static agora.beet.main.GenerateInstrumentation.*;
+import static agora.beet.main.GenerateInstrumentation.numberOfExits;
+import static agora.beet.main.GenerateInstrumentation.HIERARCHY_SEPARATOR;
+import static agora.beet.main.GenerateInstrumentation.ARRAY_NESTING_SEPARATOR;
 import static agora.beet.variable.ArrayVariables.generateDeclsVariablesOfArrayExit;
-import static agora.beet.variable.ExitVariables.*;
+import static agora.beet.variable.ExitVariables.generateDeclsVariablesOfExit;
+import static agora.beet.variable.ExitVariables.generateDeclsVariablesOfPrimitiveResponse;
+import static agora.beet.variable.ExitVariables.getListOfJsonElementsForDeclsExit;
 
 /**
  * @author Juan C. Alonso

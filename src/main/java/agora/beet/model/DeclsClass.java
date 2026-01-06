@@ -5,12 +5,12 @@ import io.swagger.v3.oas.models.media.MediaType;
 import io.swagger.v3.oas.models.responses.ApiResponse;
 import io.swagger.v3.oas.models.responses.ApiResponses;
 
+import java.util.ArrayList;
 import java.util.Map.Entry;
+import java.util.List;
 
-import java.util.*;
-
-import static agora.beet.main.GenerateInstrumentation.*;
-import static agora.beet.main.GenerateInstrumentationHar.addNewDeclsClass;
+import static agora.beet.main.GenerateInstrumentation.HIERARCHY_SEPARATOR;
+import static agora.beet.main.GenerateInstrumentation.addNewDeclsClass;
 import static agora.beet.pptNesting.NestedPpts.getAllNestedDeclsExits;
 import static agora.beet.variable.EnterVariables.getListOfDeclsVariables;
 

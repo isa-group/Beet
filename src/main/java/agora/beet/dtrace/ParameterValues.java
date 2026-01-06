@@ -9,8 +9,10 @@ import java.util.Map;
 
 import static agora.beet.dtrace.EnterArray.generateDtraceEnterValueOfArray;
 import static agora.beet.dtrace.VariableValues.getPrimitiveValueFromHierarchy;
-import static agora.beet.main.GenerateInstrumentation.*;
 import static agora.beet.main.GenerateInstrumentation.HIERARCHY_SEPARATOR;
+import static agora.beet.main.GenerateInstrumentation.stringsToConsiderAsNull;
+import static agora.beet.main.GenerateInstrumentation.primitiveTypes;
+import static agora.beet.main.GenerateInstrumentation.STRING_TYPE_NAME;
 import static agora.beet.util.JSONManager.stringToJsonObject;
 import static agora.beet.util.StringManager.decodeString;
 import static agora.beet.util.StringManager.encodeString;
