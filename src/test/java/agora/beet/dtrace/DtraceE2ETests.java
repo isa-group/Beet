@@ -261,7 +261,10 @@ public class DtraceE2ETests {
                  */
                 Arguments.of("src/test/resources/testData/dtraceOracles/exit/propertyOfTypeNestedArray/nestedArrayOfPrimitives/propertyOfTypeNestedArrayOfPrimitives.yaml", "src/test/resources/testData/dtraceOracles/exit/propertyOfTypeNestedArray/nestedArrayOfPrimitives/setValues/testCase_propertyOfTypeNestedArrayOfPrimitives.csv",
                         "src/test/resources/testData/dtraceOracles/exit/propertyOfTypeNestedArray/nestedArrayOfPrimitives/setValues/dtraceFile.dtrace", "src/test/resources/testData/dtraceOracles/exit/propertyOfTypeNestedArray/nestedArrayOfPrimitives/setValues/dtraceFile_propertyOfTypeNestedArrayOfPrimitives.dtrace"
-                )//,
+                ),
+                // e2e_dtrace_exit_020 (Circular refs)
+                Arguments.of("src/test/resources/testData/dtraceOracles/exit/circularRefs/oas.json", "src/test/resources/testData/dtraceOracles/exit/circularRefs/testCases_circularRefs.csv",
+                        "src/test/resources/testData/dtraceOracles/exit/circularRefs/dtraceFile.dtrace", "src/test/resources/testData/dtraceOracles/exit/circularRefs/dtraceFile_circularRefs.dtrace")
 
         );
     }
