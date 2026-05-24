@@ -116,7 +116,7 @@ public class EnterVariables {
                 if(mediaType != null) {
                     String schemaType = mediaType.getSchema().getType();
                     if(schemaType != null && schemaType.equals("array")) {       // The parameter is of type array
-                        ArraySchema arraySchema = (ArraySchema) mediaType.getSchema();      // objectName = createPlaylist_Input    rootVariableName = this
+                        ArraySchema arraySchema = (ArraySchema) mediaType.getSchema();
                         return Collections.singletonList(generateDeclsVariablesOfArray(arraySchema, rootVariableName,
                                 sourceOfParameter, "variable", rootVariableName, dectype));
                     } else {                                                    // The body is of type object

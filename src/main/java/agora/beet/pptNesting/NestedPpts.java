@@ -58,33 +58,34 @@ public class NestedPpts {
             Map<String, Schema> allSchemas = new HashMap<>();
 
             allSchemas.put("", mapOfProperties);
-            allSchemas.putAll(getAllNestedSchemas("", mapOfProperties));
+            allSchemas.putAll(getAllNestedSchemas("", mapOfProperties, endpoint, operationName));
 
             for(String nameSuffix: allSchemas.keySet()) {
-                if(allSchemas.get(nameSuffix).getProperties()==null){       // If the element is of type array, call the constructor that receives an ArraySchema
-                    ArraySchema arraySchema = (ArraySchema) allSchemas.get(nameSuffix);
+                Schema s = allSchemas.get(nameSuffix);
+                String schemaType = s.getType();
+                if (ARRAY_TYPE_NAME.equalsIgnoreCase(schemaType) && s instanceof ArraySchema) {
+                    ArraySchema arraySchema = (ArraySchema) s;
                     DeclsExit declsExit = new DeclsExit(endpoint, operationName, variableNameInput, enterVariables, outputObjectName,
                             arraySchema, nameSuffix, nameSuffix, statusCode);
                     res.add(declsExit);
-                } else {    // If the element is of type object, call the constructor that receives an Schema
+                } else if (!ARRAY_TYPE_NAME.equalsIgnoreCase(schemaType)) {
                     DeclsExit declsExit = new DeclsExit(endpoint, operationName,
-                            variableNameInput, enterVariables, outputObjectName, allSchemas.get(nameSuffix), nameSuffix, statusCode);
+                            variableNameInput, enterVariables, outputObjectName, s, nameSuffix, statusCode);
                     res.add(declsExit);
                 }
-
+                // else: type is "array" but not an ArraySchema instance — skip (no getItems() available)
             }
-
         }
 
         return res;
 
     }
 
-    public static Map<String, Schema> getAllNestedSchemas(String nameSuffix, Schema mapOfProperties) {
+    public static Map<String, Schema> getAllNestedSchemas(String nameSuffix, Schema mapOfProperties,
+                                                          String endpoint, String operationName) {
         Map<String, Schema> res = new HashMap<>();
 
         Map<String, Schema> properties = mapOfProperties.getProperties();
-        // Warnings if properties == null
         if (properties == null) {
             if(mapOfProperties.getAdditionalProperties() == null) {
                 System.err.println("WARNING: No properties found for object: " + nameSuffix);
@@ -100,8 +101,13 @@ public class NestedPpts {
 
                 // If there is an allOf, parameterType is null, but the schema contains all the properties
                 if(parameterType == null || parameterType.equalsIgnoreCase(OBJECT_TYPE_NAME)) {     // If object
-                    // Recursive call with object.getParameter
-                    res.putAll(getAllNestedSchemas(nameSuffix + HIERARCHY_SEPARATOR + parameterName, schema));
+                    if (schema.getProperties() == null && schema.getAdditionalProperties() == null) {
+                        printCircularReferenceWarning(mapOfProperties, parameterName, schema, nameSuffix,
+                                endpoint, operationName);
+                    } else {
+                        res.putAll(getAllNestedSchemas(nameSuffix + HIERARCHY_SEPARATOR + parameterName, schema,
+                                endpoint, operationName));
+                    }
 
                 } else if(parameterType.equalsIgnoreCase(ARRAY_TYPE_NAME)) {    // If array
                     ArraySchema arraySchema = (ArraySchema) mapOfProperties.getProperties().get(parameterName);
@@ -120,15 +126,52 @@ public class NestedPpts {
                     if(itemsDatatype == null || itemsDatatype.equalsIgnoreCase(OBJECT_TYPE_NAME)) {
                         Schema subSchema = arraySchema.getItems();
 
-                        res.put(nameSuffix + HIERARCHY_SEPARATOR + parameterName, subSchema);
-
-                        res.putAll(getAllNestedSchemas(nameSuffix + HIERARCHY_SEPARATOR + parameterName, subSchema));
+                        if (subSchema.getProperties() == null && subSchema.getAdditionalProperties() == null) {
+                            // swagger-parser breaks circular reference cycles by replacing a schema with a stub
+                            // that has null properties. We recover one level of depth by looking up the real
+                            // schema from components (identified by its preserved title field). We do NOT
+                            // recurse into the real schema to avoid infinite loops.
+                            printCircularReferenceWarning(mapOfProperties, parameterName, subSchema, nameSuffix,
+                                    endpoint, operationName);
+                            Schema realSchema = lookupRealSchema(subSchema);
+                            if (realSchema != null && realSchema.getProperties() != null) {
+                                res.put(nameSuffix + HIERARCHY_SEPARATOR + parameterName, realSchema);
+                            } else {
+                                res.put(nameSuffix + HIERARCHY_SEPARATOR + parameterName, subSchema);
+                            }
+                        } else {
+                            res.put(nameSuffix + HIERARCHY_SEPARATOR + parameterName, subSchema);
+                            res.putAll(getAllNestedSchemas(nameSuffix + HIERARCHY_SEPARATOR + parameterName, subSchema,
+                                    endpoint, operationName));
+                        }
                     }
                 }
             }
         }
 
         return res;
+    }
+
+    private static void printCircularReferenceWarning(Schema parentSchema, String propertyName,
+                                                      Schema unresolvedSchema, String path,
+                                                      String endpoint, String operationName) {
+        String parentName = parentSchema.getTitle() != null ? parentSchema.getTitle() : path;
+
+        String childName;
+        if (unresolvedSchema.getTitle() != null) {
+            childName = unresolvedSchema.getTitle();
+        } else if (unresolvedSchema.get$ref() != null) {
+            String ref = unresolvedSchema.get$ref();
+            childName = ref.substring(ref.lastIndexOf('/') + 1);
+        } else {
+            childName = propertyName;
+        }
+
+        System.err.println("WARNING: Circular reference detected in operation '" + operationName
+                + "' (" + endpoint + ") between '" + parentName + "' and '" + childName
+                + "' (property '" + propertyName + "'). This relationship cannot be fully resolved. "
+                + "The generated .decls file may not be fully representative of the complete API functionality. "
+                + "Consider restructuring the circular reference in the API specification.");
     }
 
 }

@@ -47,6 +47,9 @@ public class DeclsClass {
         for(Entry<String, ApiResponse> apiResponse: apiResponses.entrySet()) {
             String outputObjectName = operationName + HIERARCHY_SEPARATOR + "Output" + HIERARCHY_SEPARATOR + apiResponse.getKey();
 
+            if(apiResponse.getValue().getContent() == null) {
+                continue;
+            }
             for(MediaType mediaType: apiResponse.getValue().getContent().values()) {
 
                 List<DeclsExit> nestedDeclsExits = getAllNestedDeclsExits(endpoint, operationName,
