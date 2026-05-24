@@ -208,6 +208,33 @@ input.optional
 return
 1279087105
 1
+return.id
+1
+1
+return.date
+"2033-01-01"
+1
+return.nameEn
+"New Year’s Day"
+1
+return.nameFr
+"Jour de l’An"
+1
+return.federal
+1
+1
+return.observedDate
+"2033-01-03"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces/{provinceId}&Province&200&province&holidays():::ENTER
 input
@@ -239,6 +266,33 @@ input.optional
 return
 1279087105
 1
+return.id
+5
+1
+return.date
+"2033-02-21"
+1
+return.nameEn
+"Family Day"
+1
+return.nameFr
+"Fête de la famille"
+1
+return.federal
+0
+1
+return.observedDate
+"2033-02-21"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces/{provinceId}&Province&200&province&holidays():::ENTER
 input
@@ -270,6 +324,33 @@ input.optional
 return
 1279087105
 1
+return.id
+8
+1
+return.date
+"2033-04-15"
+1
+return.nameEn
+"Good Friday"
+1
+return.nameFr
+"Vendredi saint"
+1
+return.federal
+1
+1
+return.observedDate
+"2033-04-15"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces/{provinceId}&Province&200&province&holidays():::ENTER
 input
@@ -301,160 +382,32 @@ input.optional
 return
 1279087105
 1
-
-/api/v1/provinces/{provinceId}&Province&200&province&holidays():::ENTER
-input
-343460016
+return.id
+9
 1
-input.provinceId
-"BC"
+return.date
+"2033-04-18"
 1
-input.year
-2033
+return.nameEn
+"Easter Monday"
 1
-input.optional
-"1"
+return.nameFr
+"Lundi de Pâques"
 1
-
-/api/v1/provinces/{provinceId}&Province&200&province&holidays():::EXIT9
-input
-343460016
+return.federal
 1
-input.provinceId
-"BC"
 1
-input.year
-2033
+return.observedDate
+"2033-04-18"
 1
-input.optional
-"1"
+return.provinces
+null
 1
-return
-1279087105
+return.provinces[..]
+nonsensical
+2
+return.optional
 1
-
-/api/v1/provinces/{provinceId}&Province&200&province&holidays():::ENTER
-input
-343460016
-1
-input.provinceId
-"BC"
-1
-input.year
-2033
-1
-input.optional
-"1"
-1
-
-/api/v1/provinces/{provinceId}&Province&200&province&holidays():::EXIT9
-input
-343460016
-1
-input.provinceId
-"BC"
-1
-input.year
-2033
-1
-input.optional
-"1"
-1
-return
-1279087105
-1
-
-/api/v1/provinces/{provinceId}&Province&200&province&holidays():::ENTER
-input
-343460016
-1
-input.provinceId
-"BC"
-1
-input.year
-2033
-1
-input.optional
-"1"
-1
-
-/api/v1/provinces/{provinceId}&Province&200&province&holidays():::EXIT9
-input
-343460016
-1
-input.provinceId
-"BC"
-1
-input.year
-2033
-1
-input.optional
-"1"
-1
-return
-1279087105
-1
-
-/api/v1/provinces/{provinceId}&Province&200&province&holidays():::ENTER
-input
-343460016
-1
-input.provinceId
-"BC"
-1
-input.year
-2033
-1
-input.optional
-"1"
-1
-
-/api/v1/provinces/{provinceId}&Province&200&province&holidays():::EXIT9
-input
-343460016
-1
-input.provinceId
-"BC"
-1
-input.year
-2033
-1
-input.optional
-"1"
-1
-return
-1279087105
-1
-
-/api/v1/provinces/{provinceId}&Province&200&province&holidays():::ENTER
-input
-343460016
-1
-input.provinceId
-"BC"
-1
-input.year
-2033
-1
-input.optional
-"1"
-1
-
-/api/v1/provinces/{provinceId}&Province&200&province&holidays():::EXIT9
-input
-343460016
-1
-input.provinceId
-"BC"
-1
-input.year
-2033
-1
-input.optional
-"1"
-1
-return
-1279087105
 1
 
 /api/v1/provinces/{provinceId}&Province&200&province&holidays():::ENTER
@@ -487,6 +440,33 @@ input.optional
 return
 1279087105
 1
+return.id
+12
+1
+return.date
+"2033-05-23"
+1
+return.nameEn
+"Victoria Day"
+1
+return.nameFr
+"Fête de la Reine"
+1
+return.federal
+1
+1
+return.observedDate
+"2033-05-23"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces/{provinceId}&Province&200&province&holidays():::ENTER
 input
@@ -518,6 +498,33 @@ input.optional
 return
 1279087105
 1
+return.id
+16
+1
+return.date
+"2033-07-01"
+1
+return.nameEn
+"Canada Day"
+1
+return.nameFr
+"Fête du Canada"
+1
+return.federal
+1
+1
+return.observedDate
+"2033-07-01"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces/{provinceId}&Province&200&province&holidays():::ENTER
 input
@@ -549,6 +556,33 @@ input.optional
 return
 1279087105
 1
+return.id
+20
+1
+return.date
+"2033-08-01"
+1
+return.nameEn
+"British Columbia Day"
+1
+return.nameFr
+"Jour de Colombie-Britannique"
+1
+return.federal
+0
+1
+return.observedDate
+"2033-08-01"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces/{provinceId}&Province&200&province&holidays():::ENTER
 input
@@ -579,6 +613,323 @@ input.optional
 1
 return
 1279087105
+1
+return.id
+27
+1
+return.date
+"2033-09-05"
+1
+return.nameEn
+"Labour Day"
+1
+return.nameFr
+"Fête du travail"
+1
+return.federal
+1
+1
+return.observedDate
+"2033-09-05"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
+
+/api/v1/provinces/{provinceId}&Province&200&province&holidays():::ENTER
+input
+343460016
+1
+input.provinceId
+"BC"
+1
+input.year
+2033
+1
+input.optional
+"1"
+1
+
+/api/v1/provinces/{provinceId}&Province&200&province&holidays():::EXIT9
+input
+343460016
+1
+input.provinceId
+"BC"
+1
+input.year
+2033
+1
+input.optional
+"1"
+1
+return
+1279087105
+1
+return.id
+29
+1
+return.date
+"2033-09-30"
+1
+return.nameEn
+"National Day for Truth and Reconciliation"
+1
+return.nameFr
+"Journée nationale de la vérité et de la réconciliation"
+1
+return.federal
+1
+1
+return.observedDate
+"2033-09-30"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
+
+/api/v1/provinces/{provinceId}&Province&200&province&holidays():::ENTER
+input
+343460016
+1
+input.provinceId
+"BC"
+1
+input.year
+2033
+1
+input.optional
+"1"
+1
+
+/api/v1/provinces/{provinceId}&Province&200&province&holidays():::EXIT9
+input
+343460016
+1
+input.provinceId
+"BC"
+1
+input.year
+2033
+1
+input.optional
+"1"
+1
+return
+1279087105
+1
+return.id
+31
+1
+return.date
+"2033-10-10"
+1
+return.nameEn
+"Thanksgiving"
+1
+return.nameFr
+"Action de grâce"
+1
+return.federal
+1
+1
+return.observedDate
+"2033-10-10"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
+
+/api/v1/provinces/{provinceId}&Province&200&province&holidays():::ENTER
+input
+343460016
+1
+input.provinceId
+"BC"
+1
+input.year
+2033
+1
+input.optional
+"1"
+1
+
+/api/v1/provinces/{provinceId}&Province&200&province&holidays():::EXIT9
+input
+343460016
+1
+input.provinceId
+"BC"
+1
+input.year
+2033
+1
+input.optional
+"1"
+1
+return
+1279087105
+1
+return.id
+32
+1
+return.date
+"2033-11-11"
+1
+return.nameEn
+"Remembrance Day"
+1
+return.nameFr
+"Jour du Souvenir"
+1
+return.federal
+1
+1
+return.observedDate
+"2033-11-11"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
+
+/api/v1/provinces/{provinceId}&Province&200&province&holidays():::ENTER
+input
+343460016
+1
+input.provinceId
+"BC"
+1
+input.year
+2033
+1
+input.optional
+"1"
+1
+
+/api/v1/provinces/{provinceId}&Province&200&province&holidays():::EXIT9
+input
+343460016
+1
+input.provinceId
+"BC"
+1
+input.year
+2033
+1
+input.optional
+"1"
+1
+return
+1279087105
+1
+return.id
+33
+1
+return.date
+"2033-12-25"
+1
+return.nameEn
+"Christmas Day"
+1
+return.nameFr
+"Noël"
+1
+return.federal
+1
+1
+return.observedDate
+"2033-12-26"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
+
+/api/v1/provinces/{provinceId}&Province&200&province&holidays():::ENTER
+input
+343460016
+1
+input.provinceId
+"BC"
+1
+input.year
+2033
+1
+input.optional
+"1"
+1
+
+/api/v1/provinces/{provinceId}&Province&200&province&holidays():::EXIT9
+input
+343460016
+1
+input.provinceId
+"BC"
+1
+input.year
+2033
+1
+input.optional
+"1"
+1
+return
+1279087105
+1
+return.id
+34
+1
+return.date
+"2033-12-26"
+1
+return.nameEn
+"Boxing Day"
+1
+return.nameFr
+"Lendemain de Noël"
+1
+return.federal
+1
+1
+return.observedDate
+"2033-12-27"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+1
 1
 
 /api/v1/holidays&Holidays&200():::ENTER
@@ -8831,6 +9182,33 @@ input.optional
 return
 1535655885
 1
+return.id
+1
+1
+return.date
+"2028-01-01"
+1
+return.nameEn
+"New Year’s Day"
+1
+return.nameFr
+"Jour de l’An"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-01-03"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -8855,7 +9233,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+5
+1
+return.date
+"2028-02-21"
+1
+return.nameEn
+"Family Day"
+1
+return.nameFr
+"Fête de la famille"
+1
+return.federal
+0
+1
+return.observedDate
+"2028-02-21"
+1
+return.provinces
+null
 1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -8881,6 +9286,33 @@ input.optional
 return
 1535655885
 1
+return.id
+8
+1
+return.date
+"2028-04-14"
+1
+return.nameEn
+"Good Friday"
+1
+return.nameFr
+"Vendredi saint"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-04-14"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -8905,7 +9337,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+9
+1
+return.date
+"2028-04-17"
+1
+return.nameEn
+"Easter Monday"
+1
+return.nameFr
+"Lundi de Pâques"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-04-17"
+1
+return.provinces
+null
 1
+return.provinces[..]
+nonsensical
+2
+return.optional
+1
+1
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -8930,7 +9389,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+12
+1
+return.date
+"2028-05-22"
+1
+return.nameEn
+"Victoria Day"
+1
+return.nameFr
+"Fête de la Reine"
+1
+return.federal
+1
 1
+return.observedDate
+"2028-05-22"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+1
+1
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -8955,7 +9441,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+16
+1
+return.date
+"2028-07-01"
+1
+return.nameEn
+"Canada Day"
+1
+return.nameFr
+"Fête du Canada"
 1
+return.federal
+1
+1
+return.observedDate
+"2028-07-03"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -8980,7 +9493,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+23
+1
+return.date
+"2028-08-07"
+1
+return.nameEn
+"Heritage Day"
+1
+return.nameFr
+"Jour d’Héritage"
 1
+return.federal
+0
+1
+return.observedDate
+"2028-08-07"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+1
+1
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -9005,7 +9545,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+27
+1
+return.date
+"2028-09-04"
+1
+return.nameEn
+"Labour Day"
 1
+return.nameFr
+"Fête du travail"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-09-04"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -9030,7 +9597,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+29
+1
+return.date
+"2028-09-30"
+1
+return.nameEn
+"National Day for Truth and Reconciliation"
 1
+return.nameFr
+"Journée nationale de la vérité et de la réconciliation"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-10-02"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+1
+1
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -9055,7 +9649,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+31
 1
+return.date
+"2028-10-09"
+1
+return.nameEn
+"Thanksgiving"
+1
+return.nameFr
+"Action de grâce"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-10-09"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+1
+1
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -9080,7 +9701,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+32
+1
+return.date
+"2028-11-11"
+1
+return.nameEn
+"Remembrance Day"
+1
+return.nameFr
+"Jour du Souvenir"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-11-13"
 1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+1
+1
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -9105,7 +9753,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+33
+1
+return.date
+"2028-12-25"
+1
+return.nameEn
+"Christmas Day"
+1
+return.nameFr
+"Noël"
+1
+return.federal
 1
+1
+return.observedDate
+"2028-12-25"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -9130,7 +9805,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+34
+1
+return.date
+"2028-12-26"
+1
+return.nameEn
+"Boxing Day"
+1
+return.nameFr
+"Lendemain de Noël"
+1
+return.federal
 1
+1
+return.observedDate
+"2028-12-26"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+1
+1
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -9155,7 +9857,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+1
+1
+return.date
+"2028-01-01"
 1
+return.nameEn
+"New Year’s Day"
+1
+return.nameFr
+"Jour de l’An"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-01-03"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -9180,7 +9909,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+5
+1
+return.date
+"2028-02-21"
 1
+return.nameEn
+"Family Day"
+1
+return.nameFr
+"Fête de la famille"
+1
+return.federal
+0
+1
+return.observedDate
+"2028-02-21"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -9205,7 +9961,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+8
+1
+return.date
+"2028-04-14"
+1
+return.nameEn
+"Good Friday"
 1
+return.nameFr
+"Vendredi saint"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-04-14"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -9230,7 +10013,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+9
+1
+return.date
+"2028-04-17"
+1
+return.nameEn
+"Easter Monday"
 1
+return.nameFr
+"Lundi de Pâques"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-04-17"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+1
+1
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -9255,7 +10065,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+12
+1
+return.date
+"2028-05-22"
+1
+return.nameEn
+"Victoria Day"
+1
+return.nameFr
+"Fête de la Reine"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-05-22"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
 1
+1
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -9280,7 +10117,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+16
+1
+return.date
+"2028-07-01"
+1
+return.nameEn
+"Canada Day"
+1
+return.nameFr
+"Fête du Canada"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-07-03"
 1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -9305,7 +10169,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+20
+1
+return.date
+"2028-08-07"
+1
+return.nameEn
+"British Columbia Day"
+1
+return.nameFr
+"Jour de Colombie-Britannique"
+1
+return.federal
+0
+1
+return.observedDate
+"2028-08-07"
+1
+return.provinces
+null
 1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -9331,6 +10222,33 @@ input.optional
 return
 1535655885
 1
+return.id
+27
+1
+return.date
+"2028-09-04"
+1
+return.nameEn
+"Labour Day"
+1
+return.nameFr
+"Fête du travail"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-09-04"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -9355,7 +10273,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+29
+1
+return.date
+"2028-09-30"
+1
+return.nameEn
+"National Day for Truth and Reconciliation"
+1
+return.nameFr
+"Journée nationale de la vérité et de la réconciliation"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-10-02"
+1
+return.provinces
+null
 1
+return.provinces[..]
+nonsensical
+2
+return.optional
+1
+1
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -9380,7 +10325,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+31
+1
+return.date
+"2028-10-09"
+1
+return.nameEn
+"Thanksgiving"
+1
+return.nameFr
+"Action de grâce"
+1
+return.federal
+1
 1
+return.observedDate
+"2028-10-09"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+1
+1
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -9405,7 +10377,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+32
+1
+return.date
+"2028-11-11"
+1
+return.nameEn
+"Remembrance Day"
+1
+return.nameFr
+"Jour du Souvenir"
 1
+return.federal
+1
+1
+return.observedDate
+"2028-11-13"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+1
+1
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -9430,7 +10429,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+33
+1
+return.date
+"2028-12-25"
 1
+return.nameEn
+"Christmas Day"
+1
+return.nameFr
+"Noël"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-12-25"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -9455,7 +10481,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+34
+1
+return.date
+"2028-12-26"
 1
+return.nameEn
+"Boxing Day"
+1
+return.nameFr
+"Lendemain de Noël"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-12-26"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+1
+1
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -9480,7 +10533,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+1
+1
+return.date
+"2028-01-01"
+1
+return.nameEn
+"New Year’s Day"
+1
+return.nameFr
+"Jour de l’An"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-01-03"
 1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -9505,7 +10585,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+3
+1
+return.date
+"2028-02-21"
+1
+return.nameEn
+"Louis Riel Day"
+1
+return.nameFr
+"Journée Louis Riel"
+1
+return.federal
+0
+1
+return.observedDate
+"2028-02-21"
+1
+return.provinces
+null
 1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -9531,6 +10638,33 @@ input.optional
 return
 1535655885
 1
+return.id
+8
+1
+return.date
+"2028-04-14"
+1
+return.nameEn
+"Good Friday"
+1
+return.nameFr
+"Vendredi saint"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-04-14"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -9556,7 +10690,34 @@ input.optional
 return
 1535655885
 1
-
+return.id
+9
+1
+return.date
+"2028-04-17"
+1
+return.nameEn
+"Easter Monday"
+1
+return.nameFr
+"Lundi de Pâques"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-04-17"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+1
+1
+
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
 1551702882
@@ -9580,7 +10741,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+12
+1
+return.date
+"2028-05-22"
+1
+return.nameEn
+"Victoria Day"
+1
+return.nameFr
+"Fête de la Reine"
+1
+return.federal
 1
+1
+return.observedDate
+"2028-05-22"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+1
+1
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -9605,7 +10793,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+16
+1
+return.date
+"2028-07-01"
+1
+return.nameEn
+"Canada Day"
 1
+return.nameFr
+"Fête du Canada"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-07-03"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -9630,7 +10845,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+24
+1
+return.date
+"2028-08-07"
+1
+return.nameEn
+"Terry Fox Day"
 1
+return.nameFr
+"Journée Terry Fox"
+1
+return.federal
+0
+1
+return.observedDate
+"2028-08-07"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+1
+1
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -9655,7 +10897,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+27
+1
+return.date
+"2028-09-04"
 1
+return.nameEn
+"Labour Day"
+1
+return.nameFr
+"Fête du travail"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-09-04"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -9680,7 +10949,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+30
+1
+return.date
+"2028-09-30"
 1
+return.nameEn
+"Orange Shirt Day"
+1
+return.nameFr
+" Jour du chandail orange"
+1
+return.federal
+0
+1
+return.observedDate
+"2028-10-02"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -9705,7 +11001,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+31
+1
+return.date
+"2028-10-09"
+1
+return.nameEn
+"Thanksgiving"
 1
+return.nameFr
+"Action de grâce"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-10-09"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+1
+1
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -9730,7 +11053,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+32
 1
+return.date
+"2028-11-11"
+1
+return.nameEn
+"Remembrance Day"
+1
+return.nameFr
+"Jour du Souvenir"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-11-13"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+1
+1
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -9755,7 +11105,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+33
+1
+return.date
+"2028-12-25"
+1
+return.nameEn
+"Christmas Day"
+1
+return.nameFr
+"Noël"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-12-25"
 1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -9780,7 +11157,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+34
+1
+return.date
+"2028-12-26"
+1
+return.nameEn
+"Boxing Day"
+1
+return.nameFr
+"Lendemain de Noël"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-12-26"
 1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+1
+1
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -9805,7 +11209,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+1
+1
+return.date
+"2028-01-01"
+1
+return.nameEn
+"New Year’s Day"
+1
+return.nameFr
+"Jour de l’An"
 1
+return.federal
+1
+1
+return.observedDate
+"2028-01-03"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -9830,7 +11261,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+5
+1
+return.date
+"2028-02-21"
+1
+return.nameEn
+"Family Day"
+1
+return.nameFr
+"Fête de la famille"
 1
+return.federal
+0
+1
+return.observedDate
+"2028-02-21"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -9855,7 +11313,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+8
+1
+return.date
+"2028-04-14"
+1
+return.nameEn
+"Good Friday"
+1
+return.nameFr
+"Vendredi saint"
+1
+return.federal
 1
+1
+return.observedDate
+"2028-04-14"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -9880,7 +11365,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+12
+1
+return.date
+"2028-05-22"
+1
+return.nameEn
+"Victoria Day"
+1
+return.nameFr
+"Fête de la Reine"
+1
+return.federal
 1
+1
+return.observedDate
+"2028-05-22"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+1
+1
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -9905,7 +11417,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+16
+1
+return.date
+"2028-07-01"
+1
+return.nameEn
+"Canada Day"
 1
+return.nameFr
+"Fête du Canada"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-07-03"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -9930,7 +11469,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+21
+1
+return.date
+"2028-08-07"
+1
+return.nameEn
+"New Brunswick Day"
 1
+return.nameFr
+"Jour de Nouveau Brunswick"
+1
+return.federal
+0
+1
+return.observedDate
+"2028-08-07"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -9955,7 +11521,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+27
+1
+return.date
+"2028-09-04"
+1
+return.nameEn
+"Labour Day"
+1
+return.nameFr
+"Fête du travail"
 1
+return.federal
+1
+1
+return.observedDate
+"2028-09-04"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -9980,7 +11573,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+31
+1
+return.date
+"2028-10-09"
+1
+return.nameEn
+"Thanksgiving"
+1
+return.nameFr
+"Action de grâce"
 1
+return.federal
+1
+1
+return.observedDate
+"2028-10-09"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+1
+1
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -10005,7 +11625,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+32
+1
+return.date
+"2028-11-11"
 1
+return.nameEn
+"Remembrance Day"
+1
+return.nameFr
+"Jour du Souvenir"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-11-13"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+1
+1
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -10030,7 +11677,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+33
+1
+return.date
+"2028-12-25"
+1
+return.nameEn
+"Christmas Day"
+1
+return.nameFr
+"Noël"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-12-25"
+1
+return.provinces
+null
 1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -10056,6 +11730,33 @@ input.optional
 return
 1535655885
 1
+return.id
+34
+1
+return.date
+"2028-12-26"
+1
+return.nameEn
+"Boxing Day"
+1
+return.nameFr
+"Lendemain de Noël"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-12-26"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+1
+1
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -10080,7 +11781,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+1
+1
+return.date
+"2028-01-01"
+1
+return.nameEn
+"New Year’s Day"
+1
+return.nameFr
+"Jour de l’An"
+1
+return.federal
 1
+1
+return.observedDate
+"2028-01-03"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -10105,7 +11833,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+7
+1
+return.date
+"2028-03-17"
+1
+return.nameEn
+"Saint Patrick’s Day"
+1
+return.nameFr
+"Jour de la Saint-Patrick"
+1
+return.federal
+0
 1
+return.observedDate
+"2028-03-13"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -10130,7 +11885,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+8
+1
+return.date
+"2028-04-14"
+1
+return.nameEn
+"Good Friday"
+1
+return.nameFr
+"Vendredi saint"
+1
+return.federal
+1
 1
+return.observedDate
+"2028-04-14"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -10155,7 +11937,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+10
+1
+return.date
+"2028-04-23"
+1
+return.nameEn
+"Saint George’s Day"
+1
+return.nameFr
+"Jour de St. George"
+1
+return.federal
+0
+1
+return.observedDate
+"2028-04-24"
 1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -10180,7 +11989,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+15
+1
+return.date
+"2028-06-24"
+1
+return.nameEn
+"Discovery Day"
+1
+return.nameFr
+"Journée découverte"
+1
+return.federal
+0
+1
+return.observedDate
+"2028-06-26"
+1
+return.provinces
+null
 1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -10206,6 +12042,33 @@ input.optional
 return
 1535655885
 1
+return.id
+16
+1
+return.date
+"2028-07-01"
+1
+return.nameEn
+"Canada Day"
+1
+return.nameFr
+"Fête du Canada"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-07-03"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -10231,6 +12094,33 @@ input.optional
 return
 1535655885
 1
+return.id
+18
+1
+return.date
+"2028-07-12"
+1
+return.nameEn
+"Orangemen’s Day"
+1
+return.nameFr
+"Fête des orangistes"
+1
+return.federal
+0
+1
+return.observedDate
+"2028-07-10"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -10255,7 +12145,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+25
 1
+return.date
+"2028-08-02"
+1
+return.nameEn
+"Regatta Day"
+1
+return.nameFr
+"Journée des régates"
+1
+return.federal
+0
+1
+return.observedDate
+"2028-08-02"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -10280,7 +12197,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+27
+1
+return.date
+"2028-09-04"
 1
+return.nameEn
+"Labour Day"
+1
+return.nameFr
+"Fête du travail"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-09-04"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -10306,9 +12250,36 @@ input.optional
 return
 1535655885
 1
-
-/api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
-input
+return.id
+32
+1
+return.date
+"2028-11-11"
+1
+return.nameEn
+"Remembrance Day"
+1
+return.nameFr
+"Jour du Souvenir"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-11-13"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+1
+1
+
+/api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
+input
 1551702882
 1
 input.year
@@ -10330,7 +12301,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+33
+1
+return.date
+"2028-12-25"
 1
+return.nameEn
+"Christmas Day"
+1
+return.nameFr
+"Noël"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-12-25"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -10355,7 +12353,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+34
+1
+return.date
+"2028-12-26"
+1
+return.nameEn
+"Boxing Day"
+1
+return.nameFr
+"Lendemain de Noël"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-12-26"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
 1
+1
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -10380,7 +12405,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+1
+1
+return.date
+"2028-01-01"
+1
+return.nameEn
+"New Year’s Day"
+1
+return.nameFr
+"Jour de l’An"
+1
+return.federal
 1
+1
+return.observedDate
+"2028-01-03"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -10405,7 +12457,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+6
+1
+return.date
+"2028-02-21"
+1
+return.nameEn
+"Heritage Day"
+1
+return.nameFr
+"Fête du Patrimoine"
+1
+return.federal
+0
 1
+return.observedDate
+"2028-02-21"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -10430,7 +12509,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+8
+1
+return.date
+"2028-04-14"
+1
+return.nameEn
+"Good Friday"
+1
+return.nameFr
+"Vendredi saint"
+1
+return.federal
 1
+1
+return.observedDate
+"2028-04-14"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -10455,7 +12561,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+9
+1
+return.date
+"2028-04-17"
+1
+return.nameEn
+"Easter Monday"
+1
+return.nameFr
+"Lundi de Pâques"
+1
+return.federal
 1
+1
+return.observedDate
+"2028-04-17"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+1
+1
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -10480,7 +12613,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+16
+1
+return.date
+"2028-07-01"
 1
+return.nameEn
+"Canada Day"
+1
+return.nameFr
+"Fête du Canada"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-07-03"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -10505,7 +12665,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+27
+1
+return.date
+"2028-09-04"
 1
+return.nameEn
+"Labour Day"
+1
+return.nameFr
+"Fête du travail"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-09-04"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -10530,7 +12717,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+31
+1
+return.date
+"2028-10-09"
+1
+return.nameEn
+"Thanksgiving"
+1
+return.nameFr
+"Action de grâce"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-10-09"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
 1
+1
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -10555,7 +12769,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+33
+1
+return.date
+"2028-12-25"
+1
+return.nameEn
+"Christmas Day"
+1
+return.nameFr
+"Noël"
+1
+return.federal
+1
 1
+return.observedDate
+"2028-12-25"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -10580,7 +12821,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+34
+1
+return.date
+"2028-12-26"
+1
+return.nameEn
+"Boxing Day"
+1
+return.nameFr
+"Lendemain de Noël"
+1
+return.federal
+1
 1
+return.observedDate
+"2028-12-26"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+1
+1
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -10605,7 +12873,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+1
+1
+return.date
+"2028-01-01"
 1
+return.nameEn
+"New Year’s Day"
+1
+return.nameFr
+"Jour de l’An"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-01-03"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -10630,7 +12925,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+8
+1
+return.date
+"2028-04-14"
 1
+return.nameEn
+"Good Friday"
+1
+return.nameFr
+"Vendredi saint"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-04-14"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -10655,7 +12977,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+12
+1
+return.date
+"2028-05-22"
+1
+return.nameEn
+"Victoria Day"
+1
+return.nameFr
+"Fête de la Reine"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-05-22"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
 1
+1
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -10680,7 +13029,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+13
+1
+return.date
+"2028-06-21"
+1
+return.nameEn
+"National Indigenous Peoples Day"
+1
+return.nameFr
+"Journée nationale des peuples autochtones"
+1
+return.federal
+0
+1
+return.observedDate
+"2028-06-21"
 1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -10705,7 +13081,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+16
+1
+return.date
+"2028-07-01"
+1
+return.nameEn
+"Canada Day"
+1
+return.nameFr
+"Fête du Canada"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-07-03"
 1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -10730,7 +13133,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+19
+1
+return.date
+"2028-08-07"
+1
+return.nameEn
+"Civic Holiday"
+1
+return.nameFr
+"Congé civique"
+1
+return.federal
+1
 1
+return.observedDate
+"2028-08-07"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+1
+1
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -10755,7 +13185,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+27
+1
+return.date
+"2028-09-04"
+1
+return.nameEn
+"Labour Day"
+1
+return.nameFr
+"Fête du travail"
 1
+return.federal
+1
+1
+return.observedDate
+"2028-09-04"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -10780,7 +13237,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+29
+1
+return.date
+"2028-09-30"
+1
+return.nameEn
+"National Day for Truth and Reconciliation"
 1
+return.nameFr
+"Journée nationale de la vérité et de la réconciliation"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-10-02"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+1
+1
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -10805,7 +13289,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+31
 1
+return.date
+"2028-10-09"
+1
+return.nameEn
+"Thanksgiving"
+1
+return.nameFr
+"Action de grâce"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-10-09"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+1
+1
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -10830,7 +13341,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+32
+1
+return.date
+"2028-11-11"
+1
+return.nameEn
+"Remembrance Day"
+1
+return.nameFr
+"Jour du Souvenir"
+1
+return.federal
+1
 1
+return.observedDate
+"2028-11-13"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+1
+1
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -10855,7 +13393,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+33
+1
+return.date
+"2028-12-25"
+1
+return.nameEn
+"Christmas Day"
 1
+return.nameFr
+"Noël"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-12-25"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -10880,7 +13445,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+1
+1
+return.date
+"2028-01-01"
 1
+return.nameEn
+"New Year’s Day"
+1
+return.nameFr
+"Jour de l’An"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-01-03"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -10905,7 +13497,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+8
 1
+return.date
+"2028-04-14"
+1
+return.nameEn
+"Good Friday"
+1
+return.nameFr
+"Vendredi saint"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-04-14"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -10930,7 +13549,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+12
 1
+return.date
+"2028-05-22"
+1
+return.nameEn
+"Victoria Day"
+1
+return.nameFr
+"Fête de la Reine"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-05-22"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+1
+1
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -10955,7 +13601,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+16
+1
+return.date
+"2028-07-01"
+1
+return.nameEn
+"Canada Day"
+1
+return.nameFr
+"Fête du Canada"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-07-03"
 1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -10980,7 +13653,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+17
+1
+return.date
+"2028-07-09"
+1
+return.nameEn
+"Nunavut Day"
+1
+return.nameFr
+"Jour de Nunavut"
+1
+return.federal
+0
+1
+return.observedDate
+"2028-07-10"
 1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -11005,7 +13705,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+19
+1
+return.date
+"2028-08-07"
+1
+return.nameEn
+"Civic Holiday"
+1
+return.nameFr
+"Congé civique"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-08-07"
 1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+1
+1
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -11030,7 +13757,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+27
+1
+return.date
+"2028-09-04"
+1
+return.nameEn
+"Labour Day"
+1
+return.nameFr
+"Fête du travail"
 1
+return.federal
+1
+1
+return.observedDate
+"2028-09-04"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -11055,7 +13809,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+29
+1
+return.date
+"2028-09-30"
+1
+return.nameEn
+"National Day for Truth and Reconciliation"
+1
+return.nameFr
+"Journée nationale de la vérité et de la réconciliation"
 1
+return.federal
+1
+1
+return.observedDate
+"2028-10-02"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+1
+1
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -11080,7 +13861,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+31
+1
+return.date
+"2028-10-09"
+1
+return.nameEn
+"Thanksgiving"
+1
+return.nameFr
+"Action de grâce"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-10-09"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
 1
+1
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -11105,7 +13913,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+32
+1
+return.date
+"2028-11-11"
+1
+return.nameEn
+"Remembrance Day"
+1
+return.nameFr
+"Jour du Souvenir"
+1
+return.federal
+1
 1
+return.observedDate
+"2028-11-13"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+1
+1
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -11130,7 +13965,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+33
+1
+return.date
+"2028-12-25"
+1
+return.nameEn
+"Christmas Day"
+1
+return.nameFr
+"Noël"
 1
+return.federal
+1
+1
+return.observedDate
+"2028-12-25"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -11155,7 +14017,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+1
+1
+return.date
+"2028-01-01"
 1
+return.nameEn
+"New Year’s Day"
+1
+return.nameFr
+"Jour de l’An"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-01-03"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -11180,7 +14069,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+5
+1
+return.date
+"2028-02-21"
 1
+return.nameEn
+"Family Day"
+1
+return.nameFr
+"Fête de la famille"
+1
+return.federal
+0
+1
+return.observedDate
+"2028-02-21"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -11205,7 +14121,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+8
+1
+return.date
+"2028-04-14"
 1
+return.nameEn
+"Good Friday"
+1
+return.nameFr
+"Vendredi saint"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-04-14"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -11230,7 +14173,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+9
+1
+return.date
+"2028-04-17"
 1
+return.nameEn
+"Easter Monday"
+1
+return.nameFr
+"Lundi de Pâques"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-04-17"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+1
+1
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -11255,7 +14225,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+12
+1
+return.date
+"2028-05-22"
+1
+return.nameEn
+"Victoria Day"
+1
+return.nameFr
+"Fête de la Reine"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-05-22"
 1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+1
+1
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -11280,7 +14277,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+16
+1
+return.date
+"2028-07-01"
+1
+return.nameEn
+"Canada Day"
+1
+return.nameFr
+"Fête du Canada"
+1
+return.federal
 1
+1
+return.observedDate
+"2028-07-03"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -11305,7 +14329,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+19
+1
+return.date
+"2028-08-07"
+1
+return.nameEn
+"Civic Holiday"
+1
+return.nameFr
+"Congé civique"
+1
+return.federal
 1
+1
+return.observedDate
+"2028-08-07"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+1
+1
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -11330,7 +14381,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+27
+1
+return.date
+"2028-09-04"
 1
+return.nameEn
+"Labour Day"
+1
+return.nameFr
+"Fête du travail"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-09-04"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -11355,7 +14433,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+31
+1
+return.date
+"2028-10-09"
 1
+return.nameEn
+"Thanksgiving"
+1
+return.nameFr
+"Action de grâce"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-10-09"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+1
+1
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -11380,7 +14485,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+32
+1
+return.date
+"2028-11-11"
+1
+return.nameEn
+"Remembrance Day"
+1
+return.nameFr
+"Jour du Souvenir"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-11-13"
 1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+1
+1
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -11405,7 +14537,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+33
+1
+return.date
+"2028-12-25"
+1
+return.nameEn
+"Christmas Day"
+1
+return.nameFr
+"Noël"
 1
+return.federal
+1
+1
+return.observedDate
+"2028-12-25"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -11430,7 +14589,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+34
+1
+return.date
+"2028-12-26"
+1
+return.nameEn
+"Boxing Day"
+1
+return.nameFr
+"Lendemain de Noël"
 1
+return.federal
+1
+1
+return.observedDate
+"2028-12-26"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+1
+1
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -11455,7 +14641,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+1
+1
+return.date
+"2028-01-01"
+1
+return.nameEn
+"New Year’s Day"
+1
+return.nameFr
+"Jour de l’An"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-01-03"
+1
+return.provinces
+null
 1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -11481,6 +14694,33 @@ input.optional
 return
 1535655885
 1
+return.id
+4
+1
+return.date
+"2028-02-21"
+1
+return.nameEn
+"Islander Day"
+1
+return.nameFr
+"Fête des Insulaires"
+1
+return.federal
+0
+1
+return.observedDate
+"2028-02-21"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -11505,7 +14745,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+8
+1
+return.date
+"2028-04-14"
+1
+return.nameEn
+"Good Friday"
+1
+return.nameFr
+"Vendredi saint"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-04-14"
+1
+return.provinces
+null
 1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -11531,6 +14798,33 @@ input.optional
 return
 1535655885
 1
+return.id
+16
+1
+return.date
+"2028-07-01"
+1
+return.nameEn
+"Canada Day"
+1
+return.nameFr
+"Fête du Canada"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-07-03"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -11555,7 +14849,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+27
+1
+return.date
+"2028-09-04"
+1
+return.nameEn
+"Labour Day"
+1
+return.nameFr
+"Fête du travail"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-09-04"
 1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -11580,7 +14901,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+29
+1
+return.date
+"2028-09-30"
+1
+return.nameEn
+"National Day for Truth and Reconciliation"
+1
+return.nameFr
+"Journée nationale de la vérité et de la réconciliation"
+1
+return.federal
+1
 1
+return.observedDate
+"2028-10-02"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+1
+1
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -11605,7 +14953,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+32
+1
+return.date
+"2028-11-11"
+1
+return.nameEn
+"Remembrance Day"
+1
+return.nameFr
+"Jour du Souvenir"
 1
+return.federal
+1
+1
+return.observedDate
+"2028-11-13"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+1
+1
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -11627,10 +15002,37 @@ input.year
 1
 input.optional
 "true"
+1
+return
+1535655885
+1
+return.id
+33
+1
+return.date
+"2028-12-25"
+1
+return.nameEn
+"Christmas Day"
+1
+return.nameFr
+"Noël"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-12-25"
 1
-return
-1535655885
+return.provinces
+null
 1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -11655,7 +15057,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+1
+1
+return.date
+"2028-01-01"
+1
+return.nameEn
+"New Year’s Day"
+1
+return.nameFr
+"Jour de l’An"
+1
+return.federal
 1
+1
+return.observedDate
+"2028-01-03"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -11680,7 +15109,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+2
+1
+return.date
+"2028-01-02"
+1
+return.nameEn
+"Day after New Year’s"
+1
+return.nameFr
+"Lendemain du Jour de l’An"
+1
+return.federal
+0
 1
+return.observedDate
+"2028-01-04"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+1
+1
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -11705,7 +15161,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+8
+1
+return.date
+"2028-04-14"
+1
+return.nameEn
+"Good Friday"
+1
+return.nameFr
+"Vendredi saint"
 1
+return.federal
+1
+1
+return.observedDate
+"2028-04-14"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -11730,7 +15213,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+11
+1
+return.date
+"2028-05-22"
+1
+return.nameEn
+"National Patriots’ Day"
+1
+return.nameFr
+"Journée nationale des patriotes"
 1
+return.federal
+0
+1
+return.observedDate
+"2028-05-22"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -11755,7 +15265,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+14
+1
+return.date
+"2028-06-24"
+1
+return.nameEn
+"Saint-Jean-Baptiste Day"
+1
+return.nameFr
+"Saint-Jean-Baptiste / Fête nationale du Québec"
+1
+return.federal
+0
 1
+return.observedDate
+"2028-06-26"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -11780,7 +15317,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+16
+1
+return.date
+"2028-07-01"
+1
+return.nameEn
+"Canada Day"
+1
+return.nameFr
+"Fête du Canada"
+1
+return.federal
+1
 1
+return.observedDate
+"2028-07-03"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -11805,7 +15369,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+27
+1
+return.date
+"2028-09-04"
+1
+return.nameEn
+"Labour Day"
+1
+return.nameFr
+"Fête du travail"
+1
+return.federal
+1
 1
+return.observedDate
+"2028-09-04"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -11830,7 +15421,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+31
+1
+return.date
+"2028-10-09"
+1
+return.nameEn
+"Thanksgiving"
+1
+return.nameFr
+"Action de grâce"
+1
+return.federal
+1
 1
+return.observedDate
+"2028-10-09"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+1
+1
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -11855,7 +15473,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+33
+1
+return.date
+"2028-12-25"
+1
+return.nameEn
+"Christmas Day"
+1
+return.nameFr
+"Noël"
 1
+return.federal
+1
+1
+return.observedDate
+"2028-12-25"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -11880,7 +15525,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+1
+1
+return.date
+"2028-01-01"
+1
+return.nameEn
+"New Year’s Day"
 1
+return.nameFr
+"Jour de l’An"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-01-03"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -11905,7 +15577,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+5
+1
+return.date
+"2028-02-21"
+1
+return.nameEn
+"Family Day"
 1
+return.nameFr
+"Fête de la famille"
+1
+return.federal
+0
+1
+return.observedDate
+"2028-02-21"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -11930,7 +15629,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+8
+1
+return.date
+"2028-04-14"
+1
+return.nameEn
+"Good Friday"
+1
+return.nameFr
+"Vendredi saint"
 1
+return.federal
+1
+1
+return.observedDate
+"2028-04-14"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -11955,7 +15681,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+12
+1
+return.date
+"2028-05-22"
+1
+return.nameEn
+"Victoria Day"
+1
+return.nameFr
+"Fête de la Reine"
 1
+return.federal
+1
+1
+return.observedDate
+"2028-05-22"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+1
+1
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -11980,7 +15733,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+16
+1
+return.date
+"2028-07-01"
 1
+return.nameEn
+"Canada Day"
+1
+return.nameFr
+"Fête du Canada"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-07-03"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -12005,7 +15785,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+22
+1
+return.date
+"2028-08-07"
 1
+return.nameEn
+"Saskatchewan Day"
+1
+return.nameFr
+"Jour de Saskatchewan"
+1
+return.federal
+0
+1
+return.observedDate
+"2028-08-07"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -12030,7 +15837,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+27
+1
+return.date
+"2028-09-04"
+1
+return.nameEn
+"Labour Day"
 1
+return.nameFr
+"Fête du travail"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-09-04"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -12055,7 +15889,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+31
+1
+return.date
+"2028-10-09"
+1
+return.nameEn
+"Thanksgiving"
 1
+return.nameFr
+"Action de grâce"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-10-09"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+1
+1
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -12080,7 +15941,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+32
 1
+return.date
+"2028-11-11"
+1
+return.nameEn
+"Remembrance Day"
+1
+return.nameFr
+"Jour du Souvenir"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-11-13"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+1
+1
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -12105,7 +15993,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+33
+1
+return.date
+"2028-12-25"
+1
+return.nameEn
+"Christmas Day"
+1
+return.nameFr
+"Noël"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-12-25"
 1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -12130,7 +16045,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+1
+1
+return.date
+"2028-01-01"
+1
+return.nameEn
+"New Year’s Day"
+1
+return.nameFr
+"Jour de l’An"
+1
+return.federal
+1
 1
+return.observedDate
+"2028-01-03"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -12155,7 +16097,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+8
+1
+return.date
+"2028-04-14"
+1
+return.nameEn
+"Good Friday"
+1
+return.nameFr
+"Vendredi saint"
+1
+return.federal
+1
 1
+return.observedDate
+"2028-04-14"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -12180,7 +16149,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+12
+1
+return.date
+"2028-05-22"
+1
+return.nameEn
+"Victoria Day"
+1
+return.nameFr
+"Fête de la Reine"
+1
+return.federal
+1
 1
+return.observedDate
+"2028-05-22"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+1
+1
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -12205,7 +16201,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+13
+1
+return.date
+"2028-06-21"
+1
+return.nameEn
+"National Indigenous Peoples Day"
+1
+return.nameFr
+"Journée nationale des peuples autochtones"
 1
+return.federal
+0
+1
+return.observedDate
+"2028-06-21"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -12230,7 +16253,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+16
+1
+return.date
+"2028-07-01"
+1
+return.nameEn
+"Canada Day"
+1
+return.nameFr
+"Fête du Canada"
+1
+return.federal
 1
+1
+return.observedDate
+"2028-07-03"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -12255,7 +16305,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+26
+1
+return.date
+"2028-08-21"
+1
+return.nameEn
+"Discovery Day"
+1
+return.nameFr
+"Jour de la Découverte"
+1
+return.federal
+0
 1
+return.observedDate
+"2028-08-21"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -12280,7 +16357,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+27
+1
+return.date
+"2028-09-04"
+1
+return.nameEn
+"Labour Day"
+1
+return.nameFr
+"Fête du travail"
+1
+return.federal
+1
 1
+return.observedDate
+"2028-09-04"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -12305,7 +16409,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+29
+1
+return.date
+"2028-09-30"
+1
+return.nameEn
+"National Day for Truth and Reconciliation"
+1
+return.nameFr
+"Journée nationale de la vérité et de la réconciliation"
+1
+return.federal
+1
 1
+return.observedDate
+"2028-10-02"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+1
+1
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -12330,7 +16461,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+31
+1
+return.date
+"2028-10-09"
+1
+return.nameEn
+"Thanksgiving"
+1
+return.nameFr
+"Action de grâce"
 1
+return.federal
+1
+1
+return.observedDate
+"2028-10-09"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+1
+1
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -12355,7 +16513,34 @@ input.optional
 1
 return
 1535655885
+1
+return.id
+32
+1
+return.date
+"2028-11-11"
 1
+return.nameEn
+"Remembrance Day"
+1
+return.nameFr
+"Jour du Souvenir"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-11-13"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+1
+1
 
 /api/v1/provinces&Provinces&200&provinces&holidays():::ENTER
 input
@@ -12381,4 +16566,30 @@ input.optional
 return
 1535655885
 1
-
+return.id
+33
+1
+return.date
+"2028-12-25"
+1
+return.nameEn
+"Christmas Day"
+1
+return.nameFr
+"Noël"
+1
+return.federal
+1
+1
+return.observedDate
+"2028-12-25"
+1
+return.provinces
+null
+1
+return.provinces[..]
+nonsensical
+2
+return.optional
+nonsensical
+2

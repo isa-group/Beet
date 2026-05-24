@@ -21,7 +21,13 @@ public class NestedArrays {
 
         List<DeclsVariable> res = new ArrayList<>();
 
-        ArraySchema arraySchema = (ArraySchema) mapOfProperties.getProperties().get(parameterName);
+        // After resolveFully, circular-ref stubs for array properties may be stored as plain Schema
+        // instances instead of ArraySchema, causing a ClassCastException. Treat them as object arrays.
+        Schema arrayPropSchema = (Schema) mapOfProperties.getProperties().get(parameterName);
+        if (!(arrayPropSchema instanceof ArraySchema)) {
+            return getDeclsVariablesArray(variablePath, parameterName, parameterName, HASHCODE_TYPE_NAME);
+        }
+        ArraySchema arraySchema = (ArraySchema) arrayPropSchema;
         String itemsDatatype = arraySchema.getItems().getType();
 
         // Three possible situations:

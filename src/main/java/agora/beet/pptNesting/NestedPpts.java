@@ -2,6 +2,7 @@ package agora.beet.pptNesting;
 
 import agora.beet.model.DeclsExit;
 import agora.beet.model.DeclsVariable;
+import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.media.ArraySchema;
 import io.swagger.v3.oas.models.media.MediaType;
 import io.swagger.v3.oas.models.media.Schema;
@@ -125,12 +126,22 @@ public class NestedPpts {
                     // If there is an allOf, parameterType is null, but the schema contains all the properties
                     if(itemsDatatype == null || itemsDatatype.equalsIgnoreCase(OBJECT_TYPE_NAME)) {
                         Schema subSchema = arraySchema.getItems();
-                        res.put(nameSuffix + HIERARCHY_SEPARATOR + parameterName, subSchema);
 
                         if (subSchema.getProperties() == null && subSchema.getAdditionalProperties() == null) {
+                            // swagger-parser breaks circular reference cycles by replacing a schema with a stub
+                            // that has null properties. We recover one level of depth by looking up the real
+                            // schema from components (identified by its preserved title field). We do NOT
+                            // recurse into the real schema to avoid infinite loops.
                             printCircularReferenceWarning(mapOfProperties, parameterName, subSchema, nameSuffix,
                                     endpoint, operationName);
+                            Schema realSchema = lookupRealSchema(subSchema);
+                            if (realSchema != null && realSchema.getProperties() != null) {
+                                res.put(nameSuffix + HIERARCHY_SEPARATOR + parameterName, realSchema);
+                            } else {
+                                res.put(nameSuffix + HIERARCHY_SEPARATOR + parameterName, subSchema);
+                            }
                         } else {
+                            res.put(nameSuffix + HIERARCHY_SEPARATOR + parameterName, subSchema);
                             res.putAll(getAllNestedSchemas(nameSuffix + HIERARCHY_SEPARATOR + parameterName, subSchema,
                                     endpoint, operationName));
                         }
@@ -140,6 +151,35 @@ public class NestedPpts {
         }
 
         return res;
+    }
+
+    /**
+     * Resolves a circular-reference stub back to the real schema from the OAS components map.
+     *
+     * When swagger-parser encounters a schema it is already resolving (circular cycle), it creates
+     * a stub: an empty Schema with null properties. The stub does not preserve the title, but it
+     * does preserve the $ref field (e.g. "#/components/schemas/Holiday"). We extract the schema
+     * name from the $ref as the primary identifier, falling back to the title when $ref is absent.
+     * The components map contains the first fully-resolved version of each schema, which is safe to
+     * use for one level of variable generation without further recursion.
+     */
+    private static Schema lookupRealSchema(Schema stub) {
+        // swagger-parser stubs preserve $ref but NOT title — use $ref as primary identifier
+        String schemaName = null;
+        if (stub.get$ref() != null) {
+            String ref = stub.get$ref();
+            schemaName = ref.substring(ref.lastIndexOf('/') + 1);
+        } else if (stub.getTitle() != null) {
+            schemaName = stub.getTitle();
+        }
+        if (schemaName == null) {
+            return null;
+        }
+        OpenAPI spec = agora.beet.main.GenerateInstrumentation.getOpenAPISpec();
+        if (spec == null || spec.getComponents() == null || spec.getComponents().getSchemas() == null) {
+            return null;
+        }
+        return spec.getComponents().getSchemas().get(schemaName);
     }
 
     private static void printCircularReferenceWarning(Schema parentSchema, String propertyName,

@@ -39,6 +39,8 @@ public class GenerateInstrumentation {
     public static int numberOfExits = 1;
 
     private static List<DeclsClass> declsClasses = new ArrayList<>();
+    // Stored so that NestedPpts can recover real schemas for circular-ref stubs (see lookupRealSchema)
+    private static OpenAPI openAPISpec;
 
     public static final String HASHCODE_TYPE_NAME = "hashcode";
     public static final String STRING_TYPE_NAME = "java.lang.String";
@@ -197,7 +199,14 @@ public class GenerateInstrumentation {
         parseOptions.setResolveFully(true);
         parseOptions.setFlatten(true);
 
-        return new OpenAPIV3Parser().read(openApiSpecPath, null, parseOptions);
+        // Store the parsed spec so circular-ref resolution can look up real schemas later
+        openAPISpec = new OpenAPIV3Parser().read(openApiSpecPath, null, parseOptions);
+        return openAPISpec;
+    }
+
+    // Exposes the parsed spec for circular-ref stub recovery in NestedPpts.lookupRealSchema
+    public static OpenAPI getOpenAPISpec() {
+        return openAPISpec;
     }
 
     public static void addNewDeclsClass(DeclsClass declsClass){
