@@ -236,6 +236,52 @@ variable return.nextHoliday
 	enclosing-var return
 	dec-type Holidays&Output&200&holidays&provinces&nextHoliday
 	rep-type hashcode
+variable return.nextHoliday.id
+	var-kind field id
+	enclosing-var return.nextHoliday
+	dec-type int
+	rep-type int
+variable return.nextHoliday.date
+	var-kind field date
+	enclosing-var return.nextHoliday
+	dec-type java.lang.String
+	rep-type java.lang.String
+variable return.nextHoliday.nameEn
+	var-kind field nameEn
+	enclosing-var return.nextHoliday
+	dec-type java.lang.String
+	rep-type java.lang.String
+variable return.nextHoliday.nameFr
+	var-kind field nameFr
+	enclosing-var return.nextHoliday
+	dec-type java.lang.String
+	rep-type java.lang.String
+variable return.nextHoliday.federal
+	var-kind field federal
+	enclosing-var return.nextHoliday
+	dec-type int
+	rep-type int
+variable return.nextHoliday.observedDate
+	var-kind field observedDate
+	enclosing-var return.nextHoliday
+	dec-type java.lang.String
+	rep-type java.lang.String
+variable return.nextHoliday.provinces
+	var-kind field provinces
+	enclosing-var return.nextHoliday
+	dec-type provinces[]
+	rep-type hashcode
+variable return.nextHoliday.provinces[..]
+	var-kind array
+	enclosing-var return.nextHoliday.provinces
+	array 1
+	dec-type provinces[]
+	rep-type hashcode[]
+variable return.nextHoliday.optional
+	var-kind field optional
+	enclosing-var return.nextHoliday
+	dec-type int
+	rep-type int
 variable return.holidays
 	var-kind field holidays
 	enclosing-var return
@@ -298,6 +344,52 @@ variable return
 	var-kind return
 	dec-type Holidays&Output&200&holidays&provinces&holidays
 	rep-type hashcode
+variable return.id
+	var-kind field id
+	enclosing-var return
+	dec-type int
+	rep-type int
+variable return.date
+	var-kind field date
+	enclosing-var return
+	dec-type java.lang.String
+	rep-type java.lang.String
+variable return.nameEn
+	var-kind field nameEn
+	enclosing-var return
+	dec-type java.lang.String
+	rep-type java.lang.String
+variable return.nameFr
+	var-kind field nameFr
+	enclosing-var return
+	dec-type java.lang.String
+	rep-type java.lang.String
+variable return.federal
+	var-kind field federal
+	enclosing-var return
+	dec-type int
+	rep-type int
+variable return.observedDate
+	var-kind field observedDate
+	enclosing-var return
+	dec-type java.lang.String
+	rep-type java.lang.String
+variable return.provinces
+	var-kind field provinces
+	enclosing-var return
+	dec-type provinces[]
+	rep-type hashcode
+variable return.provinces[..]
+	var-kind array
+	enclosing-var return.provinces
+	array 1
+	dec-type provinces[]
+	rep-type hashcode[]
+variable return.optional
+	var-kind field optional
+	enclosing-var return
+	dec-type int
+	rep-type int
 
 
 ppt /api/v1/provinces:::CLASS
@@ -416,6 +508,52 @@ variable return.nextHoliday
 	enclosing-var return
 	dec-type Provinces&Output&200&provinces&nextHoliday
 	rep-type hashcode
+variable return.nextHoliday.id
+	var-kind field id
+	enclosing-var return.nextHoliday
+	dec-type int
+	rep-type int
+variable return.nextHoliday.date
+	var-kind field date
+	enclosing-var return.nextHoliday
+	dec-type java.lang.String
+	rep-type java.lang.String
+variable return.nextHoliday.nameEn
+	var-kind field nameEn
+	enclosing-var return.nextHoliday
+	dec-type java.lang.String
+	rep-type java.lang.String
+variable return.nextHoliday.nameFr
+	var-kind field nameFr
+	enclosing-var return.nextHoliday
+	dec-type java.lang.String
+	rep-type java.lang.String
+variable return.nextHoliday.federal
+	var-kind field federal
+	enclosing-var return.nextHoliday
+	dec-type int
+	rep-type int
+variable return.nextHoliday.observedDate
+	var-kind field observedDate
+	enclosing-var return.nextHoliday
+	dec-type java.lang.String
+	rep-type java.lang.String
+variable return.nextHoliday.provinces
+	var-kind field provinces
+	enclosing-var return.nextHoliday
+	dec-type provinces[]
+	rep-type hashcode
+variable return.nextHoliday.provinces[..]
+	var-kind array
+	enclosing-var return.nextHoliday.provinces
+	array 1
+	dec-type provinces[]
+	rep-type hashcode[]
+variable return.nextHoliday.optional
+	var-kind field optional
+	enclosing-var return.nextHoliday
+	dec-type int
+	rep-type int
 variable return.holidays
 	var-kind field holidays
 	enclosing-var return
@@ -473,6 +611,52 @@ variable return
 	var-kind return
 	dec-type Provinces&Output&200&provinces&holidays
 	rep-type hashcode
+variable return.id
+	var-kind field id
+	enclosing-var return
+	dec-type int
+	rep-type int
+variable return.date
+	var-kind field date
+	enclosing-var return
+	dec-type java.lang.String
+	rep-type java.lang.String
+variable return.nameEn
+	var-kind field nameEn
+	enclosing-var return
+	dec-type java.lang.String
+	rep-type java.lang.String
+variable return.nameFr
+	var-kind field nameFr
+	enclosing-var return
+	dec-type java.lang.String
+	rep-type java.lang.String
+variable return.federal
+	var-kind field federal
+	enclosing-var return
+	dec-type int
+	rep-type int
+variable return.observedDate
+	var-kind field observedDate
+	enclosing-var return
+	dec-type java.lang.String
+	rep-type java.lang.String
+variable return.provinces
+	var-kind field provinces
+	enclosing-var return
+	dec-type provinces[]
+	rep-type hashcode
+variable return.provinces[..]
+	var-kind array
+	enclosing-var return.provinces
+	array 1
+	dec-type provinces[]
+	rep-type hashcode[]
+variable return.optional
+	var-kind field optional
+	enclosing-var return
+	dec-type int
+	rep-type int
 
 
 ppt /api/v1/provinces/{provinceId}:::CLASS
@@ -562,6 +746,52 @@ variable return.province.nextHoliday
 	enclosing-var return.province
 	dec-type Province&Output&200&nextHoliday
 	rep-type hashcode
+variable return.province.nextHoliday.id
+	var-kind field id
+	enclosing-var return.province.nextHoliday
+	dec-type int
+	rep-type int
+variable return.province.nextHoliday.date
+	var-kind field date
+	enclosing-var return.province.nextHoliday
+	dec-type java.lang.String
+	rep-type java.lang.String
+variable return.province.nextHoliday.nameEn
+	var-kind field nameEn
+	enclosing-var return.province.nextHoliday
+	dec-type java.lang.String
+	rep-type java.lang.String
+variable return.province.nextHoliday.nameFr
+	var-kind field nameFr
+	enclosing-var return.province.nextHoliday
+	dec-type java.lang.String
+	rep-type java.lang.String
+variable return.province.nextHoliday.federal
+	var-kind field federal
+	enclosing-var return.province.nextHoliday
+	dec-type int
+	rep-type int
+variable return.province.nextHoliday.observedDate
+	var-kind field observedDate
+	enclosing-var return.province.nextHoliday
+	dec-type java.lang.String
+	rep-type java.lang.String
+variable return.province.nextHoliday.provinces
+	var-kind field provinces
+	enclosing-var return.province.nextHoliday
+	dec-type provinces[]
+	rep-type hashcode
+variable return.province.nextHoliday.provinces[..]
+	var-kind array
+	enclosing-var return.province.nextHoliday.provinces
+	array 1
+	dec-type provinces[]
+	rep-type hashcode[]
+variable return.province.nextHoliday.optional
+	var-kind field optional
+	enclosing-var return.province.nextHoliday
+	dec-type int
+	rep-type int
 variable return.province.holidays
 	var-kind field holidays
 	enclosing-var return.province
@@ -624,6 +854,52 @@ variable return
 	var-kind return
 	dec-type Province&Output&200&province&holidays
 	rep-type hashcode
+variable return.id
+	var-kind field id
+	enclosing-var return
+	dec-type int
+	rep-type int
+variable return.date
+	var-kind field date
+	enclosing-var return
+	dec-type java.lang.String
+	rep-type java.lang.String
+variable return.nameEn
+	var-kind field nameEn
+	enclosing-var return
+	dec-type java.lang.String
+	rep-type java.lang.String
+variable return.nameFr
+	var-kind field nameFr
+	enclosing-var return
+	dec-type java.lang.String
+	rep-type java.lang.String
+variable return.federal
+	var-kind field federal
+	enclosing-var return
+	dec-type int
+	rep-type int
+variable return.observedDate
+	var-kind field observedDate
+	enclosing-var return
+	dec-type java.lang.String
+	rep-type java.lang.String
+variable return.provinces
+	var-kind field provinces
+	enclosing-var return
+	dec-type provinces[]
+	rep-type hashcode
+variable return.provinces[..]
+	var-kind array
+	enclosing-var return.provinces
+	array 1
+	dec-type provinces[]
+	rep-type hashcode[]
+variable return.optional
+	var-kind field optional
+	enclosing-var return
+	dec-type int
+	rep-type int
 
 
 ppt /api/v1/holidays/{holidayId}:::CLASS
@@ -797,6 +1073,52 @@ variable return
 	var-kind return
 	dec-type Holiday&Output&200&holiday&provinces&holidays
 	rep-type hashcode
+variable return.id
+	var-kind field id
+	enclosing-var return
+	dec-type int
+	rep-type int
+variable return.date
+	var-kind field date
+	enclosing-var return
+	dec-type java.lang.String
+	rep-type java.lang.String
+variable return.nameEn
+	var-kind field nameEn
+	enclosing-var return
+	dec-type java.lang.String
+	rep-type java.lang.String
+variable return.nameFr
+	var-kind field nameFr
+	enclosing-var return
+	dec-type java.lang.String
+	rep-type java.lang.String
+variable return.federal
+	var-kind field federal
+	enclosing-var return
+	dec-type int
+	rep-type int
+variable return.observedDate
+	var-kind field observedDate
+	enclosing-var return
+	dec-type java.lang.String
+	rep-type java.lang.String
+variable return.provinces
+	var-kind field provinces
+	enclosing-var return
+	dec-type provinces[]
+	rep-type hashcode
+variable return.provinces[..]
+	var-kind array
+	enclosing-var return.provinces
+	array 1
+	dec-type provinces[]
+	rep-type hashcode[]
+variable return.optional
+	var-kind field optional
+	enclosing-var return
+	dec-type int
+	rep-type int
 
 ppt /api/v1/holidays/{holidayId}&Holiday&200&holiday&provinces():::EXIT12
 ppt-type subexit
@@ -833,6 +1155,52 @@ variable return.nextHoliday
 	enclosing-var return
 	dec-type Holiday&Output&200&holiday&provinces&nextHoliday
 	rep-type hashcode
+variable return.nextHoliday.id
+	var-kind field id
+	enclosing-var return.nextHoliday
+	dec-type int
+	rep-type int
+variable return.nextHoliday.date
+	var-kind field date
+	enclosing-var return.nextHoliday
+	dec-type java.lang.String
+	rep-type java.lang.String
+variable return.nextHoliday.nameEn
+	var-kind field nameEn
+	enclosing-var return.nextHoliday
+	dec-type java.lang.String
+	rep-type java.lang.String
+variable return.nextHoliday.nameFr
+	var-kind field nameFr
+	enclosing-var return.nextHoliday
+	dec-type java.lang.String
+	rep-type java.lang.String
+variable return.nextHoliday.federal
+	var-kind field federal
+	enclosing-var return.nextHoliday
+	dec-type int
+	rep-type int
+variable return.nextHoliday.observedDate
+	var-kind field observedDate
+	enclosing-var return.nextHoliday
+	dec-type java.lang.String
+	rep-type java.lang.String
+variable return.nextHoliday.provinces
+	var-kind field provinces
+	enclosing-var return.nextHoliday
+	dec-type provinces[]
+	rep-type hashcode
+variable return.nextHoliday.provinces[..]
+	var-kind array
+	enclosing-var return.nextHoliday.provinces
+	array 1
+	dec-type provinces[]
+	rep-type hashcode[]
+variable return.nextHoliday.optional
+	var-kind field optional
+	enclosing-var return.nextHoliday
+	dec-type int
+	rep-type int
 variable return.holidays
 	var-kind field holidays
 	enclosing-var return

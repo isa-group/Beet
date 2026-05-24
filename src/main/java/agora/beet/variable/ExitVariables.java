@@ -38,11 +38,17 @@ public class ExitVariables {
                                                                    boolean isArray) {
         List<DeclsVariable> res = new ArrayList<>();
         Map<String, Schema> properties = mapOfProperties.getProperties();
-        // Warnings if properties == null
         if (properties == null) {
-            if(mapOfProperties.getAdditionalProperties() == null) {
+            if (mapOfProperties.getAdditionalProperties() == null) {
+                // Circular-ref stub: swagger-parser replaced this schema with an empty placeholder.
+                // Recover one level of fields by using the real schema from the OAS components map.
+                // We do NOT recurse further from the real schema to avoid infinite loops.
+                Schema realSchema = lookupRealSchema(mapOfProperties);
+                if (realSchema != null && realSchema.getProperties() != null) {
+                    return generateDeclsVariablesOfExit(realSchema, parentVariable, varKind, variableNameOutput, isArray);
+                }
                 System.err.println("WARNING: No properties found for object: " + parentVariable);
-            } else{
+            } else {
                 System.err.println("WARNING: Object: " + parentVariable + " only contains additional properties");
             }
         } else {

@@ -9,6 +9,7 @@ import io.swagger.v3.oas.models.PathItem.HttpMethod;
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.PathItem;
 import io.swagger.v3.oas.models.Paths;
+import io.swagger.v3.oas.models.media.Schema;
 import io.swagger.v3.parser.OpenAPIV3Parser;
 import io.swagger.v3.parser.core.models.ParseOptions;
 
@@ -204,9 +205,35 @@ public class GenerateInstrumentation {
         return openAPISpec;
     }
 
-    // Exposes the parsed spec for circular-ref stub recovery in NestedPpts.lookupRealSchema
+    // Exposes the parsed spec for circular-ref stub recovery
     public static OpenAPI getOpenAPISpec() {
         return openAPISpec;
+    }
+
+    /**
+     * Resolves a circular-reference stub back to the real schema from the OAS components map.
+     *
+     * swagger-parser stubs preserve the $ref field (e.g. "#/components/schemas/Holiday") but NOT
+     * the title. We extract the schema name from $ref as the primary identifier, falling back to
+     * the title when $ref is absent. The components map holds the first fully-resolved version of
+     * each schema, safe to use for one level of variable/ppt generation without further recursion.
+     */
+    public static Schema lookupRealSchema(Schema stub) {
+        String schemaName = null;
+        if (stub.get$ref() != null) {
+            String ref = stub.get$ref();
+            schemaName = ref.substring(ref.lastIndexOf('/') + 1);
+        } else if (stub.getTitle() != null) {
+            schemaName = stub.getTitle();
+        }
+        if (schemaName == null) {
+            return null;
+        }
+        if (openAPISpec == null || openAPISpec.getComponents() == null
+                || openAPISpec.getComponents().getSchemas() == null) {
+            return null;
+        }
+        return openAPISpec.getComponents().getSchemas().get(schemaName);
     }
 
     public static void addNewDeclsClass(DeclsClass declsClass){
