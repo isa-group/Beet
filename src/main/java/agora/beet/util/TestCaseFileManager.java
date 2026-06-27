@@ -71,7 +71,9 @@ public class TestCaseFileManager {
         if(str.trim().isEmpty()){
             return new HashMap<>();
         }else {
-            Map<String, String> res = Arrays.stream(str.split("\\s*;\\s*")).map(s -> s.split("="))
+            Map<String, String> res = Arrays.stream(str.split("\\s*;\\s*")).map(s -> s.split("=", 2))
+                    // Ignore parameters with no value (e.g. "search="), which would otherwise break the mapping
+                    .filter(a -> a.length == 2 && !a[1].isEmpty())
                     .collect(Collectors.toMap(a -> a[0], a -> a[1]));
             // Remove all new line chars (\n and \r). The parameter value line of the dTrace must be specified in a single line
             res.replaceAll((k,v) -> removeNewLineChars(v));
